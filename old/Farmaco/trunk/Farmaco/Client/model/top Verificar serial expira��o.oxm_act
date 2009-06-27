@@ -1,0 +1,217 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<?Oracle-JDeveloper Artifact = '1.1'?>
+<artifact xmlns="http://xmlns.oracle.com/jdeveloper/modeler/artifact" name="top Verificar serial expiração" type="Activity" cid="7ed1251e-010c-1000-801f-0a0000438433::top Verificar serial expiração::Activity">
+   <property xmlns="">
+      <cid name="NAMESPACE_REFERENCE" key="1000::::UMLContainer"/>
+      <null name="COMMENT"/>
+      <null name="IMAGE"/>
+      <null name="CONTAINER_REFERENCE"/>
+      <null name="PARTITION_REFERENCE"/>
+      <null name="WORKFLOW_ITEM_TYPE_REFERENCE"/>
+      <null name="WORKFLOW_MESSAGE_TYPE_REFERENCE"/>
+      <cid name="DIAGRAM_REFERENCE" key="7ed1251e-010c-1000-801e-0a0000438433::Verificar serial expiração::Diagram"/>
+      <null name="HUB_PARTITION_REFERENCE"/>
+      <null name="WORKFLOW_ROLE_REFERENCE"/>
+      <null name="EXECUTION_STRING"/>
+      <null name="DYNAMIC_ARGUMENTS"/>
+      <null name="DYNAMIC_MULTIPLICITY"/>
+      <text name="IS_DYNAMIC">FALSE</text>
+      <null name="WF_COST"/>
+      <text name="WF_ENABLED_FLAG">FALSE</text>
+      <text name="WF_RERUN_MODE">RESET</text>
+      <null name="WF_CUSTOM_LEVEL"/>
+      <null name="WF_PROTECT_LEVEL"/>
+      <text name="WF_TYPE">FUNCTION</text>
+      <null name="WF_ERROR_PROCESS"/>
+      <null name="WF_ERROR_ITEM_TYPE"/>
+      <text name="WF_EXPAND_ROLE_FLAG">FALSE</text>
+      <null name="WF_IMPLEMENTATION_NAME"/>
+   </property>
+   <backreference xmlns=""/>
+   <children xmlns="">
+      <child type="Pseudostate" reference="OWNER_REFERENCE">
+         <artifact name="" type="Pseudostate" cid="7ed132e9-010c-1000-8020-0a0000438433::top Verificar serial expiração::Pseudostate">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <null name="IMAGE"/>
+               <cid name="CONTAINER_REFERENCE" key="7ed1251e-010c-1000-801f-0a0000438433::top Verificar serial expiração::Activity"/>
+               <text name="TYPE">INITIAL</text>
+               <number name="SEQUENCE_NUMBER" value="1"/>
+            </property>
+            <backreference/>
+            <children/>
+         </artifact>
+         <artifact name="" type="Pseudostate" cid="7ed145a6-010c-1000-8021-0a0000438433::top Verificar serial expiração::Pseudostate">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <null name="IMAGE"/>
+               <cid name="CONTAINER_REFERENCE" key="7ed1251e-010c-1000-801f-0a0000438433::top Verificar serial expiração::Activity"/>
+               <text name="TYPE">FINAL</text>
+               <number name="SEQUENCE_NUMBER" value="2"/>
+            </property>
+            <backreference/>
+            <children/>
+         </artifact>
+         <artifact name="" type="Pseudostate" cid="7ed1fa8d-010c-1000-8024-0a0000438433::top Verificar serial expiração::Pseudostate">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <null name="IMAGE"/>
+               <cid name="CONTAINER_REFERENCE" key="7ed1251e-010c-1000-801f-0a0000438433::top Verificar serial expiração::Activity"/>
+               <text name="TYPE">OR</text>
+               <number name="SEQUENCE_NUMBER" value="3"/>
+            </property>
+            <backreference/>
+            <children/>
+         </artifact>
+      </child>
+      <child type="Transition" reference="CONTAINER_REFERENCE">
+         <artifact name="" type="Transition" cid="7ed4868f-010c-1000-802d-0a0000438433::top Verificar serial expiração::Transition">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <null name="IMAGE"/>
+               <null name="CHANNEL_REFERENCE"/>
+               <null name="TRIGGER_EVENT_REFERENCE"/>
+               <cid name="SOURCE_TYPE_REFERENCE" key="7ed40412-010c-1000-802b-0a0000438433::avisa usuário e fecha o programa::Activity"/>
+               <cid name="TARGET_TYPE_REFERENCE" key="7ed145a6-010c-1000-8021-0a0000438433::top Verificar serial expiração::Pseudostate"/>
+               <number name="SEQUENCE_NUMBER" value="7"/>
+               <text name="BROADCAST_FLAG">TRUE</text>
+               <null name="GUARD_CONDITION"/>
+               <null name="CODE_FRAGMENT"/>
+               <null name="INSTANCE_SELECTOR"/>
+            </property>
+            <backreference/>
+            <children/>
+         </artifact>
+         <artifact name="" type="Transition" cid="7ed45658-010c-1000-802c-0a0000438433::top Verificar serial expiração::Transition">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <null name="IMAGE"/>
+               <null name="CHANNEL_REFERENCE"/>
+               <null name="TRIGGER_EVENT_REFERENCE"/>
+               <cid name="SOURCE_TYPE_REFERENCE" key="7ed33be3-010c-1000-8029-0a0000438433::marca serial como expirado::Activity"/>
+               <cid name="TARGET_TYPE_REFERENCE" key="7ed40412-010c-1000-802b-0a0000438433::avisa usuário e fecha o programa::Activity"/>
+               <number name="SEQUENCE_NUMBER" value="6"/>
+               <text name="BROADCAST_FLAG">TRUE</text>
+               <null name="GUARD_CONDITION"/>
+               <null name="CODE_FRAGMENT"/>
+               <null name="INSTANCE_SELECTOR"/>
+            </property>
+            <backreference/>
+            <children/>
+         </artifact>
+         <artifact name="" type="Transition" cid="7ed538a7-010c-1000-8030-0a0000438433::top Verificar serial expiração::Transition">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <null name="IMAGE"/>
+               <null name="CHANNEL_REFERENCE"/>
+               <null name="TRIGGER_EVENT_REFERENCE"/>
+               <cid name="SOURCE_TYPE_REFERENCE" key="7ed4aca5-010c-1000-802e-0a0000438433::aguarda de 10 à 15 minutos::Activity"/>
+               <cid name="TARGET_TYPE_REFERENCE" key="7ed1597c-010c-1000-8022-0a0000438433::pega o serial::Activity"/>
+               <number name="SEQUENCE_NUMBER" value="8"/>
+               <text name="BROADCAST_FLAG">TRUE</text>
+               <null name="GUARD_CONDITION"/>
+               <null name="CODE_FRAGMENT"/>
+               <null name="INSTANCE_SELECTOR"/>
+            </property>
+            <backreference/>
+            <children/>
+         </artifact>
+         <artifact name="" type="Transition" cid="7ed529f1-010c-1000-802f-0a0000438433::top Verificar serial expiração::Transition">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <null name="IMAGE"/>
+               <null name="CHANNEL_REFERENCE"/>
+               <null name="TRIGGER_EVENT_REFERENCE"/>
+               <cid name="SOURCE_TYPE_REFERENCE" key="7ed1fa8d-010c-1000-8024-0a0000438433::top Verificar serial expiração::Pseudostate"/>
+               <cid name="TARGET_TYPE_REFERENCE" key="7ed4aca5-010c-1000-802e-0a0000438433::aguarda de 10 à 15 minutos::Activity"/>
+               <number name="SEQUENCE_NUMBER" value="5"/>
+               <text name="BROADCAST_FLAG">TRUE</text>
+               <null name="GUARD_CONDITION"/>
+               <null name="CODE_FRAGMENT"/>
+               <null name="INSTANCE_SELECTOR"/>
+            </property>
+            <backreference/>
+            <children/>
+         </artifact>
+         <artifact name="" type="Transition" cid="7ed2bba8-010c-1000-8026-0a0000438433::top Verificar serial expiração::Transition">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <null name="IMAGE"/>
+               <null name="CHANNEL_REFERENCE"/>
+               <null name="TRIGGER_EVENT_REFERENCE"/>
+               <cid name="SOURCE_TYPE_REFERENCE" key="7ed1597c-010c-1000-8022-0a0000438433::pega o serial::Activity"/>
+               <cid name="TARGET_TYPE_REFERENCE" key="7ed1829f-010c-1000-8023-0a0000438433::verifica se a data dele é inferior a data atual::Activity"/>
+               <number name="SEQUENCE_NUMBER" value="2"/>
+               <text name="BROADCAST_FLAG">TRUE</text>
+               <null name="GUARD_CONDITION"/>
+               <null name="CODE_FRAGMENT"/>
+               <null name="INSTANCE_SELECTOR"/>
+            </property>
+            <backreference/>
+            <children/>
+         </artifact>
+         <artifact name="" type="Transition" cid="7ed2b37a-010c-1000-8025-0a0000438433::top Verificar serial expiração::Transition">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <null name="IMAGE"/>
+               <null name="CHANNEL_REFERENCE"/>
+               <null name="TRIGGER_EVENT_REFERENCE"/>
+               <cid name="SOURCE_TYPE_REFERENCE" key="7ed132e9-010c-1000-8020-0a0000438433::top Verificar serial expiração::Pseudostate"/>
+               <cid name="TARGET_TYPE_REFERENCE" key="7ed1597c-010c-1000-8022-0a0000438433::pega o serial::Activity"/>
+               <number name="SEQUENCE_NUMBER" value="1"/>
+               <text name="BROADCAST_FLAG">TRUE</text>
+               <null name="GUARD_CONDITION"/>
+               <null name="CODE_FRAGMENT"/>
+               <null name="INSTANCE_SELECTOR"/>
+            </property>
+            <backreference/>
+            <children/>
+         </artifact>
+         <artifact name="" type="Transition" cid="7ed2d971-010c-1000-8028-0a0000438433::top Verificar serial expiração::Transition">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <null name="IMAGE"/>
+               <null name="CHANNEL_REFERENCE"/>
+               <cid name="TRIGGER_EVENT_REFERENCE" key="::serial é expirado em 2 dias::Event"/>
+               <cid name="SOURCE_TYPE_REFERENCE" key="7ed1fa8d-010c-1000-8024-0a0000438433::top Verificar serial expiração::Pseudostate"/>
+               <cid name="TARGET_TYPE_REFERENCE" key="7ed33be3-010c-1000-8029-0a0000438433::marca serial como expirado::Activity"/>
+               <number name="SEQUENCE_NUMBER" value="4"/>
+               <text name="BROADCAST_FLAG">TRUE</text>
+               <null name="GUARD_CONDITION"/>
+               <null name="CODE_FRAGMENT"/>
+               <null name="INSTANCE_SELECTOR"/>
+            </property>
+            <backreference/>
+            <children/>
+         </artifact>
+         <artifact name="" type="Transition" cid="7ed2c53d-010c-1000-8027-0a0000438433::top Verificar serial expiração::Transition">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <null name="IMAGE"/>
+               <null name="CHANNEL_REFERENCE"/>
+               <null name="TRIGGER_EVENT_REFERENCE"/>
+               <cid name="SOURCE_TYPE_REFERENCE" key="7ed1829f-010c-1000-8023-0a0000438433::verifica se a data dele é inferior a data atual::Activity"/>
+               <cid name="TARGET_TYPE_REFERENCE" key="7ed1fa8d-010c-1000-8024-0a0000438433::top Verificar serial expiração::Pseudostate"/>
+               <number name="SEQUENCE_NUMBER" value="3"/>
+               <text name="BROADCAST_FLAG">TRUE</text>
+               <null name="GUARD_CONDITION"/>
+               <null name="CODE_FRAGMENT"/>
+               <null name="INSTANCE_SELECTOR"/>
+            </property>
+            <backreference/>
+            <children/>
+         </artifact>
+      </child>
+   </children>
+</artifact>

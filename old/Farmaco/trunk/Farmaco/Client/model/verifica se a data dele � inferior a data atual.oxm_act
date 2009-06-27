@@ -1,0 +1,32 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<?Oracle-JDeveloper Artifact = '1.1'?>
+<artifact xmlns="http://xmlns.oracle.com/jdeveloper/modeler/artifact" name="verifica se a data dele é inferior a data atual" type="Activity" cid="7ed1829f-010c-1000-8023-0a0000438433::verifica se a data dele é inferior a data atual::Activity">
+   <property xmlns="">
+      <cid name="NAMESPACE_REFERENCE" key="1000::::UMLContainer"/>
+      <null name="COMMENT"/>
+      <null name="IMAGE"/>
+      <cid name="CONTAINER_REFERENCE" key="7ed1251e-010c-1000-801f-0a0000438433::top Verificar serial expiração::Activity"/>
+      <null name="PARTITION_REFERENCE"/>
+      <null name="WORKFLOW_ITEM_TYPE_REFERENCE"/>
+      <null name="WORKFLOW_MESSAGE_TYPE_REFERENCE"/>
+      <null name="DIAGRAM_REFERENCE"/>
+      <null name="HUB_PARTITION_REFERENCE"/>
+      <null name="WORKFLOW_ROLE_REFERENCE"/>
+      <null name="EXECUTION_STRING"/>
+      <null name="DYNAMIC_ARGUMENTS"/>
+      <null name="DYNAMIC_MULTIPLICITY"/>
+      <text name="IS_DYNAMIC">FALSE</text>
+      <null name="WF_COST"/>
+      <text name="WF_ENABLED_FLAG">FALSE</text>
+      <text name="WF_RERUN_MODE">RESET</text>
+      <null name="WF_CUSTOM_LEVEL"/>
+      <null name="WF_PROTECT_LEVEL"/>
+      <text name="WF_TYPE">FUNCTION</text>
+      <null name="WF_ERROR_PROCESS"/>
+      <null name="WF_ERROR_ITEM_TYPE"/>
+      <text name="WF_EXPAND_ROLE_FLAG">FALSE</text>
+      <null name="WF_IMPLEMENTATION_NAME"/>
+   </property>
+   <backreference xmlns=""/>
+   <children xmlns=""/>
+</artifact>

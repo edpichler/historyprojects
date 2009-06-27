@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.dudhoo.farmaco.hibernate.NomeComercial"
+           table="NOME_COMERCIAL">
+        <id name="id" type="int">
+            <column name="ID"/>
+            <generator class="identity"/>
+        </id>
+        <many-to-one name="principioAtivo" cascade="all"
+            class="com.dudhoo.farmaco.hibernate.PrincipioAtivo" not-null="true"
+            column="principio_ativo_id"/>
+        <property name="nome" type="string">
+            <column name="NOME" not-null="true" length="300"/>
+        </property>
+        <property name="ultMod" type="date" update="false" insert="false">
+            <column name="ULT_MOD" length="7" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

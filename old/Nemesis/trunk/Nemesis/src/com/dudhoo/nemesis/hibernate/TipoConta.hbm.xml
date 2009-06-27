@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 23/01/2006 21:05:43 by Hibernate Tools 3.1.0 beta1JBIDERC2 -->
+<hibernate-mapping>
+    <class name="com.dudhoo.nemesis.hibernate.TipoConta" table="TIPO_CONTA" schema="NEMESIS">
+        <id name="id" type="long">
+            <column name="ID" precision="10" scale="0" />
+           <generator class="identity"/>
+        </id>
+         <property name="ultMod"  insert="false"  update="false" type="date">
+            <column name="ULT_MOD" length="7" not-null="false"/>
+        </property>
+        <many-to-one name="usuario" class="com.dudhoo.nemesis.hibernate.Usuario" fetch="select">
+            <column name="USUARIO_ID" precision="10" scale="0" not-null="true" />
+        </many-to-one>
+        <property name="nome" type="string">
+            <column name="NOME" length="100" not-null="true" unique="true" />
+        </property>
+        <property name="credito" type="boolean">
+            <column name="CREDITO" precision="1" scale="0" not-null="true"/>
+        </property>
+        <many-to-one name="observacao" lazy="false"
+                     class="com.dudhoo.nemesis.hibernate.Observacao"
+                     fetch="select" cascade="all">
+            <column name="OBS_ID" precision="10" scale="0"
+                    unique="true"/>
+        </many-to-one>
+        <property name="descricao" type="string">
+            <column name="DESCRICAO" length="200" not-null="false" unique="false"/>
+        </property>
+    </class>
+</hibernate-mapping>

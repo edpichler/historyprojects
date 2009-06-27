@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Written by Eclipse BIRT 2.0 -->
+<library xmlns="http://www.eclipse.org/birt/2005/design" version="3" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 2.0.1 Build &lt;20060222-1204></property>
+    <property name="theme">defaultTheme</property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="nemesis" id="4">
+            <property name="odaDriverClass">oracle.jdbc.driver.OracleDriver</property>
+            <property name="odaURL">jdbc:oracle:thin:@192.168.1.39:1521:xe</property>
+            <property name="odaUser">nemesis</property>
+            <encrypted-property name="odaPassword">bmVtZXNpcw==</encrypted-property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Contas Pagar" id="6">
+            <property name="dataSource">nemesis</property>
+            <property name="queryText">select 
+	pessoa.NOME as "Pessoa",
+	TIPO_CONTA.NOME as "Conta",
+	CONCAT( 'R$',TO_CHAR(CONTA_FINANCEIRA.VALOR, '999,999.99')) as "Valor",  
+	TO_CHAR(CONTA_FINANCEIRA.DATA_PAGAMENTO, 'DD-MON-YYYY')  as "Data Pagamento",
+	(Case CONTA_FINANCEIRA.CONTA_PAGA when 1 then 'Sim' else 'Não' end) as "Conta Paga"
+	
+from ((((CONTA_PAGAR
+	inner join conta_financeira on CONTA_PAGAR.ID = CONTA_FINANCEIRA.ID)
+	inner join TIPO_CONTA on CONTA_FINANCEIRA.TIPO_CONTA_ID = TIPO_CONTA.ID)
+	left join OBSERVACAO on OBSERVACAO.id = CONTA_FINANCEIRA.OBSERVACAO_ID)
+	left join pessoa on CONTA_FINANCEIRA.PESSOA_ID = PESSOA.ID)
+where conta_financeira.conta_paga = 0
+order by CONTA_FINANCEIRA.DATA_PAGAMENTO desc, valor, TIPO_CONTA.NOME</property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Contas Receber" id="7">
+            <property name="dataSource">nemesis</property>
+            <property name="queryText">select 
+	pessoa.NOME as "Pessoa",
+	TIPO_CONTA.NOME as "Conta",
+	CONCAT( 'R$',TO_CHAR(CONTA_FINANCEIRA.VALOR, '999,999.99')) as "Valor",  
+	TO_CHAR(CONTA_FINANCEIRA.DATA_PAGAMENTO, 'DD-MON-YYYY')  as "Data Pagamento",
+	(Case CONTA_FINANCEIRA.CONTA_PAGA when 1 then 'Sim' else 'Não' end) as "Conta Paga"	
+from ((((CONTA_RECEBER
+	inner join conta_financeira on CONTA_RECEBER.ID = CONTA_FINANCEIRA.ID)
+	inner join TIPO_CONTA on CONTA_FINANCEIRA.TIPO_CONTA_ID = TIPO_CONTA.ID)
+	left join OBSERVACAO on OBSERVACAO.id = CONTA_FINANCEIRA.OBSERVACAO_ID)
+	left join pessoa on CONTA_FINANCEIRA.PESSOA_ID = PESSOA.ID)
+where conta_financeira.conta_paga = 0
+order by CONTA_FINANCEIRA.DATA_PAGAMENTO desc, valor, TIPO_CONTA.NOME</property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Vendas" id="14">
+            <property name="dataSource">nemesis</property>
+            <property name="queryText">select
+usuario.NOME as "Vendedor",
+pessoa.NOME as "Cliente", 
+TIPO_CONTA.NOME as "Conta",
+PRODUTO.NOME as "Produto",
+CONCAT( 'R$',TO_CHAR(conta.VALOR, '999,999.99')) as "Valor", 
+TO_CHAR(conta.DATA_PAGAMENTO, 'DD-MON-YYYY')  as "Data Pagamento",
+(Case  conta.CONTA_PAGA when 1 then 'Sim' else 'Não' end) as "Conta Paga",
+obs.OBS as "Observações"  
+from (((((((CONTA_RECEBER
+inner join conta_financeira conta on CONTA_RECEBER.ID = conta.ID)
+inner join TIPO_CONTA on conta.TIPO_CONTA_ID = TIPO_CONTA.ID)  
+inner join MOVIMENTO_ESTOQUE on MOVIMENTO_ESTOQUE.CONTA_FINANCEIRA_ID = conta.ID)
+inner join produto on produto.ID = MOVIMENTO_ESTOQUE.PRODUTO_ID)
+inner join usuario on usuario.ID = MOVIMENTO_ESTOQUE.USUARIO_ID)  
+left join OBSERVACAO obs on obs.id = conta.OBSERVACAO_ID)
+left join pessoa on conta.PESSOA_ID = PESSOA.ID)  
+where TIPO_CONTA.CREDITO = 1
+order by USUARIO.NOME,conta.DATA_PAGAMENTO desc, conta.VALOR, TIPO_CONTA.NOME</property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Ranquink Vendedores" id="16">
+            <property name="dataSource">nemesis</property>
+            <property name="queryText">select 
+  usuario.NOME as "Vendedor",  
+  sum(CONTA_FINANCEIRA.VALOR) as "Valor Total"  
+from (((MOVIMENTO_ESTOQUE
+  inner join CONTA_FINANCEIRA on MOVIMENTO_ESTOQUE.CONTA_FINANCEIRA_ID = CONTA_FINANCEIRA.ID) 
+  inner join TIPO_CONTA on TIPO_CONTA.ID = CONTA_FINANCEIRA.TIPO_CONTA_ID)
+  inner join usuario on usuario.ID = MOVIMENTO_ESTOQUE.USUARIO_ID)
+
+group by usuario.nome
+</property>
+        </oda-data-set>
+    </data-sets>
+    <themes>
+        <theme name="defaultTheme" id="2">
+            <styles>
+                <style name="table-header" id="13">
+                    <property name="backgroundColor">#000000</property>
+                    <property name="fontFamily">Arial</property>
+                    <property name="fontWeight">bolder</property>
+                    <property name="color">#FFFFFF</property>
+                </style>
+            </styles>
+        </theme>
+    </themes>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="3"/>
+    </page-setup>
+</library>

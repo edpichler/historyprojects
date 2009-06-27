@@ -1,0 +1,15 @@
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+     version="2.4">
+    <servlet>
+        <description>Web Service NWebServiceSoap12HttpPort</description>
+        <display-name>Web Service NWebServiceSoap12HttpPort</display-name>
+        <servlet-name>NWebServiceSoap12HttpPort</servlet-name>
+        <servlet-class>com.dudhoo.nemesis.webservices.NWebService</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NWebServiceSoap12HttpPort</servlet-name>
+        <url-pattern>NWebServiceSoap12HttpPort</url-pattern>
+    </servlet-mapping>
+</web-app>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'windows-1252'?>
+<data-sources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.oracle.com/oracleas/schema http://xmlns.oracle.com/oracleas/schema/data-sources-10_1.xsd" version="10.1" xmlns="http://xmlns.oracle.com/oracleas/schema">
+    <connection-pool name="jdev-connection-pool-nemesis">
+        <connection-factory factory-class="oracle.jdbc.pool.OracleDataSource" user="nemesis" password="->DataBase_User_M8a5izXb9fYGmbaswCbcJg4PkBTq_ztX" url="jdbc:oracle:thin:@localhost:1521:Xe"/>
+    </connection-pool>
+    <managed-data-source name="jdev-connection-managed-nemesis" jndi-name="jdbc/nemesisDS" connection-pool-name="jdev-connection-pool-nemesis"/>
+    <native-data-source name="jdev-connection-native-nemesis" jndi-name="jdbc/nemesisCoreDS" url="jdbc:oracle:thin:@localhost:1521:Xe" user="nemesis" password="->DataBase_User_e3lh_o355QqvHJnTXVmn8j2HqGAEp6eD" data-source-class="oracle.jdbc.pool.OracleDataSource"/>
+    <connection-pool name="jdev-connection-pool-Nemesis">
+        <connection-factory factory-class="oracle.jdbc.pool.OracleDataSource" user="nemesis" password="->DataBase_User_KSCly18r98tiGSeVpZ_3p3VIm7IDJ_dT" url="jdbc:oracle:thin:@localhost:1521:xe"/>
+    </connection-pool>
+    <managed-data-source name="jdev-connection-managed-Nemesis" jndi-name="jdbc/NemesisDS" connection-pool-name="jdev-connection-pool-Nemesis"/>
+    <native-data-source name="jdev-connection-native-Nemesis" jndi-name="jdbc/NemesisCoreDS" url="jdbc:oracle:thin:@localhost:1521:xe" user="nemesis" password="->DataBase_User_w70GKfnNn5Fd1EDLgM_4zJfCbEOgR-_c" data-source-class="oracle.jdbc.pool.OracleDataSource"/>
+    <connection-pool name="jdev-connection-pool-mrriedinemesis">
+        <connection-factory factory-class="oracle.jdbc.pool.OracleDataSource" user="nemesis" password="->DataBase_User_X9YH6Sh5ZVrfdykkUN_o2fW3CoGDGPOH" url="jdbc:oracle:thin:@192.168.1.39:1521:xe"/>
+    </connection-pool>
+    <managed-data-source name="jdev-connection-managed-mrriedinemesis" jndi-name="jdbc/mrriedinemesisDS" connection-pool-name="jdev-connection-pool-mrriedinemesis"/>
+    <native-data-source name="jdev-connection-native-mrriedinemesis" jndi-name="jdbc/mrriedinemesisCoreDS" url="jdbc:oracle:thin:@192.168.1.39:1521:xe" user="nemesis" password="->DataBase_User_kC4lYtuEnJMctUSRWBzo1Y2hVtSfV0nk" data-source-class="oracle.jdbc.pool.OracleDataSource"/>
+</data-sources>

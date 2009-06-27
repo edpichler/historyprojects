@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 23/01/2006 21:05:43 by Hibernate Tools 3.1.0 beta1JBIDERC2 -->
+<hibernate-mapping>
+	<class name="com.dudhoo.nemesis.hibernate.Pais" table="PAIS"
+		schema="NEMESIS">
+		<id name="id" type="long">
+			<column name="ID" precision="10" scale="0" />
+			<generator class="identity"/>
+		</id>
+		<many-to-one name="usuario" class="com.dudhoo.nemesis.hibernate.Usuario"
+			fetch="select">
+			<column name="USUARIO_ID" precision="10" scale="0"
+				not-null="true" />
+		</many-to-one>
+		<property name="nome" type="string">
+			<column name="NOME" length="80" not-null="true"
+				unique="true" />
+		</property>
+		<property name="sigla" type="string" >
+			<column name="SIGLA" length="5" not-null="true"
+				unique="true" />
+		</property>
+		<property name="ultMod"  insert="false" type="date" update="false">
+			<column name="ULT_MOD" length="7" not-null="false"/>
+		</property>
+		<set name="estados" inverse="true" lazy="false">
+			<key>
+				<column name="PAIS_ID" precision="10" scale="0"
+					not-null="false" />
+			</key>
+			<one-to-many class="com.dudhoo.nemesis.hibernate.Estado" />
+		</set>
+	</class>
+</hibernate-mapping>

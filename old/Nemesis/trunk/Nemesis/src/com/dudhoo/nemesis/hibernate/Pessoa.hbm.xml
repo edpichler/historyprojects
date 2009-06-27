@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 23/01/2006 21:05:43 by Hibernate Tools 3.1.0 beta1JBIDERC2 -->
+<hibernate-mapping>
+    <class name="com.dudhoo.nemesis.hibernate.Pessoa" table="PESSOA"
+           schema="NEMESIS">
+        <id name="id" type="long">
+            <column name="ID" precision="10" scale="0"/>
+            <generator class="identity"/>
+        </id>
+        <many-to-one name="endereco"
+                     class="com.dudhoo.nemesis.hibernate.Endereco"
+                     fetch="select" cascade="all" lazy="false">
+            <column name="ENDERECO_ID" precision="10" scale="0" not-null="true"
+                    unique="true"/>
+        </many-to-one>
+        <many-to-one name="observacao"
+                     class="com.dudhoo.nemesis.hibernate.Observacao" lazy="false"
+                     fetch="select" cascade="all">
+            <column name="OBSERVACAO_ID" precision="10" scale="0"
+                    unique="true"/>
+        </many-to-one>
+        <many-to-one name="ramo" class="com.dudhoo.nemesis.hibernate.Ramo"
+                     fetch="select" cascade="save-update">
+            <column name="RAMO_ID" precision="10" scale="0" not-null="true"/>
+        </many-to-one>	
+        <many-to-one name="usuario" class="com.dudhoo.nemesis.hibernate.Usuario"
+                     fetch="select" cascade="save-update">
+            <column name="USUARIO_ID" precision="10" scale="0" not-null="true"/>
+        </many-to-one>
+        <property name="telefoneComercial" type="string">
+            <column name="TELEFONE_COMERCIAL" length="22"/>
+        </property>
+        <property name="fax" type="string">
+            <column name="FAX" length="22"/>
+        </property>
+        <property name="status" type="byte">
+            <column name="STATUS" precision="2" scale="0" not-null="true"/>
+        </property>
+        <property name="site" type="string">
+            <column name="SITE" length="100"/>
+        </property>
+        <property name="celular" type="string">
+            <column name="CELULAR" length="22"/>
+        </property>
+        <property name="email" type="string">
+            <column name="EMAIL" length="120"/>
+        </property>
+        <property name="dataNascimento" type="date">
+            <column name="DATA_NASCIMENTO" length="7" not-null="true"/>
+        </property>
+        <property name="nome" type="string">
+            <column name="NOME" length="100" not-null="true"/>
+        </property>
+        <property name="dataVerificaoCredito" type="date">
+            <column name="DATA_VERIFICACAO_CREDITO" length="7"/>
+        </property>
+        <property name="limiteCredito" type="big_decimal">
+            <column name="LIMITE_CREDITO" precision="10" not-null="true"/>
+        </property>
+        <property name="instalacaoOuCasaPropria" type="boolean">
+            <column name="INSTALACAO_OU_CASA_PROPRIA" precision="1" scale="0"
+                    not-null="true"/>
+        </property>
+        <property name="quantidadeVeiculos" type="integer">
+            <column name="QUANTIDADE_VEICULOS" precision="5" scale="0"
+                    not-null="true"/>
+        </property>
+        <property name="taxaJurosDiaria" type="big_decimal">
+            <column name="TAXA_JUROS_DIARIA" precision="11" scale="10"
+                    not-null="true"/>
+        </property>
+        <property name="ultMod"  insert="false"  update="false" type="date">
+            <column name="ULT_MOD" length="7" not-null="false"/>
+        </property>
+        <set name="pessoaJuridicas" inverse="true" cascade="all">
+            <key>
+                <column name="ID" precision="10" scale="0" not-null="true"
+                        unique="true"/>
+            </key>
+            <one-to-many class="com.dudhoo.nemesis.hibernate.PessoaJuridica"/>
+        </set>    
+         <set name="pessoaFisicas" inverse="true" cascade="all">
+            <key>
+                <column name="ID" precision="10" scale="0" not-null="true"
+                        unique="true"/>
+            </key>
+            <one-to-many class="com.dudhoo.nemesis.hibernate.PessoaFisica"/>
+        </set>    
+        <set name="produtosQueFornece" table="FORNECEDOR_PRODUTO">
+            <key column="PESSOA_ID"/>
+            <many-to-many column="PRODUTO_ID"
+                          class="com.dudhoo.nemesis.hibernate.Produto"/>
+        </set>
+	<set name="contasReceber" table="CONTA_RECEBER">
+            <key column="ID"/>
+            <one-to-many class="com.dudhoo.nemesis.hibernate.ContaReceber"/>
+        </set>
+	<set name="contasPagar" table="CONTA_PAGAR">
+            <key column="ID"/>
+            <one-to-many class="com.dudhoo.nemesis.hibernate.ContaPagar"/>
+        </set>
+    </class>
+</hibernate-mapping>

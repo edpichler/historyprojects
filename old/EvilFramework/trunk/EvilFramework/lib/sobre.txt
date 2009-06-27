@@ -1,0 +1,4 @@
+Um framework genérico para aplicações Java. Basicamente é o esqueleto de qualquer aplicação.
+Builded on the Java Studio Enterprise 8 
+ - log4j
+ - apache-commons-logging

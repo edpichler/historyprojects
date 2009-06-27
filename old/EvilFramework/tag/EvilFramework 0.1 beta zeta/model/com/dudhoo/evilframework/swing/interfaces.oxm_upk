@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<?Oracle-JDeveloper Artifact = '1.1'?>
+<artifact xmlns="http://xmlns.oracle.com/jdeveloper/modeler/artifact" name="interfaces" type="UMLPackage" cid="29fe3c4b-010a-1000-8005-0a0000420d32::com.dudhoo.evilframework.swing.interfaces::UMLPackage">
+   <property xmlns="">
+      <cid name="NAMESPACE_REFERENCE" key="29fe3c4b-010a-1000-8004-0a0000420d32::com.dudhoo.evilframework.swing::UMLPackage"/>
+      <null name="COMMENT"/>
+      <null name="IMAGE"/>
+   </property>
+   <backreference xmlns=""/>
+   <children xmlns=""/>
+</artifact>

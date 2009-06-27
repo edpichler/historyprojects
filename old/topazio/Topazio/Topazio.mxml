@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" 
+	 layout="vertical" width="100%" xmlns:ns1="forms.*"  xmlns:grids="grids.*">
+	<mx:ApplicationControlBar width="100%" height="28">
+		<mx:LinkBar dataProvider="{paginas}">
+		</mx:LinkBar>
+	</mx:ApplicationControlBar>
+	<mx:ViewStack id="paginas" width="100%" height="100%">
+		<mx:VBox id="listaConsultas" label="Consultas">
+			<ns1:CnvConsulta width="100%"/>					
+		</mx:VBox>		
+		<mx:VBox id="pacientes" label="Pessoas">
+			<ns1:CnvPessoas width="100%"/>
+		</mx:VBox>
+		<mx:VBox id="medicos" label="Médicos">	
+			<ns1:CnvMedicos width="100%">
+				
+			</ns1:CnvMedicos>
+		</mx:VBox>
+	</mx:ViewStack>	
+</mx:Application>

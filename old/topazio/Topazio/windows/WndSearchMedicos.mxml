@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<WndSearch xmlns="windows.*" xmlns:mx="http://www.adobe.com/2006/mxml" creationComplete="init()">
+	<mx:Script>
+		<![CDATA[
+			import mx.events.CloseEvent;
+			import mx.events.DynamicEvent;
+			import mx.controls.dataGridClasses.DataGridColumn;
+			import mx.managers.PopUpManager;
+			import mx.events.ListEvent;
+			import forms.CnvPessoas;
+			import mx.rpc.events.ResultEvent;	
+			import mx.collections.ArrayCollection;
+			import mx.rpc.events.FaultEvent;
+			import com.pichler.*;
+			
+			import mx.controls.Alert;
+			public var medico:Medico;
+			public function handleWebServiceResult(event:ResultEvent):void {
+				this.grid.dataProvider = event.result;
+				PopUpManager.centerPopUp(this);
+			}
+			private function init():void{
+				var colunaNome : DataGridColumn = new DataGridColumn("Nome");
+				var colunaRg : DataGridColumn = new DataGridColumn("Rg");
+				var colunaData : DataGridColumn = new DataGridColumn("Data de Nascimento");
+				colunaNome.dataField ='nome';
+				colunaData.dataField = 'dataNascimento';
+				colunaRg.dataField = 'rg';
+				colunaData.labelFunction = super.formataData;
+				this.grid.columns = new Array(colunaNome, colunaRg, colunaData);
+				this.consultarMedicosService.getMedicos.send();
+				
+				this.btnOk.addEventListener(MouseEvent.CLICK, selecionou);
+				this.btnCancelar.addEventListener(MouseEvent.CLICK, cancelou);
+			}
+			private function cancelou(evt:MouseEvent):void{
+				this.medico = null;
+				 closeWindow();
+			}
+
+			private function selecionou(evt:MouseEvent): void{
+				try{
+					checkItemSelected();
+					this.medico.nome = grid.selectedItem.nome;
+					this.medico.id = grid.selectedItem.id;					
+					super.closeWindow();
+				}catch(err:Error){
+					Alert.show(err.message);
+				}
+			}
+		]]>
+	</mx:Script>
+	<mx:WebService
+		id="consultarMedicosService"
+		useProxy="false"
+		wsdl="{com.pichler.WebService.WSDL_LOCATION}">
+		<mx:operation
+			name="getMedicos"
+			result="handleWebServiceResult(event)"
+			fault="errorHandler(event)">
+				<mx:request>					
+				</mx:request>
+			</mx:operation>
+	</mx:WebService>
+</WndSearch>

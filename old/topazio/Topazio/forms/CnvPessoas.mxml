@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:grids="grids.*">
+	<mx:states>
+		<mx:State name="seleciona">
+			<mx:AddChild relativeTo="{hbox1}" position="lastChild">
+				<mx:Form   width="40%">		
+					<mx:FormItem label="Nome:">
+						<mx:TextInput text="{pessoa.nome}" id="txtNome"/>
+					</mx:FormItem>					
+					<mx:FormItem label="Cpf:">
+						<mx:TextInput text="{pessoa.cpf}" id="txtCpf"/>
+					</mx:FormItem>
+					
+					<mx:FormItem label="Rg:">
+						<mx:TextInput text="{pessoa.rg}" id="txtRg"/>
+					</mx:FormItem>
+					
+					<mx:FormItem label="Data Nasc.:">
+						<mx:DateField id="dtDataNasc" formatString="DD/MM/YYYY" selectedDate="{pessoa.dataNascimento}" showToday="true" editable="true"/>
+					</mx:FormItem>
+					
+					<mx:FormItem label="Sexo:" id="formitem1">
+					<mx:RadioButtonGroup id="sexoGroup"/>	
+					<mx:RadioButton label="Masculino" id="rdMasc"
+						selected="{pessoa.sexo}"/>
+					<mx:RadioButton label="Feminino" id="rdFem"			
+						selected="{!pessoa.sexo}"/>			
+					</mx:FormItem>
+					
+					<mx:FormItem label="Telefone:">
+						<mx:TextInput text="{pessoa.telefone}" id="txtTel"/>
+					</mx:FormItem>
+					
+					<mx:FormItem label="E-mail:">
+						<mx:TextInput text="{pessoa.email}" id="txtEmail"/>
+					</mx:FormItem>							
+					<mx:HBox width="100%" height="10%" horizontalAlign="center">
+						<mx:Button label="Cancelar" click="cancelar()"/>
+						<mx:Button label="Salvar" click="salvar()"/>
+					</mx:HBox>	
+				</mx:Form>
+			</mx:AddChild>
+			
+		</mx:State>
+	</mx:states>
+	<mx:Script>
+	<![CDATA[
+		import com.pichler.Pessoa;  
+		import mx.events.DataGridEvent;
+		import mx.rpc.events.ResultEvent;
+		import mx.binding.utils.BindingUtils;
+		import mx.controls.Alert;			
+		import mx.rpc.events.FaultEvent;
+		import mx.binding.utils.*;
+
+		[Bindable]
+		private var pessoa : Pessoa;
+		
+		private static const VIEWSTATE_VISUALIZADO : String = 'seleciona';
+		public function atualiza():void
+		{
+			
+		}
+		public function mostraPessoa(pes:Pessoa):void{
+			this.pessoa = pes;
+			this.currentState = VIEWSTATE_VISUALIZADO;
+		}
+		
+		public function salvar():void{
+			this.pessoa.cpf = txtCpf.text;
+			this.pessoa.dataNascimento = this.dtDataNasc.selectedDate;
+			this.pessoa.email = this.txtEmail.text;
+			this.pessoa.nome = this.txtNome.text;
+			this.pessoa.rg = this.txtRg.text;
+			this.pessoa.sexo = this.rdMasc.selected;
+			this.pessoa.telefone = this.txtTel.text;	
+			this.salvaPessoaService.salvarPessoa.send();
+		}
+		
+		public function cancelar():void{
+			this.pessoa = null;
+			this.currentState = '';
+		}
+		
+		public function novo():void{
+			this.pessoa = new Pessoa();
+			this.currentState = VIEWSTATE_VISUALIZADO;
+		}
+		public function atualizar():void{
+			grid.atualiza();
+			this.currentState = '';
+		}
+		public function errorHandler(event:FaultEvent):void {
+			Alert.show(event.fault.message);
+		}
+	]]>
+	</mx:Script>				
+	<mx:WebService
+		id="salvaPessoaService"
+		wsdl="{com.pichler.WebService.WSDL_LOCATION}"
+		showBusyCursor="true" 
+		fault="errorHandler(event)"
+		result="atualizar()">
+		<mx:operation name="salvarPessoa">
+			<mx:request>
+				<pes>
+					{pessoa}
+				</pes>
+			</mx:request>
+		</mx:operation>
+	</mx:WebService>
+	<mx:VBox>
+		<mx:HBox>
+			<mx:Button id="btnNovo" label="Novo" click="novo()"/>
+			<mx:Button label="Excluir" enabled="false"/>
+			<mx:Button id="btnAtualiza" label="Atualizar" click="atualizar()">
+			</mx:Button>
+		</mx:HBox>		
+		<mx:HBox id="hbox1">
+			<grids:GridPessoas id="grid" width="500" cnvPessoas="{this}" height="300"/>
+		</mx:HBox>		
+	</mx:VBox>
+
+</mx:Canvas>

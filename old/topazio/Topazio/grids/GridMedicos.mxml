@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:DataGrid xmlns:mx="http://www.adobe.com/2006/mxml" dataProvider="{this.wsResult}" creationComplete="this.consultarMedicosService.getMedicos();"  itemClick="clicou(event);" >
+	<mx:DateFormatter id="dtFormat" formatString="DD/MM/YYYY"/>
+	<mx:columns>
+        <mx:DataGridColumn dataField="nome" headerText="Nome"/>
+        <mx:DataGridColumn dataField="dataNascimento" labelFunction="formataData"  headerText="Data Nasc." />
+    	<mx:DataGridColumn dataField="telefone" headerText="Telefone"/>
+    	<mx:DataGridColumn dataField="cpf" headerText="CPF"/>
+		<mx:DataGridColumn dataField="rg" headerText="RG"/>
+	</mx:columns>
+
+		<mx:Script>
+		<![CDATA[
+			import mx.controls.dataGridClasses.DataGridColumn;
+			import mx.events.ListEvent;
+			import mx.events.ItemClickEvent;
+			import forms.CnvMedicos;
+			import mx.rpc.events.ResultEvent;	
+			import mx.collections.ArrayCollection;
+			import mx.rpc.events.FaultEvent;
+			import com.pichler.*;
+			
+			import mx.controls.Alert;
+			public var cnvMedicos : CnvMedicos;
+			[Bindable]
+			private var wsResult : ArrayCollection;
+			
+			private function formataData(item:Object, col:DataGridColumn):String
+			{
+				return dtFormat.format(item.dataNascimento);
+			}
+			public function handleWebServiceResult(event:ResultEvent):void {
+				this.wsResult = event.result as ArrayCollection;
+			}
+			
+			public function atualizar():void{
+				consultarMedicosService.getMedicos.send();
+			}
+			
+			public function clicou(evt:ListEvent):void{
+				if (this.cnvMedicos != null && this.selectedIndex != -1){					
+					var med : Medico;
+					med = new Medico();
+					med.cpf = this.selectedItem.cpf;
+					med.dataNascimento = this.selectedItem.dataNascimento;
+					med.email = this.selectedItem.email;
+					med.id = this.selectedItem.id;
+					med.nome = this.selectedItem.nome;
+					med.rg = this.selectedItem.rg;
+					med.sexo = this.selectedItem.sexo;
+					med.telefone = this.selectedItem.telefone;
+					med.ultMod = this.selectedItem.ultMod;
+					this.cnvMedicos.mostraMedico( med);
+				}
+			}
+			public function errorHandler(event:FaultEvent):void {
+				Alert.show(event.fault.message);
+			}		
+		]]>
+	</mx:Script>
+	<mx:WebService showBusyCursor="true" 
+		id="consultarMedicosService"
+		useProxy="false"
+		wsdl="{com.pichler.WebService.WSDL_LOCATION}">
+		<mx:operation
+			name="getMedicos"
+			result="handleWebServiceResult(event)"
+			fault="errorHandler(event)">
+				<mx:request>
+				</mx:request>
+			</mx:operation>
+	</mx:WebService>
+</mx:DataGrid>

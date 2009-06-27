@@ -1,0 +1,15 @@
+/* CSS file */
+
+global
+{
+	font-size:10;
+}
+Panel.panelCentral
+{
+	font-size:13;
+	header-height: 10;
+}
+Label.bottomText
+{
+	fontSize: 9;
+}

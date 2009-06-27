@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.0/notation" xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?">
+  <uml:Model xmi:id="_XXxzYI2aEd2OqvdEtdR9WA" name="Analysis Model">
+    <eAnnotations xmi:id="_XXxzYY2aEd2OqvdEtdR9WA" source="uml2.diagrams" references="_XXxzYo2aEd2OqvdEtdR9WA">
+      <contents xmi:type="notation:Diagram" xmi:id="_XXxzYo2aEd2OqvdEtdR9WA" type="Class" name="Main">
+        <children xmi:id="_fZHzoI2aEd2OqvdEtdR9WA">
+          <children xmi:id="_fZbVoI2aEd2OqvdEtdR9WA" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_fZbVoY2aEd2OqvdEtdR9WA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_fZbVoo2aEd2OqvdEtdR9WA" type="Stereotype"/>
+          <children xmi:id="_fZkfkI2aEd2OqvdEtdR9WA" type="Name"/>
+          <children xmi:id="_fZkfkY2aEd2OqvdEtdR9WA" type="Parent"/>
+          <children xmi:id="_fZkfko2aEd2OqvdEtdR9WA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_fZkfk42aEd2OqvdEtdR9WA"/>
+          </children>
+          <children xmi:id="_fZkflI2aEd2OqvdEtdR9WA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_fZkflY2aEd2OqvdEtdR9WA"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_fZHzoY2aEd2OqvdEtdR9WA" showStereotype="Label"/>
+          <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=Cartao%5Bjcu%5Ename=Cartao.java%5Bjpack%5Ename=com.lotopro%5Bjsrcroot%5Esrcfolder=com%5Bproject%5Eid=LotoEngine%5D%5D%5D%5D$uml.Class"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fZHzoo2aEd2OqvdEtdR9WA" x="10234" y="15950"/>
+        </children>
+        <children xmi:id="_hDhf8I2aEd2OqvdEtdR9WA">
+          <children xmi:id="_hDqp4I2aEd2OqvdEtdR9WA" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_hDqp4Y2aEd2OqvdEtdR9WA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_hDqp4o2aEd2OqvdEtdR9WA" type="Stereotype"/>
+          <children xmi:id="_hDqp442aEd2OqvdEtdR9WA" type="Name"/>
+          <children xmi:id="_hDqp5I2aEd2OqvdEtdR9WA" type="Parent"/>
+          <children xmi:id="_hDqp5Y2aEd2OqvdEtdR9WA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_hDqp5o2aEd2OqvdEtdR9WA"/>
+          </children>
+          <children xmi:id="_hDqp542aEd2OqvdEtdR9WA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_hDqp6I2aEd2OqvdEtdR9WA"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_hDhf8Y2aEd2OqvdEtdR9WA" showStereotype="Label"/>
+          <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=GrupoNumero%5Bjcu%5Ename=GrupoNumero.java%5Bjpack%5Ename=com.lotopro%5Bjsrcroot%5Esrcfolder=com%5Bproject%5Eid=LotoEngine%5D%5D%5D%5D$uml.Class"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hDhf8o2aEd2OqvdEtdR9WA" x="5048" y="9859"/>
+        </children>
+        <children xmi:id="_TBAyAI2bEd2OqvdEtdR9WA">
+          <children xmi:id="_TBAyA42bEd2OqvdEtdR9WA" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_TBAyBI2bEd2OqvdEtdR9WA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_TBAyBY2bEd2OqvdEtdR9WA" type="Stereotype"/>
+          <children xmi:id="_TBAyBo2bEd2OqvdEtdR9WA" type="Name"/>
+          <children xmi:id="_TBAyB42bEd2OqvdEtdR9WA" type="Parent"/>
+          <children xmi:id="_TBAyCI2bEd2OqvdEtdR9WA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_TBAyCY2bEd2OqvdEtdR9WA"/>
+          </children>
+          <children xmi:id="_TBAyCo2bEd2OqvdEtdR9WA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_TBAyC42bEd2OqvdEtdR9WA"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_TBAyAY2bEd2OqvdEtdR9WA" showStereotype="Label"/>
+          <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=Sorteio%5Bjcu%5Ename=Sorteio.java%5Bjpack%5Ename=com.lotopro%5Bjsrcroot%5Esrcfolder=com%5Bproject%5Eid=LotoEngine%5D%5D%5D%5D$uml.Class"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TBAyAo2bEd2OqvdEtdR9WA" x="1439" y="15943"/>
+        </children>
+        <children xmi:id="_i_rOIY2bEd2OqvdEtdR9WA">
+          <children xmi:id="_i_0_II2bEd2OqvdEtdR9WA" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_i_0_IY2bEd2OqvdEtdR9WA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_i_0_Io2bEd2OqvdEtdR9WA" type="Stereotype"/>
+          <children xmi:id="_i_0_I42bEd2OqvdEtdR9WA" type="Name"/>
+          <children xmi:id="_i_0_JI2bEd2OqvdEtdR9WA" type="Parent"/>
+          <children xmi:id="_i_0_JY2bEd2OqvdEtdR9WA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_i_0_Jo2bEd2OqvdEtdR9WA"/>
+          </children>
+          <children xmi:id="_i_0_J42bEd2OqvdEtdR9WA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_i_0_KI2bEd2OqvdEtdR9WA"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_i_rOIo2bEd2OqvdEtdR9WA" showStereotype="Label"/>
+          <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=Gerador%5Bjcu%5Ename=Gerador.java%5Bjpack%5Ename=com.lotopro.generate%5Bjsrcroot%5Esrcfolder=com%5Bproject%5Eid=LotoEngine%5D%5D%5D%5D$uml.Class"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_i_rOI42bEd2OqvdEtdR9WA" x="7697" y="5450"/>
+        </children>
+        <children xmi:id="_kYyWII2bEd2OqvdEtdR9WA">
+          <children xmi:id="_kY8HII2bEd2OqvdEtdR9WA" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_kY8HIY2bEd2OqvdEtdR9WA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_kY8HIo2bEd2OqvdEtdR9WA" type="Stereotype"/>
+          <children xmi:id="_kY8HI42bEd2OqvdEtdR9WA" type="Name"/>
+          <children xmi:id="_kY8HJI2bEd2OqvdEtdR9WA" type="Parent"/>
+          <children xmi:id="_kY8HJY2bEd2OqvdEtdR9WA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_kY8HJo2bEd2OqvdEtdR9WA"/>
+          </children>
+          <children xmi:id="_kY8HJ42bEd2OqvdEtdR9WA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_kY8HKI2bEd2OqvdEtdR9WA"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_kYyWIY2bEd2OqvdEtdR9WA" showStereotype="Label"/>
+          <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=GroupGenerator%5Bjcu%5Ename=GroupGenerator.java%5Bjpack%5Ename=com.lotopro.generate%5Bjsrcroot%5Esrcfolder=com%5Bproject%5Eid=LotoEngine%5D%5D%5D%5D$uml.Class"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kYyWIo2bEd2OqvdEtdR9WA" x="13835" y="1454"/>
+        </children>
+        <children xmi:id="_SpplcI2cEd2OqvdEtdR9WA">
+          <children xmi:id="_Spplc42cEd2OqvdEtdR9WA" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_SppldI2cEd2OqvdEtdR9WA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_SppldY2cEd2OqvdEtdR9WA" type="Stereotype"/>
+          <children xmi:id="_Sppldo2cEd2OqvdEtdR9WA" type="Name"/>
+          <children xmi:id="_Sppld42cEd2OqvdEtdR9WA" type="Parent"/>
+          <children xmi:id="_SppleI2cEd2OqvdEtdR9WA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_SppleY2cEd2OqvdEtdR9WA"/>
+          </children>
+          <children xmi:id="_Sppleo2cEd2OqvdEtdR9WA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Spple42cEd2OqvdEtdR9WA"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_SpplcY2cEd2OqvdEtdR9WA" showStereotype="Label"/>
+          <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=ProcessadorResultados%5Bjcu%5Ename=ProcessadorResultados.java%5Bjpack%5Ename=lotopro%5Bjsrcroot%5Esrcfolder=com%5Bproject%5Eid=LotoEngine%5D%5D%5D%5D$uml.Class"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Spplco2cEd2OqvdEtdR9WA" x="17866" y="9863"/>
+        </children>
+        <children xmi:id="_y9ZHsI2eEd2OqvdEtdR9WA">
+          <children xmi:id="_y9ZHs42eEd2OqvdEtdR9WA" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_y9ZHtI2eEd2OqvdEtdR9WA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_y9ZHtY2eEd2OqvdEtdR9WA" type="Stereotype"/>
+          <children xmi:id="_y9ZHto2eEd2OqvdEtdR9WA" type="Name"/>
+          <children xmi:id="_y9ZHt42eEd2OqvdEtdR9WA" type="Parent"/>
+          <children xmi:id="_y9ZHuI2eEd2OqvdEtdR9WA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_y9ZHuY2eEd2OqvdEtdR9WA"/>
+          </children>
+          <children xmi:id="_y9ZHuo2eEd2OqvdEtdR9WA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_y9ZHu42eEd2OqvdEtdR9WA"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_y9ZHsY2eEd2OqvdEtdR9WA" showStereotype="Label"/>
+          <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=ResultadoConferencia%5Bjcu%5Ename=ResultadoConferencia.java%5Bjpack%5Ename=com.lotopro%5Bjsrcroot%5Esrcfolder=com%5Bproject%5Eid=LotoEngine%5D%5D%5D%5D$uml.Class"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_y9ZHso2eEd2OqvdEtdR9WA" x="17486" y="15950"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_XXxzY42aEd2OqvdEtdR9WA"/>
+        <edges xmi:id="_hKEz4I2aEd2OqvdEtdR9WA" source="_fZHzoI2aEd2OqvdEtdR9WA" target="_hDhf8I2aEd2OqvdEtdR9WA">
+          <children xmi:id="_hKEz442aEd2OqvdEtdR9WA" type="NameLabel">
+            <children xmi:id="_hKEz5Y2aEd2OqvdEtdR9WA" type="Stereotype"/>
+            <children xmi:id="_hKEz5o2aEd2OqvdEtdR9WA" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hKEz5I2aEd2OqvdEtdR9WA" y="-530"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_hKEz4Y2aEd2OqvdEtdR9WA" routing="Tree" showStereotype="Text"/>
+          <element xmi:type="uml:Generalization" href="mmi:///#jgen%5Bjsrctype%5Ename=Cartao%5Bjcu%5Ename=Cartao.java%5Bjpack%5Ename=com.lotopro%5Bjsrcroot%5Esrcfolder=com%5Bproject%5Eid=LotoEngine%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=GrupoNumero%5Bjcu%5Ename=GrupoNumero.java%5Bjpack%5Ename=com.lotopro%5Bjsrcroot%5Esrcfolder=com%5Bproject%5Eid=LotoEngine%5D%5D%5D%5D%5D$uml.Generalization"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_hKEz4o2aEd2OqvdEtdR9WA" points="[0, -1416, 5066, 3836]$[-5080, -3003, -14, 2249]"/>
+        </edges>
+        <edges xmi:id="_TDGcsI2bEd2OqvdEtdR9WA" source="_TBAyAI2bEd2OqvdEtdR9WA" target="_hDhf8I2aEd2OqvdEtdR9WA">
+          <children xmi:id="_TDGcs42bEd2OqvdEtdR9WA" type="NameLabel">
+            <children xmi:id="_TDGctY2bEd2OqvdEtdR9WA" type="Stereotype"/>
+            <children xmi:id="_TDGcto2bEd2OqvdEtdR9WA" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TDGctI2bEd2OqvdEtdR9WA" y="-530"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_TDGcsY2bEd2OqvdEtdR9WA" routing="Tree" showStereotype="Text"/>
+          <element xmi:type="uml:Generalization" href="mmi:///#jgen%5Bjsrctype%5Ename=Sorteio%5Bjcu%5Ename=Sorteio.java%5Bjpack%5Ename=com.lotopro%5Bjsrcroot%5Esrcfolder=com%5Bproject%5Eid=LotoEngine%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=GrupoNumero%5Bjcu%5Ename=GrupoNumero.java%5Bjpack%5Ename=com.lotopro%5Bjsrcroot%5Esrcfolder=com%5Bproject%5Eid=LotoEngine%5D%5D%5D%5D%5D$uml.Generalization"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_TDGcso2bEd2OqvdEtdR9WA" points="[0, -1416, -2950, 3836]$[2936, -3003, -14, 2249]"/>
+        </edges>
+        <edges xmi:id="_jLTPUI2bEd2OqvdEtdR9WA" source="_i_rOIY2bEd2OqvdEtdR9WA" target="_fZHzoI2aEd2OqvdEtdR9WA">
+          <children xmi:id="_jLdAUI2bEd2OqvdEtdR9WA" type="KindLabel">
+            <children xmi:id="_jLdAUo2bEd2OqvdEtdR9WA" type="Stereotype"/>
+            <children xmi:id="_jLdAVI2bEd2OqvdEtdR9WA" type="Kind"/>
+            <children xmi:id="_jLdAU42bEd2OqvdEtdR9WA" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jLdAUY2bEd2OqvdEtdR9WA" y="-530"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_jLTPUY2bEd2OqvdEtdR9WA" showStereotype="Text"/>
+          <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=Gerador%5Bjcu%5Ename=Gerador.java%5Bjpack%5Ename=com.lotopro.generate%5Bjsrcroot%5Esrcfolder=com%5Bproject%5Eid=LotoEngine%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Cartao%5Bjcu%5Ename=Cartao.java%5Bjpack%5Ename=com.lotopro%5Bjsrcroot%5Esrcfolder=com%5Bproject%5Eid=LotoEngine%5D%5D%5D%5D%5D$uml.Usage"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_jLTPUo2bEd2OqvdEtdR9WA" points="[-13, 1416, -3783, -9088]$[3784, 5252, 14, -5252]$[3770, 9088, 0, -1416]"/>
+        </edges>
+        <edges xmi:id="_jLmKQI2bEd2OqvdEtdR9WA" source="_i_rOIY2bEd2OqvdEtdR9WA" target="_TBAyAI2bEd2OqvdEtdR9WA">
+          <children xmi:id="_jLmKQ42bEd2OqvdEtdR9WA" type="KindLabel">
+            <children xmi:id="_jLmKRY2bEd2OqvdEtdR9WA" type="Stereotype"/>
+            <children xmi:id="_jLmKR42bEd2OqvdEtdR9WA" type="Kind"/>
+            <children xmi:id="_jLmKRo2bEd2OqvdEtdR9WA" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jLmKRI2bEd2OqvdEtdR9WA" y="-530"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_jLmKQY2bEd2OqvdEtdR9WA" showStereotype="Text"/>
+          <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=Gerador%5Bjcu%5Ename=Gerador.java%5Bjpack%5Ename=com.lotopro.generate%5Bjsrcroot%5Esrcfolder=com%5Bproject%5Eid=LotoEngine%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Sorteio%5Bjcu%5Ename=Sorteio.java%5Bjpack%5Ename=com.lotopro%5Bjsrcroot%5Esrcfolder=com%5Bproject%5Eid=LotoEngine%5D%5D%5D%5D%5D$uml.Usage"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_jLmKQo2bEd2OqvdEtdR9WA" points="[-13, 1416, 4233, -9088]$[-6376, 5252, -2130, -5252]$[-4246, 9088, 0, -1416]"/>
+        </edges>
+        <edges xmi:id="_jLmKSI2bEd2OqvdEtdR9WA" source="_i_rOIY2bEd2OqvdEtdR9WA" target="_hDhf8I2aEd2OqvdEtdR9WA">
+          <children xmi:id="_jLv7QI2bEd2OqvdEtdR9WA" type="KindLabel">
+            <children xmi:id="_jLv7Qo2bEd2OqvdEtdR9WA" type="Stereotype"/>
+            <children xmi:id="_jLv7RI2bEd2OqvdEtdR9WA" type="Kind"/>
+            <children xmi:id="_jLv7Q42bEd2OqvdEtdR9WA" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jLv7QY2bEd2OqvdEtdR9WA" y="-530"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_jLmKSY2bEd2OqvdEtdR9WA" showStereotype="Text"/>
+          <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=Gerador%5Bjcu%5Ename=Gerador.java%5Bjpack%5Ename=com.lotopro.generate%5Bjsrcroot%5Esrcfolder=com%5Bproject%5Eid=LotoEngine%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=GrupoNumero%5Bjcu%5Ename=GrupoNumero.java%5Bjpack%5Ename=com.lotopro%5Bjsrcroot%5Esrcfolder=com%5Bproject%5Eid=LotoEngine%5D%5D%5D%5D%5D$uml.Usage"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_jLmKSo2bEd2OqvdEtdR9WA" points="[-13, 1416, 1283, -3836]$[-1310, 3003, -14, -2249]"/>
+        </edges>
+        <edges xmi:id="_kaRj4I2bEd2OqvdEtdR9WA" source="_kYyWII2bEd2OqvdEtdR9WA" target="_fZHzoI2aEd2OqvdEtdR9WA">
+          <children xmi:id="_kaRj442bEd2OqvdEtdR9WA" type="KindLabel">
+            <children xmi:id="_kaRj5Y2bEd2OqvdEtdR9WA" type="Stereotype"/>
+            <children xmi:id="_kaRj542bEd2OqvdEtdR9WA" type="Kind"/>
+            <children xmi:id="_kaRj5o2bEd2OqvdEtdR9WA" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kaRj5I2bEd2OqvdEtdR9WA" y="-530"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_kaRj4Y2bEd2OqvdEtdR9WA" showStereotype="Text"/>
+          <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=GroupGenerator%5Bjcu%5Ename=GroupGenerator.java%5Bjpack%5Ename=com.lotopro.generate%5Bjsrcroot%5Esrcfolder=com%5Bproject%5Eid=LotoEngine%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Cartao%5Bjcu%5Ename=Cartao.java%5Bjpack%5Ename=com.lotopro%5Bjsrcroot%5Esrcfolder=com%5Bproject%5Eid=LotoEngine%5D%5D%5D%5D%5D$uml.Usage"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_kaRj4o2bEd2OqvdEtdR9WA" points="[-13, 1204, 2673, -13507]$[-13, 9459, 2673, -5252]$[-2686, 13295, 0, -1416]"/>
+        </edges>
+        <edges xmi:id="_kaRj6I2bEd2OqvdEtdR9WA" source="_kYyWII2bEd2OqvdEtdR9WA" target="_i_rOIY2bEd2OqvdEtdR9WA">
+          <children xmi:id="_kaRj642bEd2OqvdEtdR9WA" type="KindLabel">
+            <children xmi:id="_kaRj7Y2bEd2OqvdEtdR9WA" type="Stereotype"/>
+            <children xmi:id="_kaRj742bEd2OqvdEtdR9WA" type="Kind"/>
+            <children xmi:id="_kaRj7o2bEd2OqvdEtdR9WA" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kaRj7I2bEd2OqvdEtdR9WA" y="-530"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_kaRj6Y2bEd2OqvdEtdR9WA" showStereotype="Text"/>
+          <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=GroupGenerator%5Bjcu%5Ename=GroupGenerator.java%5Bjpack%5Ename=com.lotopro.generate%5Bjsrcroot%5Esrcfolder=com%5Bproject%5Eid=LotoEngine%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Gerador%5Bjcu%5Ename=Gerador.java%5Bjpack%5Ename=com.lotopro.generate%5Bjsrcroot%5Esrcfolder=com%5Bproject%5Eid=LotoEngine%5D%5D%5D%5D%5D$uml.Usage"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_kaRj6o2bEd2OqvdEtdR9WA" points="[-13, 1204, 6443, -3003]$[-6469, 2791, -13, -1416]"/>
+        </edges>
+        <edges xmi:id="_S1khkI2cEd2OqvdEtdR9WA" source="_SpplcI2cEd2OqvdEtdR9WA" target="_TBAyAI2bEd2OqvdEtdR9WA">
+          <children xmi:id="_S1trgI2cEd2OqvdEtdR9WA" type="KindLabel">
+            <children xmi:id="_S1trgo2cEd2OqvdEtdR9WA" type="Stereotype"/>
+            <children xmi:id="_S13cgY2cEd2OqvdEtdR9WA" type="Kind"/>
+            <children xmi:id="_S13cgI2cEd2OqvdEtdR9WA" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S1trgY2cEd2OqvdEtdR9WA" y="-530"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_S1khkY2cEd2OqvdEtdR9WA" showStereotype="Text"/>
+          <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=ProcessadorResultados%5Bjcu%5Ename=ProcessadorResultados.java%5Bjpack%5Ename=lotopro%5Bjsrcroot%5Esrcfolder=com%5Bproject%5Eid=LotoEngine%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Sorteio%5Bjcu%5Ename=Sorteio.java%5Bjpack%5Ename=com.lotopro%5Bjsrcroot%5Esrcfolder=com%5Bproject%5Eid=LotoEngine%5D%5D%5D%5D%5D$uml.Usage"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_S1khko2cEd2OqvdEtdR9WA" points="[-13, 2249, 15134, -3003]$[-15147, 3836, 0, -1416]"/>
+        </edges>
+        <edges xmi:id="_S13cgo2cEd2OqvdEtdR9WA" source="_SpplcI2cEd2OqvdEtdR9WA" target="_fZHzoI2aEd2OqvdEtdR9WA">
+          <children xmi:id="_S13chY2cEd2OqvdEtdR9WA" type="KindLabel">
+            <children xmi:id="_S13ch42cEd2OqvdEtdR9WA" type="Stereotype"/>
+            <children xmi:id="_S13ciY2cEd2OqvdEtdR9WA" type="Kind"/>
+            <children xmi:id="_S13ciI2cEd2OqvdEtdR9WA" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S13cho2cEd2OqvdEtdR9WA" y="-530"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_S13cg42cEd2OqvdEtdR9WA" showStereotype="Text"/>
+          <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=ProcessadorResultados%5Bjcu%5Ename=ProcessadorResultados.java%5Bjpack%5Ename=lotopro%5Bjsrcroot%5Esrcfolder=com%5Bproject%5Eid=LotoEngine%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Cartao%5Bjcu%5Ename=Cartao.java%5Bjpack%5Ename=com.lotopro%5Bjsrcroot%5Esrcfolder=com%5Bproject%5Eid=LotoEngine%5D%5D%5D%5D%5D$uml.Usage"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_S13chI2cEd2OqvdEtdR9WA" points="[-13, 2249, 7118, -3003]$[-7131, 3836, 0, -1416]"/>
+        </edges>
+        <edges xmi:id="_y9i4sI2eEd2OqvdEtdR9WA" source="_SpplcI2cEd2OqvdEtdR9WA" target="_y9ZHsI2eEd2OqvdEtdR9WA">
+          <children xmi:id="_y9i4s42eEd2OqvdEtdR9WA" type="KindLabel">
+            <children xmi:id="_y9i4tY2eEd2OqvdEtdR9WA" type="Stereotype"/>
+            <children xmi:id="_y9i4t42eEd2OqvdEtdR9WA" type="Kind"/>
+            <children xmi:id="_y9i4to2eEd2OqvdEtdR9WA" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_y9i4tI2eEd2OqvdEtdR9WA" y="-530"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_y9i4sY2eEd2OqvdEtdR9WA" showStereotype="Text"/>
+          <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=ProcessadorResultados%5Bjcu%5Ename=ProcessadorResultados.java%5Bjpack%5Ename=lotopro%5Bjsrcroot%5Esrcfolder=com%5Bproject%5Eid=LotoEngine%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=ResultadoConferencia%5Bjcu%5Ename=ResultadoConferencia.java%5Bjpack%5Ename=com.lotopro%5Bjsrcroot%5Esrcfolder=com%5Bproject%5Eid=LotoEngine%5D%5D%5D%5D%5D$uml.Usage"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_y9i4so2eEd2OqvdEtdR9WA" points="[-13, 2249, -159, -3003]$[146, 3836, 0, -1416]"/>
+        </edges>
+      </contents>
+    </eAnnotations>
+    <ownedComment xmi:id="_J4eDsI2cEd2OqvdEtdR9WA" annotatedElement="_XXxzYI2aEd2OqvdEtdR9WA">
+      <body>..\LotoEngine\resources\log4j.properties</body>
+    </ownedComment>
+    <packageImport xmi:id="_XXxzZI2aEd2OqvdEtdR9WA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <profileApplication xmi:id="_XXxzZY2aEd2OqvdEtdR9WA">
+      <eAnnotations xmi:id="_XXxzZo2aEd2OqvdEtdR9WA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_XXxzZ42aEd2OqvdEtdR9WA">
+      <eAnnotations xmi:id="_XXxzaI2aEd2OqvdEtdR9WA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML2_MSL_PROFILES/Default.epx#_a_S3wNWLEdiy4IqP8whjFA?Default?"/>
+    </profileApplication>
+    <profileApplication xmi:id="_XXxzaY2aEd2OqvdEtdR9WA">
+      <eAnnotations xmi:id="_XXxzao2aEd2OqvdEtdR9WA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_IrdAUMmBEdqBcN1R6EvWUw?Deployment/Deployment?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA?Deployment?"/>
+    </profileApplication>
+  </uml:Model>
+  <Default:URL xmi:id="_J59RcI2cEd2OqvdEtdR9WA" base_Comment="_J4eDsI2cEd2OqvdEtdR9WA"/>
+</xmi:XMI>

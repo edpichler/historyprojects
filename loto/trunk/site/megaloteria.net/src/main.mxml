@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="vertical" currentState="index">
+<mx:Script>
+	<![CDATA[
+		import mx.rpc.http.HTTPService;
+		import mx.controls.Alert;
+		import flash.net.navigateToURL;
+		import mx.utils.URLUtil;
+		import mx.managers.BrowserManager;
+		
+		public function openDownload(): void
+		{		
+			navigateToURL(new URLRequest("http://www.megaloteria.net/download/lotochance.jnlp"), "_blank");			
+		}	
+		
+		public function pagar(): void
+		{
+			var url:URLRequest = new URLRequest("https://pagseguro.uol.com.br/security/webpagamentos/webpagto.aspx");
+        	url.method = "POST";
+        
+	        var uv:URLVariables = new URLVariables();       
+	        uv.email_cobranca = "contato@megaloteria.net";
+	        uv.tipo = "CP";
+	        uv.moeda = "BRL";
+	        uv.item_id_1 = "1";
+	        uv.item_descr_1 = "Chave Lotochance";
+	        uv.item_quant_1 = "1";
+	        uv.item_valor_1 = "990";
+	        uv.item_frete_1 = "000";        
+	        url.data = uv;
+	        navigateToURL(url,"_blank");
+		}
+	]]>
+</mx:Script>
+
+	<mx:states>
+		<mx:State name="index">
+			<mx:AddChild relativeTo="{panel1}" position="lastChild">
+				<mx:Text text="&#xa;Simule sorteios da lotomania! &#xa;&#xa;Preencha milhares de volantes com um apenas dois cliques!&#xa;&#xa;Confira de forma automática milhares de cartões e em poucos segundos!&#xa;&#xa;Visualize apenas os volantes premiados!&#xa;&#xa;Está esperando o quê? Conheça as suas chances!&#xa;&#xa;Basta clicar abaixo no botão 'Inicar o Lotochance' no link abaixo que será instalado no seu computador. Depois basta ativá-lo. Além de ser barato, a licença é vitalícia!" width="100%" textAlign="center" id="text1"/>
+			</mx:AddChild>
+			<mx:AddChild relativeTo="{panel1}" position="lastChild">
+				<mx:HBox width="100%" horizontalAlign="center" id="hbox1">
+								
+					<mx:Button label="Download" id="btnDownload" click="openDownload()"/>
+				</mx:HBox>
+			</mx:AddChild>
+			<mx:AddChild relativeTo="{panel1}" position="lastChild">
+				<mx:Button click="pagar()" label="Comprar" id="btnAtivar" enabled="true" toolTip="Se você já fez o download" textAlign="center" />
+			</mx:AddChild>
+			<mx:SetStyle target="{panel1}" name="horizontalAlign" value="center"/>
+			<mx:AddChild relativeTo="{btnAtivar}" position="before">
+				<mx:Text text="Ao executar o Lotochance pela primeira vez, será questionado a chave para ativar o produto. Você terá acesso à ela logo após a confirmação do pagamento* pela instituição financeira. Também irá receber por email." width="100%" textAlign="center"/>
+			</mx:AddChild>
+			<mx:AddChild relativeTo="{panel1}" position="lastChild">
+				<mx:Label text="*Máximo de até dois dias úteis para boleto bancário. Verifique as instruções na página de pagamento." fontSize="8" textAlign="left"/>
+			</mx:AddChild>
+		</mx:State>
+	</mx:states>
+	<mx:HBox width="80%" verticalAlign="bottom">
+		<mx:Label text="Megaloteria.net" fontSize="25" fontWeight="bold" fontStyle="italic" textAlign="left"/>
+		<mx:Label text="A sorte é você quem faz" textAlign="left" fontStyle="italic"/>
+	</mx:HBox>
+	<mx:VBox width="80%" id="vbox1" horizontalAlign="left">
+		<mx:ApplicationControlBar width="100%" id="applicationcontrolbar1">
+			<mx:LinkButton label="Lotomania"/>
+		</mx:ApplicationControlBar>
+	</mx:VBox>
+	<mx:Panel width="80%" height="90%" layout="vertical" styleName="panelCentral" horizontalAlign="left" id="panel1">
+		
+	</mx:Panel>
+	<mx:Label text=" www.megaloterias.net" styleName="bottomText"/>
+	<mx:Style source="style.css"/>
+</mx:Application>

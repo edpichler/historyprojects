@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+	<ui:composition template="/template.xhtml">
+		<ui:define name="body">
+			<h2>Farmacos cadastrados</h2>
+			<h:form>
+				<t:commandLink action="goEdit" value="Inserir"></t:commandLink>
+				<t:dataTable var="row" value="#{listFarmacos.farmacos}"
+					binding="#{listFarmacos.tabela}">
+					<t:column>
+						<f:facet name="header">Editar</f:facet>
+						<t:commandLink action="goEdit" actionListener="#{listFarmacos.editar}"
+							value="Editar"></t:commandLink>
+					</t:column>
+					<t:column>
+						<f:facet name="header">Remover</f:facet>
+						<t:commandLink actionListener="#{listFarmacos.deletar}"
+							value="Deletar"></t:commandLink>
+					</t:column>
+					<t:column>
+						<f:facet name="header">Nome</f:facet>
+						<t:outputText value="#{row.nome}"></t:outputText>
+					</t:column>
+					<t:column>
+						<f:facet name="header">Descrição</f:facet>
+						<t:outputText value="#{row.descricao}"></t:outputText>
+					</t:column>
+				</t:dataTable>
+			</h:form>
+		</ui:define>
+	</ui:composition>
+</jsp:root>

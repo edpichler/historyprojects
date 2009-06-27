@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+	<ui:composition template="/template.xhtml">
+		<ui:define name="body">
+			<h:form>
+				<h:panelGrid columns="2">
+					<h:outputLabel value="Nome"></h:outputLabel>
+					<h:inputText value="#{editFarmaco.farmaco.nome}">
+					</h:inputText>
+				</h:panelGrid>
+				<t:inputHtml allowEditSource="true"
+					value="#{editFarmaco.farmaco.descricao}">
+				</t:inputHtml>
+				<h:commandButton value="Salvar" action="list"
+					actionListener="#{editFarmaco.salvar}"></h:commandButton>
+				<h:commandLink value="Voltar" action="list" actionListener="#{editFarmaco.limpar}"></h:commandLink>
+			</h:form>
+		</ui:define>
+	</ui:composition>
+</jsp:root>

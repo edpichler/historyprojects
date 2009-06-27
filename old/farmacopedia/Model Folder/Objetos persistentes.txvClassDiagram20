@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V1hexuhezvtsv2grhj43o">
+		<property name="$metaclass" value="ClassDiagram20"/>
+		<property name="$name" value="Objetos persistentes"/>
+		<reference referencedUin="jdt:e_class:src:net.farmacopedia.root.Entidade">
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="375,81,105,130"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:net.farmacopedia.hibernate.Farmaco">
+			<property name="bounds" value="155,75,361,121"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:net.farmacopedia.hibernate.Farmaco:Entidade">
+				<property name="sourceAnchor" value="301,189"/>
+				<property name="targetAnchor" value="380,189"/>
+				<property name="bendpoints" value=""/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:com.farmacopedia.hibernate.Farmaco">
+			<property name="bounds" value="55,55,281,141"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+	</view>
+</nodeSet>

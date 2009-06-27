@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<node uin="8bho0jezvt18h4-knmwjl">
+		<property name="$metaclass" value="Actor20"/>
+		<property name="$name" value="Usuário"/>
+		<link uin="ieje0rezvt9mxq5de2wo">
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<participant referencedUin="design:node:::8bho0jezvt18h4-knmwjl" role="Client"></participant>
+			<participant referencedUin="design:node:::gj7tthezvt8v5o-50y4mb" role="Supplier"></participant>
+		</link>
+	</node>
+	<node uin="gj7tthezvt6m52-qjlr8e">
+		<property name="$metaclass" value="UseCase20"/>
+		<property name="$doc" value="Não pode conseguir copiar o conteúdo. Ver apresentaçao do mesmo por flash ou imagem.&#10;"/>
+		<property name="$name" value="Abrir e visualizar"/>
+		<link uin="ieje0rezz584zl-3c6mew">
+			<property name="$metaclass" value="Dependency20"/>
+			<participant referencedUin="design:node:::gj7tthezvt6m52-qjlr8e" role="Client"></participant>
+			<participant referencedUin="design:node:::gj7tthezvt8v5o-50y4mb" role="Supplier"></participant>
+		</link>
+	</node>
+	<node uin="gj7tthezvt8v5o-50y4mb">
+		<property name="$metaclass" value="UseCase20"/>
+		<property name="$name" value="Procura farmaco"/>
+		<property name="$doc" value="Pode procurar o farmaco com palavras chaves"/>
+		<link uin="q3j4ezvt9leudg4slz">
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<participant referencedUin="design:node:::gj7tthezvt8v5o-50y4mb" role="Client"></participant>
+			<participant referencedUin="design:node:::gj7tthezvt6m52-qjlr8e" role="Supplier"></participant>
+		</link>
+	</node>
+	<node uin="8bho0jezvtbhaom3sa7m">
+		<property name="$metaclass" value="Actor20"/>
+		<property name="$name" value="Farmacologista"/>
+		<property name="$doc" value="Quem tem o poder de alterar os farmacos e atualizar os mesmos."/>
+		<link uin="ieje0rezvtchk6wdq5m0">
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<participant referencedUin="design:node:::8bho0jezvtbhaom3sa7m" role="Client"></participant>
+			<participant referencedUin="design:node:::gj7tthezvt8v5o-50y4mb" role="Supplier"></participant>
+		</link>
+		<link uin="ieje0rezvtd690mm0ewv">
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<participant referencedUin="design:node:::8bho0jezvtbhaom3sa7m" role="Client"></participant>
+			<participant referencedUin="design:node:::gj7tthezvtczb0ro35hz" role="Supplier"></participant>
+		</link>
+	</node>
+	<node uin="gj7tthezvtczb0ro35hz">
+		<property name="$metaclass" value="UseCase20"/>
+		<property name="$name" value="Gerenciar farmacos"/>
+	</node>
+	<node uin="gj7tthezvtpl25-74z4q6">
+		<property name="$metaclass" value="UseCase20"/>
+		<property name="$name" value="Gerenciar Farmacologistas"/>
+	</node>
+	<node uin="8bho0jezz57h2tquf7zj">
+		<property name="$metaclass" value="Actor20"/>
+		<property name="$name" value="admin"/>
+		<link uin="ieje0rezz57n8r-uqy6j8">
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<participant referencedUin="design:node:::8bho0jezz57h2tquf7zj" role="Client"></participant>
+			<participant referencedUin="design:node:::gj7tthezvtpl25-74z4q6" role="Supplier"></participant>
+		</link>
+		<link uin="ieje0rezz57rvf-ze8fgw">
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<participant referencedUin="design:node:::8bho0jezz57h2tquf7zj" role="Client"></participant>
+			<participant referencedUin="design:node:::gj7tthezvtczb0ro35hz" role="Supplier"></participant>
+		</link>
+		<link uin="ieje0rezz57uyhw04g44">
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<participant referencedUin="design:node:::8bho0jezz57h2tquf7zj" role="Client"></participant>
+			<participant referencedUin="design:node:::gj7tthezvt8v5o-50y4mb" role="Supplier"></participant>
+		</link>
+	</node>
+</nodeSet>

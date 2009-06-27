@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<jdevws:WebService xmlns:jdevws="http://xmlns.oracle.com/jdeveloper/10130/webservice">
+   <list n="CHILD_NODES">
+      <url path="NWebService.java"/>
+      <url path="NWebServicePortType.java"/>
+      <url path="../../../../../public_html/WEB-INF/wsdl/NWebService.wsdl"/>
+      <url path="../../../../../public_html/WEB-INF/NWebService-java-wsdl-mapping.xml"/>
+   </list>
+   <hash n="DATA_MODEL">
+      <list n="BD_">
+         <hash>
+            <value n="BOUND_PORT_TYPE" v="{http://webservices.nemesis.dudhoo.com/}NWebService"/>
+            <value n="DEFAULT_NAME" v="false"/>
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPBinding"/>
+            <value n="NAME" v="{http://webservices.nemesis.dudhoo.com/}NWebServiceSoap12Http"/>
+            <list n="OP_BINDINGS">
+               <hash>
+                  <value n="BD_SOAP_ACTION" v="http://webservices.nemesis.dudhoo.com//getAllProdutos"/>
+                  <value n="BD_SOAP_INPUT_USE" v="1"/>
+                  <value n="BD_SOAP_OUTPUT_USE" v="1"/>
+                  <value n="BD_SOAP_STYLE" v="1"/>
+                  <value n="BOUND_OPERATION" v="java.util.List.getAllProdutos"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BD_SOAP_ACTION" v="http://webservices.nemesis.dudhoo.com//getTimestamp"/>
+                  <value n="BD_SOAP_INPUT_USE" v="1"/>
+                  <value n="BD_SOAP_OUTPUT_USE" v="1"/>
+                  <value n="BD_SOAP_STYLE" v="1"/>
+                  <value n="BOUND_OPERATION" v="java.util.Date.getTimestamp"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BD_SOAP_ACTION" v="http://webservices.nemesis.dudhoo.com//newClientePf"/>
+                  <value n="BD_SOAP_INPUT_USE" v="1"/>
+                  <value n="BD_SOAP_OUTPUT_USE" v="1"/>
+                  <value n="BD_SOAP_STYLE" v="1"/>
+                  <value n="BOUND_OPERATION" v="void.newClientePf.com.dudhoo.nemesis.hibernate.PessoaFisica"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BD_SOAP_ACTION" v="http://webservices.nemesis.dudhoo.com//newClientePj"/>
+                  <value n="BD_SOAP_INPUT_USE" v="1"/>
+                  <value n="BD_SOAP_OUTPUT_USE" v="1"/>
+                  <value n="BD_SOAP_STYLE" v="1"/>
+                  <value n="BOUND_OPERATION" v="void.newClientePj.com.dudhoo.nemesis.hibernate.PessoaJuridica"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BD_SOAP_ACTION" v="http://webservices.nemesis.dudhoo.com//newOrder"/>
+                  <value n="BD_SOAP_INPUT_USE" v="1"/>
+                  <value n="BD_SOAP_OUTPUT_USE" v="1"/>
+                  <value n="BD_SOAP_STYLE" v="1"/>
+                  <value n="BOUND_OPERATION" v="void.newOrder.com.dudhoo.nemesis.hibernate.Produto.long.com.dudhoo.nemesis.hibernate.Pessoa.long.com.dudhoo.nemesis.hibernate.Observacao"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+            </list>
+            <hash n="PROPERTY_GROUPS"/>
+         </hash>
+      </list>
+      <value n="GUID" v="971daddf-010b-1000-8001-7f000001d769"/>
+      <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaWebService"/>
+      <list n="PO_">
+         <hash>
+            <value n="DEFAULT_NAME" v="false"/>
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPPort"/>
+            <value n="NAME" v="NWebServiceSoap12HttpPort"/>
+            <value n="PORT_BINDING_NAME" v="{http://webservices.nemesis.dudhoo.com/}NWebServiceSoap12Http"/>
+            <list n="PORT_OPS">
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="java.util.List.getAllProdutos"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="java.util.Date.getTimestamp"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="void.newClientePf.com.dudhoo.nemesis.hibernate.PessoaFisica"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="void.newClientePj.com.dudhoo.nemesis.hibernate.PessoaJuridica"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="void.newOrder.com.dudhoo.nemesis.hibernate.Produto.long.com.dudhoo.nemesis.hibernate.Pessoa.long.com.dudhoo.nemesis.hibernate.Observacao"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+            </list>
+            <hash n="PROPERTY_GROUPS"/>
+            <url n="URL" protocol="http" host="127.0.0.1" port="8888" path="/NemesisContext/NWebServiceSoap12HttpPort"/>
+         </hash>
+      </list>
+      <hash n="PROPERTY_GROUPS">
+         <hash n="WSDL_TO_JAVA_PROPERTIES">
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.WSDLToJavaProperties"/>
+            <value n="WSDL2JAVA_DEFAULT_PACKAGE" v="com.dudhoo.nemesis.webservices"/>
+            <value n="WSDL2JAVA_ROOT_VALUE_PACKAGE"/>
+         </hash>
+      </hash>
+      <list n="PT_">
+         <hash>
+            <value n="AUTO_SERVICE_INTERFACE"/>
+            <value n="DEFAULT_NAME" v="false"/>
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaPortType"/>
+            <value n="NAME" v="{http://webservices.nemesis.dudhoo.com/}NWebService"/>
+            <hash n="PROPERTY_GROUPS"/>
+            <value n="PT_CLASS" v="com.dudhoo.nemesis.webservices.NWebService"/>
+            <value n="PT_SERVICE_INTERFACE" v="com.dudhoo.nemesis.webservices.NWebServicePortType"/>
+         </hash>
+      </list>
+      <url n="TARGET_PROJECT" path="../../../../../Nemesis.jpr"/>
+      <url n="WS_MAPPING_FILE" path="../../../../../public_html/WEB-INF/NWebService-java-wsdl-mapping.xml"/>
+      <value n="WS_TARGET_NAMESPACE" v="http://webservices.nemesis.dudhoo.com/"/>
+      <value n="WS_TYPE_NAMESPACE" v="http://webservices.nemesis.dudhoo.com/types/"/>
+      <value n="WS_URI" v="NWebService"/>
+   </hash>
+</jdevws:WebService>

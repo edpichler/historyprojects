@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Written by Eclipse BIRT 2.0 -->
+<library xmlns="http://www.eclipse.org/birt/2005/design" version="3" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 2.0.1 Build &lt;20060222-1204></property>
+    <property name="theme">defaultTheme</property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="nemesis" id="4">
+            <property name="odaDriverClass">oracle.jdbc.driver.OracleDriver</property>
+            <property name="odaURL">jdbc:oracle:thin:@localhost:1521:xe</property>
+            <property name="odaUser">nemesis</property>
+            <encrypted-property name="odaPassword">bmVtZXNpcw==</encrypted-property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="compras" id="5">
+            <property name="dataSource">nemesis</property>
+            <property name="queryText">select	 "PRODUTO"."NOME" as "Produto",
+	 "MOVIMENTO_ESTOQUE"."PRECO_UNITARIO" as "PRECO_UNITARIO",
+	 "CONTA_FINANCEIRA"."VALOR" as "VALOR",
+	 "MOVIMENTO_ESTOQUE"."QUANTIDADE" as "QUANTIDADE",
+	 "CONTA_FINANCEIRA"."DATA_PAGAMENTO" as "DATA_PAGAMENTO" 
+ from	 "MOVIMENTO_ESTOQUE" "MOVIMENTO_ESTOQUE",
+	 "CONTA_PAGAR" "CONTA_PAGAR",
+	 "CONTA_FINANCEIRA" "CONTA_FINANCEIRA",
+	 "PRODUTO" "PRODUTO" 
+ where   "CONTA_FINANCEIRA"."ID"="CONTA_PAGAR"."ID"
+ and	 "MOVIMENTO_ESTOQUE"."CONTA_FINANCEIRA_ID"="CONTA_FINANCEIRA"."ID"
+ and	 "PRODUTO"."ID"="MOVIMENTO_ESTOQUE"."PRODUTO_ID"</property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Contas a Pagar" id="6">
+            <property name="dataSource">nemesis</property>
+            <property name="queryText">select	 "PESSOA_JURIDICA"."RAZAO_SOCIAL" as "RAZAO_SOCIAL",
+	 "PESSOA_JURIDICA"."FANTASIA" as "FANTASIA",
+	 "PESSOA_JURIDICA"."CNPJ" as "CNPJ",
+	 "CONTA_FINANCEIRA"."DATA_PAGAMENTO" as "DATA_PAGAMENTO",
+	 "CONTA_FINANCEIRA"."VALOR" as "VALOR" 
+ from	 "CONTA_PAGAR" "CONTA_PAGAR",
+	 "CONTA_FINANCEIRA" "CONTA_FINANCEIRA",
+	 "PESSOA_JURIDICA" "PESSOA_JURIDICA",
+	 "PESSOA" "PESSOA" 
+ where   "CONTA_FINANCEIRA"."ID"="CONTA_PAGAR"."ID"
+ and	 "PESSOA"."ID"="CONTA_FINANCEIRA"."PESSOA_ID"
+ and	 "PESSOA_JURIDICA"."PESSOA_ID"="PESSOA"."ID"</property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="contas a receber" id="7">
+            <property name="dataSource">nemesis</property>
+            <property name="queryText">select	 "PESSOA_JURIDICA"."RAZAO_SOCIAL" as "RAZAO_SOCIAL",
+	 "PESSOA_JURIDICA"."FANTASIA" as "FANTASIA",
+	 "PESSOA_JURIDICA"."CNPJ" as "CNPJ",
+	 "CONTA_FINANCEIRA"."DATA_PAGAMENTO" as "DATA_PAGAMENTO",
+	 "CONTA_FINANCEIRA"."VALOR" as "VALOR" 
+ from	 "CONTA_RECEBER" "CONTA_RECEBER",
+	 "CONTA_FINANCEIRA" "CONTA_FINANCEIRA",
+	 "PESSOA_JURIDICA" "PESSOA_JURIDICA",
+	 "PESSOA" "PESSOA" 
+ where   "CONTA_RECEBER"."ID"="CONTA_FINANCEIRA"."ID"
+ and	 "PESSOA"."ID"="CONTA_FINANCEIRA"."PESSOA_ID"
+ and	 "PESSOA_JURIDICA"."PESSOA_ID"="PESSOA"."ID"</property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Pessoas Fisicas por cidade" id="8">
+            <property name="dataSource">nemesis</property>
+            <property name="queryText">select	 "CIDADE"."NOME" as "Cidade",
+	 "PESSOA_FISICA"."NOME" as "Nome" 
+ from	 "PESSOA_FISICA" "PESSOA_FISICA",
+	 "PESSOA" "PESSOA",
+	 "ENDERECO" "ENDERECO",
+	 "CIDADE" "CIDADE" 
+ where   "ENDERECO"."CIDADE_ID"="CIDADE"."ID"
+ and	 "PESSOA"."ENDERECO_ID"="ENDERECO"."ID"
+ and	 "PESSOA_FISICA"."PESSOA_ID"(+) ="PESSOA"."ID"</property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="produtos e fornecedores" id="9">
+            <property name="dataSource">nemesis</property>
+            <property name="queryText">select	 "PRODUTO"."NOME" as "Produto",
+	 "PESSOA_FISICA"."NOME" as "NOME",
+	 "PESSOA_JURIDICA"."RAZAO_SOCIAL" as "RAZAO SOCIAL",
+	 "PESSOA_JURIDICA"."FANTASIA" as "FANTASIA",
+	 "PESSOA_JURIDICA"."CNPJ" as "CNPJ",
+	 "PESSOA_FISICA"."CPF" as "CPF" 
+ from	 "FORNECEDOR_PRODUTO" "FORNECEDOR_PRODUTO",
+	 "PRODUTO" "PRODUTO",
+	 "PESSOA_FISICA" "PESSOA_FISICA",
+	 "PESSOA_JURIDICA" "PESSOA_JURIDICA",
+	 "PESSOA" "PESSOA" 
+ where   "FORNECEDOR_PRODUTO"."PRODUTO_ID"="PRODUTO"."ID"
+ and	 "PESSOA"."ID"="FORNECEDOR_PRODUTO"."PESSOA_ID"
+ and	 "PESSOA"."ID"(+) ="PESSOA_JURIDICA"."PESSOA_ID"
+ and	 "PESSOA_FISICA"."PESSOA_ID"(+) ="PESSOA"."ID"</property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="quantidade pessoas por cidade" id="10">
+            <property name="dataSource">nemesis</property>
+            <property name="queryText">select	 "CIDADE"."NOME" as "Cidade",
+	 count(PESSOA.ID) as "Quant. Pessoas" 
+ from	 "PESSOA" "PESSOA",
+	 "ENDERECO" "ENDERECO",
+	 "CIDADE" "CIDADE" 
+ where   "ENDERECO"."CIDADE_ID"="CIDADE"."ID"
+ and	 "PESSOA"."ENDERECO_ID"="ENDERECO"."ID" 
+group by CIDADE.NOME</property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="vendas" id="11">
+            <property name="dataSource">nemesis</property>
+            <property name="queryText">select	 "PRODUTO"."NOME" as "Produto",
+	 "MOVIMENTO_ESTOQUE"."PRECO_UNITARIO" as "PRECO_UNITARIO",
+	 "CONTA_FINANCEIRA"."VALOR" as "VALOR",
+	 "MOVIMENTO_ESTOQUE"."QUANTIDADE" as "QUANTIDADE",
+	 "CONTA_FINANCEIRA"."DATA_PAGAMENTO" as "DATA_PAGAMENTO" 
+ from	 "MOVIMENTO_ESTOQUE" "MOVIMENTO_ESTOQUE",
+	 "CONTA_RECEBER" "CONTA_RECEBER",
+	 "CONTA_FINANCEIRA" "CONTA_FINANCEIRA",
+	 "PRODUTO" "PRODUTO" 
+ where   "CONTA_FINANCEIRA"."ID"="CONTA_RECEBER"."ID"
+ and	 "MOVIMENTO_ESTOQUE"."CONTA_FINANCEIRA_ID"="CONTA_FINANCEIRA"."ID"
+ and	 "PRODUTO"."ID"="MOVIMENTO_ESTOQUE"."PRODUTO_ID"</property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="vendas e clientes" id="12">
+            <property name="dataSource">nemesis</property>
+            <property name="queryText">select	 "PRODUTO"."NOME" as "Produto",
+	 "MOVIMENTO_ESTOQUE"."PRECO_UNITARIO" as "PRECO_UNITARIO",
+	 "CONTA_FINANCEIRA"."VALOR" as "VALOR",
+	 "MOVIMENTO_ESTOQUE"."QUANTIDADE" as "QUANTIDADE",
+	 "CONTA_FINANCEIRA"."DATA_PAGAMENTO" as "DATA_PAGAMENTO",
+	 "PESSOA_FISICA"."NOME" as "NOME",
+	 "PESSOA_FISICA"."SOBRENOME" as "SOBRENOME",
+	 "PESSOA_FISICA"."RG" as "RG",
+	 "PESSOA_FISICA"."CPF" as "CPF" 
+ from	 "MOVIMENTO_ESTOQUE" "MOVIMENTO_ESTOQUE",
+	 "CONTA_RECEBER" "CONTA_RECEBER",
+	 "CONTA_FINANCEIRA" "CONTA_FINANCEIRA",
+	 "PRODUTO" "PRODUTO",
+	 "PESSOA_FISICA" "PESSOA_FISICA" 
+ where   "CONTA_FINANCEIRA"."ID"="CONTA_RECEBER"."ID"
+ and	 "MOVIMENTO_ESTOQUE"."CONTA_FINANCEIRA_ID"="CONTA_FINANCEIRA"."ID"
+ and	 "MOVIMENTO_ESTOQUE"."PESSOA_ID"="PESSOA_FISICA"."ID"
+ and	 "PRODUTO"."ID"="MOVIMENTO_ESTOQUE"."PRODUTO_ID"</property>
+        </oda-data-set>
+    </data-sets>
+    <themes>
+        <theme name="defaultTheme" id="2">
+            <styles>
+                <style name="NewStyle" id="13"/>
+            </styles>
+        </theme>
+    </themes>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="3"/>
+    </page-setup>
+</library>

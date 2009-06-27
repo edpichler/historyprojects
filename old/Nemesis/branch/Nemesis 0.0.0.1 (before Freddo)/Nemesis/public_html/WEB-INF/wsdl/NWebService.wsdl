@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions
+     name="NWebService"
+     targetNamespace="http://webservices.nemesis.dudhoo.com/"
+     xmlns="http://schemas.xmlsoap.org/wsdl/"
+     xmlns:tns="http://webservices.nemesis.dudhoo.com/"
+     xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
+     xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"
+     xmlns:tns0="http://webservices.nemesis.dudhoo.com/types/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+     xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+     xmlns:tns1="http://www.oracle.com/webservices/internal/literal"
+    >
+    <types>
+        <schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://webservices.nemesis.dudhoo.com/types/"
+             elementFormDefault="qualified" xmlns:tns="http://webservices.nemesis.dudhoo.com/types/"
+             xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:soap12-enc="http://www.w3.org/2003/05/soap-encoding" xmlns:ns1="http://www.oracle.com/webservices/internal/literal">
+            <import namespace="http://www.oracle.com/webservices/internal/literal"/>
+            <complexType name="getAllProdutos">
+                <sequence/>
+            </complexType>
+            <complexType name="getAllProdutosResponse">
+                <sequence>
+                    <element name="result" type="ns1:list" nillable="true"/>
+                </sequence>
+            </complexType>
+            <complexType name="getTimestamp">
+                <sequence/>
+            </complexType>
+            <complexType name="getTimestampResponse">
+                <sequence>
+                    <element name="result" type="dateTime" nillable="true"/>
+                </sequence>
+            </complexType>
+            <complexType name="newClientePf">
+                <sequence>
+                    <element name="pf" type="tns:PessoaFisica" nillable="true"/>
+                </sequence>
+            </complexType>
+            <complexType name="PessoaFisica">
+                <sequence>
+                    <element name="nome" type="string" nillable="true"/>
+                    <element name="rg" type="string" nillable="true"/>
+                    <element name="telefoneResidencial" type="string" nillable="true"/>
+                    <element name="idPessoaFisica" type="long"/>
+                    <element name="sobrenome" type="string" nillable="true"/>
+                    <element name="estadoCivil" type="int"/>
+                    <element name="conjugeId" type="long" nillable="true"/>
+                    <element name="sexo" type="boolean"/>
+                    <element name="profissao" type="string" nillable="true"/>
+                    <element name="pessoa" type="tns:Pessoa" nillable="true"/>
+                    <element name="id" type="long"/>
+                    <element name="cpf" type="string" nillable="true"/>
+                </sequence>
+            </complexType>
+            <complexType name="Pessoa">
+                <sequence>
+                    <element name="celular" type="string" nillable="true"/>
+                    <element name="contasReceber" type="ns1:set" nillable="true"/>
+                    <element name="quantidadeVeiculos" type="int" nillable="true"/>
+                    <element name="ultMod" type="dateTime" nillable="true"/>
+                    <element name="produtosQueFornece" type="ns1:set" nillable="true"/>
+                    <element name="telefoneComercial" type="string" nillable="true"/>
+                    <element name="status" type="byte"/>
+                    <element name="ramo" type="tns:Ramo" nillable="true"/>
+                    <element name="fax" type="string" nillable="true"/>
+                    <element name="pessoaJuridicas" type="ns1:set" nillable="true"/>
+                    <element name="id" type="long"/>
+                    <element name="observacao" type="tns:Observacao" nillable="true"/>
+                    <element name="pessoaFisicas" type="ns1:set" nillable="true"/>
+                    <element name="taxaJurosDiaria" type="decimal" nillable="true"/>
+                    <element name="instalacaoOuCasaPropria" type="boolean"/>
+                    <element name="contasPagar" type="ns1:set" nillable="true"/>
+                    <element name="site" type="string" nillable="true"/>
+                    <element name="dataVerificaoCredito" type="dateTime" nillable="true"/>
+                    <element name="email" type="string" nillable="true"/>
+                    <element name="endereco" type="tns:Endereco" nillable="true"/>
+                    <element name="dataNascimento" type="dateTime" nillable="true"/>
+                    <element name="limiteCredito" type="decimal" nillable="true"/>
+                </sequence>
+            </complexType>
+            <complexType name="Ramo">
+                <sequence>
+                    <element name="nome" type="string" nillable="true"/>
+                    <element name="ultMod" type="dateTime" nillable="true"/>
+                    <element name="descricao" type="string" nillable="true"/>
+                    <element name="pessoas" type="ns1:set" nillable="true"/>
+                    <element name="id" type="long"/>
+                </sequence>
+            </complexType>
+            <complexType name="Usuario">
+                <sequence>
+                    <element name="imagemId" type="long" nillable="true"/>
+                    <element name="nome" type="string" nillable="true"/>
+                    <element name="senha" type="string" nillable="true"/>
+                    <element name="celular" type="string" nillable="true"/>
+                    <element name="ultMod" type="dateTime" nillable="true"/>
+                    <element name="id" type="long"/>
+                    <element name="expira" type="dateTime" nillable="true"/>
+                    <element name="grupoUsuarioId" type="long"/>
+                    <element name="username" type="string" nillable="true"/>
+                    <element name="email" type="string" nillable="true"/>
+                </sequence>
+            </complexType>
+            <complexType name="Observacao">
+                <sequence>
+                    <element name="grupoUsuarios" type="ns1:set" nillable="true"/>
+                    <element name="ultMod" type="dateTime" nillable="true"/>
+                    <element name="pessoas" type="ns1:set" nillable="true"/>
+                    <element name="enderecos" type="ns1:set" nillable="true"/>
+                    <element name="id" type="long"/>
+                    <element name="obs" type="string" nillable="true"/>
+                </sequence>
+            </complexType>
+            <complexType name="Endereco">
+                <sequence>
+                    <element name="proximidade" type="string" nillable="true"/>
+                    <element name="bairro" type="string" nillable="true"/>
+                    <element name="rua" type="string" nillable="true"/>
+                    <element name="complemento" type="string" nillable="true"/>
+                    <element name="ultMod" type="dateTime" nillable="true"/>
+                    <element name="pessoas" type="ns1:set" nillable="true"/>
+                    <element name="cidade" type="tns:Cidade" nillable="true"/>
+                    <element name="id" type="long"/>
+                    <element name="observacao" type="tns:Observacao" nillable="true"/>
+                    <element name="numero" type="string" nillable="true"/>
+                    <element name="cep" type="string" nillable="true"/>
+                    <element name="andar" type="string" nillable="true"/>
+                </sequence>
+            </complexType>
+            <complexType name="Cidade">
+                <complexContent>
+                    <extension base="tns:Entidade">
+                        <sequence>
+                            <element name="nome" type="string" nillable="true"/>
+                            <element name="cep" type="string" nillable="true"/>
+                            <element name="enderecos" type="ns1:set" nillable="true"/>
+                            <element name="estado" type="tns:Estado" nillable="true"/>
+                        </sequence>
+                    </extension>
+                </complexContent>
+            </complexType>
+            <complexType name="Estado">
+                <sequence>
+                    <element name="cidades" type="ns1:set" nillable="true"/>
+                    <element name="nome" type="string" nillable="true"/>
+                    <element name="sigla" type="string" nillable="true"/>
+                    <element name="ultMod" type="dateTime" nillable="true"/>
+                    <element name="pais" type="tns:Pais" nillable="true"/>
+                    <element name="id" type="long"/>
+                </sequence>
+            </complexType>
+            <complexType name="Pais">
+                <sequence>
+                    <element name="nome" type="string" nillable="true"/>
+                    <element name="sigla" type="string" nillable="true"/>
+                    <element name="ultMod" type="dateTime" nillable="true"/>
+                    <element name="estados" type="ns1:set" nillable="true"/>
+                    <element name="id" type="long"/>
+                </sequence>
+            </complexType>
+            <complexType name="Entidade">
+                <sequence>
+                    <element name="ultMod" type="dateTime" nillable="true"/>
+                    <element name="observacao" type="tns:Observacao" nillable="true"/>
+                    <element name="id" type="long"/>
+                </sequence>
+            </complexType>
+            <complexType name="newClientePfResponse">
+                <sequence/>
+            </complexType>
+            <complexType name="newClientePj">
+                <sequence>
+                    <element name="pj" type="tns:PessoaJuridica" nillable="true"/>
+                </sequence>
+            </complexType>
+            <complexType name="PessoaJuridica">
+                <sequence>
+                    <element name="nome" type="string" nillable="true"/>
+                    <element name="cnpj" type="string" nillable="true"/>
+                    <element name="empresas" type="ns1:set" nillable="true"/>
+                    <element name="inscricaoEstadual" type="string" nillable="true"/>
+                    <element name="nomeCompletoContato" type="string" nillable="true"/>
+                    <element name="fantasia" type="string" nillable="true"/>
+                    <element name="pessoa" type="tns:Pessoa" nillable="true"/>
+                    <element name="id" type="long"/>
+                    <element name="razaoSocial" type="string" nillable="true"/>
+                </sequence>
+            </complexType>
+            <complexType name="newClientePjResponse">
+                <sequence/>
+            </complexType>
+            <complexType name="newOrder">
+                <sequence>
+                    <element name="prod" type="tns:Produto" nillable="true"/>
+                    <element name="valorUnitario" type="long"/>
+                    <element name="cliente" type="tns:Pessoa" nillable="true"/>
+                    <element name="quantidade" type="long"/>
+                    <element name="obs" type="tns:Observacao" nillable="true"/>
+                </sequence>
+            </complexType>
+            <complexType name="Produto">
+                <sequence>
+                    <element name="nome" type="string" nillable="true"/>
+                    <element name="ultMod" type="dateTime" nillable="true"/>
+                    <element name="id" type="long"/>
+                </sequence>
+            </complexType>
+            <complexType name="newOrderResponse">
+                <sequence/>
+            </complexType>
+            <element name="getAllProdutosElement" type="tns:getAllProdutos"/>
+            <element name="getAllProdutosResponseElement" type="tns:getAllProdutosResponse"/>
+            <element name="getTimestampElement" type="tns:getTimestamp"/>
+            <element name="getTimestampResponseElement" type="tns:getTimestampResponse"/>
+            <element name="newClientePfElement" type="tns:newClientePf"/>
+            <element name="newClientePfResponseElement" type="tns:newClientePfResponse"/>
+            <element name="newClientePjElement" type="tns:newClientePj"/>
+            <element name="newClientePjResponseElement" type="tns:newClientePjResponse"/>
+            <element name="newOrderElement" type="tns:newOrder"/>
+            <element name="newOrderResponseElement" type="tns:newOrderResponse"/>
+        </schema>
+        <schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.oracle.com/webservices/internal/literal"
+             elementFormDefault="qualified" xmlns:tns="http://www.oracle.com/webservices/internal/literal"
+             xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:soap12-enc="http://www.w3.org/2003/05/soap-encoding">
+            <import namespace="http://webservices.nemesis.dudhoo.com/types/"/>
+            <complexType name="list">
+                <complexContent>
+                    <extension base="tns:collection">
+                        <sequence/>
+                    </extension>
+                </complexContent>
+            </complexType>
+            <complexType name="collection">
+                <sequence>
+                    <element name="item" type="anyType" minOccurs="0" maxOccurs="unbounded"/>
+                </sequence>
+            </complexType>
+            <complexType name="set">
+                <complexContent>
+                    <extension base="tns:collection">
+                        <sequence/>
+                    </extension>
+                </complexContent>
+            </complexType>
+        </schema>
+    </types>
+    <message name="NWebServicePortType_getAllProdutos">
+        <part name="parameters" element="tns0:getAllProdutosElement"/>
+    </message>
+    <message name="NWebServicePortType_getAllProdutosResponse">
+        <part name="parameters" element="tns0:getAllProdutosResponseElement"/>
+    </message>
+    <message name="NWebServicePortType_getTimestamp">
+        <part name="parameters" element="tns0:getTimestampElement"/>
+    </message>
+    <message name="NWebServicePortType_getTimestampResponse">
+        <part name="parameters" element="tns0:getTimestampResponseElement"/>
+    </message>
+    <message name="NWebServicePortType_newClientePf">
+        <part name="parameters" element="tns0:newClientePfElement"/>
+    </message>
+    <message name="NWebServicePortType_newClientePfResponse">
+        <part name="parameters" element="tns0:newClientePfResponseElement"/>
+    </message>
+    <message name="NWebServicePortType_newClientePj">
+        <part name="parameters" element="tns0:newClientePjElement"/>
+    </message>
+    <message name="NWebServicePortType_newClientePjResponse">
+        <part name="parameters" element="tns0:newClientePjResponseElement"/>
+    </message>
+    <message name="NWebServicePortType_newOrder">
+        <part name="parameters" element="tns0:newOrderElement"/>
+    </message>
+    <message name="NWebServicePortType_newOrderResponse">
+        <part name="parameters" element="tns0:newOrderResponseElement"/>
+    </message>
+    <portType name="NWebService">
+        <operation name="getAllProdutos">
+            <input message="tns:NWebServicePortType_getAllProdutos"/>
+            <output message="tns:NWebServicePortType_getAllProdutosResponse"/>
+        </operation>
+        <operation name="getTimestamp">
+            <input message="tns:NWebServicePortType_getTimestamp"/>
+            <output message="tns:NWebServicePortType_getTimestampResponse"/>
+        </operation>
+        <operation name="newClientePf">
+            <input message="tns:NWebServicePortType_newClientePf"/>
+            <output message="tns:NWebServicePortType_newClientePfResponse"/>
+        </operation>
+        <operation name="newClientePj">
+            <input message="tns:NWebServicePortType_newClientePj"/>
+            <output message="tns:NWebServicePortType_newClientePjResponse"/>
+        </operation>
+        <operation name="newOrder">
+            <input message="tns:NWebServicePortType_newOrder"/>
+            <output message="tns:NWebServicePortType_newOrderResponse"/>
+        </operation>
+    </portType>
+    <binding name="NWebServiceSoap12Http" type="tns:NWebService">
+        <soap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="getAllProdutos">
+            <soap12:operation soapAction="http://webservices.nemesis.dudhoo.com//getAllProdutos" soapActionRequired="false"/>
+            <input>
+                <soap12:body use="literal" parts="parameters"/>
+            </input>
+            <output>
+                <soap12:body use="literal" parts="parameters"/>
+            </output>
+        </operation>
+        <operation name="getTimestamp">
+            <soap12:operation soapAction="http://webservices.nemesis.dudhoo.com//getTimestamp" soapActionRequired="false"/>
+            <input>
+                <soap12:body use="literal" parts="parameters"/>
+            </input>
+            <output>
+                <soap12:body use="literal" parts="parameters"/>
+            </output>
+        </operation>
+        <operation name="newClientePf">
+            <soap12:operation soapAction="http://webservices.nemesis.dudhoo.com//newClientePf" soapActionRequired="false"/>
+            <input>
+                <soap12:body use="literal" parts="parameters"/>
+            </input>
+            <output>
+                <soap12:body use="literal" parts="parameters"/>
+            </output>
+        </operation>
+        <operation name="newClientePj">
+            <soap12:operation soapAction="http://webservices.nemesis.dudhoo.com//newClientePj" soapActionRequired="false"/>
+            <input>
+                <soap12:body use="literal" parts="parameters"/>
+            </input>
+            <output>
+                <soap12:body use="literal" parts="parameters"/>
+            </output>
+        </operation>
+        <operation name="newOrder">
+            <soap12:operation soapAction="http://webservices.nemesis.dudhoo.com//newOrder" soapActionRequired="false"/>
+            <input>
+                <soap12:body use="literal" parts="parameters"/>
+            </input>
+            <output>
+                <soap12:body use="literal" parts="parameters"/>
+            </output>
+        </operation>
+    </binding>
+    <service name="NWebService">
+        <port name="NWebServiceSoap12HttpPort" binding="tns:NWebServiceSoap12Http">
+            <soap12:address location="http://127.0.0.1:8888/NemesisContext/NWebServiceSoap12HttpPort"/>
+        </port>
+    </service>
+</definitions>

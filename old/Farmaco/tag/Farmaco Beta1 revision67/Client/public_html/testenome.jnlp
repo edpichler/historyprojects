@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'windows-1252'?>
+<jnlp spec="1.0+" codebase="http://127.0.0.1:8988"
+      href="/Farmaco-Client-context-root/testenome.jnlp">
+   <information>
+      <title>testettle</title>
+      <vendor>teste vendor</vendor>
+      <homepage href="testenome.html"/>
+      <description>teste desc</description>
+      <offline-allowed/>      
+   </information>    
+   <security>
+         <all-permissions/>
+      </security>
+   <resources>
+      <j2se version="1.4+"/>
+      <jar href="/Farmaco-Client-context-root/apps/Farmaco.jar" main="true"
+           download="eager"/>
+      <jar href="/Farmaco-Client-context-root/apps/Derby.jar" main="false"
+           download="eager"/>
+      <jar href="/Farmaco-Client-context-root/apps/EvilFramework.jar"
+           download="eager" main="false"/>
+      <jar href="/Farmaco-Client-context-root/apps/commons-lang-2.1.jar" download="eager"
+           main="false"/>
+      <jar href="/Farmaco-Client-context-root/apps/commons-collections-3.1.jar"
+           download="eager" main="false"/>
+      <jar href="/Farmaco-Client-context-root/apps/commons-configuration-1.2.jar"
+           download="eager" main="false"/>
+      <jar href="/Farmaco-Client-context-root/apps/commons-logging.jar"
+           download="eager" main="false"/>
+      <jar href="/Farmaco-Client-context-root/apps/commons-logging-api.jar"
+           download="eager" main="false"/>
+      <jar href="/Farmaco-Client-context-root/apps/log4j-1.2.12.jar"
+           download="eager" main="false"/>	   
+   </resources>
+   <application-desc main-class="com.dudhoo.farmaco.swing.Main"/>
+</jnlp>

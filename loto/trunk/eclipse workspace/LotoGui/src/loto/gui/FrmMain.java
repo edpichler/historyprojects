@@ -240,7 +240,7 @@ public class FrmMain extends JFrame {
 	}
 
 	public void verifySerial() {
-		getController().verifySerial();
+		//getController().verifySerial();
 		
 	}
 

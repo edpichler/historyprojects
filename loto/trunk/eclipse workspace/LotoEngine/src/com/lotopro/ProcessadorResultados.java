@@ -67,7 +67,7 @@ public class ProcessadorResultados {
 	 */
 	private void verificaPontosSuficientes(int qtdePontos, Cartao cartao,
 			ResultadoConferencia resultadoConferencia) {
-		if (qtdePontos > 15 || qtdePontos == 0) {
+		if (qtdePontos > 10 ) {
 			cartao.setPremiado(true);
 			resultadoConferencia.incrementaCartaoComPontos(qtdePontos, cartao);
 		}else{

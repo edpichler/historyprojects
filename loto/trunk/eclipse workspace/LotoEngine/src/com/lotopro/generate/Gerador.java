@@ -1,5 +1,6 @@
 package com.lotopro.generate;
 
+import java.util.ArrayList;
 import java.util.Collection;
 
 import org.apache.log4j.Logger;
@@ -21,7 +22,12 @@ public class Gerador {
 		}
 
 		Cartao cartao = new Cartao();
-		gerarGrupo(cartao);
+		ArrayList<Integer> excludes = new ArrayList<Integer>();
+		/*
+		 * excludes.add(21); excludes.add(22); excludes.add(23);
+		 * excludes.add(24); excludes.add(25);
+		 */
+		gerarGrupo(cartao, excludes);
 
 		if (logger.isDebugEnabled()) {
 			logger.debug("gerarCartao() - end"); //$NON-NLS-1$
@@ -43,15 +49,18 @@ public class Gerador {
 		return sorteio;
 	}
 
-	private void gerarGrupo(GrupoNumero grupoNumero) {
+	private void gerarGrupo(GrupoNumero grupoNumero,
+			Collection<Integer> excludes) {
 		if (logger.isDebugEnabled()) {
 			logger.debug("gerarCartoes() - start"); //$NON-NLS-1$
 		}
 		Collection<Integer> numeros = grupoNumero.getNumeros();
 		while (numeros.size() < grupoNumero.getQuantidadeMaximaNumeros()) {
-			int numeroNovo = (int) (Math.random() * 100);// gera números de 0 à
-														// 99
-			if (!numeros.contains(numeroNovo)) {
+			int numeroNovo = (int) (Math.random() * 25);// gera números de 0 à
+			// 99
+
+			if (numeroNovo > 0 && !excludes.contains(numeroNovo)
+					&& !numeros.contains(numeroNovo)) {
 				try {
 					grupoNumero.addNumero(numeroNovo);
 				} catch (Exception exc) {
@@ -60,11 +69,17 @@ public class Gerador {
 							numeroNovo), exc);
 				}
 			}
+
 		}
 
 		if (logger.isDebugEnabled()) {
 			logger.debug("gerarCartoes() - end"); //$NON-NLS-1$
 		}
+	}
+
+	private void gerarGrupo(GrupoNumero grupoNumero) {
+		Collection<Integer> zero = new ArrayList<Integer>();
+		gerarGrupo(grupoNumero, zero);
 	}
 
 }

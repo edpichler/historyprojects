@@ -42,7 +42,7 @@ public class GeradorTest {
 		Cartao cartao = ger.gerarCartao();
 		System.out.println(cartao.toString());
 		assertTrue("Quantidade de números no cartão está errada ", cartao
-				.getNumeros().size() == Cartao.QUANTIDADE_LOTOMANIA);
+				.getNumeros().size() == Cartao.QUANTIDADE_LOTOFACIL);
 	}
 
 	/**

@@ -4,11 +4,11 @@ package com.lotopro;
 
 public class Cartao extends GrupoNumero {
 
-	public static final int QUANTIDADE_LOTOMANIA = 50;
+	public static final int QUANTIDADE_LOTOFACIL = 15;
 	private boolean premiado;
 
 	public Cartao() {
-		super(QUANTIDADE_LOTOMANIA);
+		super(QUANTIDADE_LOTOFACIL);
 	}
 
 	public void setPremiado(boolean b) {

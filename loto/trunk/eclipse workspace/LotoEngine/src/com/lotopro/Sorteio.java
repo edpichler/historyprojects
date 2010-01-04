@@ -5,7 +5,7 @@ package com.lotopro;
  * */
 public class Sorteio extends GrupoNumero {
 
-	public static final int QUANTIDADE_SORTEIO_LOTOMANIA = 20;
+	public static final int QUANTIDADE_SORTEIO_LOTOMANIA = 15;
 
 	public Sorteio() {
 		super(QUANTIDADE_SORTEIO_LOTOMANIA);

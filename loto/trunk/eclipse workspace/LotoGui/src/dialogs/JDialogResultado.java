@@ -43,15 +43,15 @@ public class JDialogResultado extends JDialog {
 
 	private JLabel jLabel0Pontos = null;
 
-	private JLabel jLabelRes20Pontos = null;
+	private JLabel jLabelRes15Pontos = null;
 
-	private JLabel jLabelRes19Pontos = null;
+	private JLabel jLabelRes14Pontos = null;
 
-	private JLabel jLabelRes18Pontos = null;
+	private JLabel jLabelRes13Pontos = null;
 
-	private JLabel jLabelRes17Pontos = null;
+	private JLabel jLabelRes12Pontos = null;
 
-	private JLabel jLabelRes16Pontos = null;
+	private JLabel jLabelRes11Pontos = null;
 
 	private JLabel jLabelRes0Pontos = null;
 
@@ -159,34 +159,34 @@ public class JDialogResultado extends JDialog {
 				gridBagConstraints9.gridy = 4;  // Generated
 				gridBagConstraints9.insets = new Insets(0, 5, 0, 0);  // Generated
 				gridBagConstraints9.gridx = 1;  // Generated
-				jLabelRes16Pontos = new JLabel();
-				jLabelRes16Pontos.setText("...");  // Generated
+				jLabelRes11Pontos = new JLabel();
+				jLabelRes11Pontos.setText("...");  // Generated
 				GridBagConstraints gridBagConstraints8 = new GridBagConstraints();
 				gridBagConstraints8.gridy = 3;  // Generated
 				gridBagConstraints8.insets = new Insets(0, 5, 0, 0);  // Generated
 				gridBagConstraints8.gridx = 1;  // Generated
-				jLabelRes17Pontos = new JLabel();
-				jLabelRes17Pontos.setText("...");  // Generated
+				jLabelRes12Pontos = new JLabel();
+				jLabelRes12Pontos.setText("...");  // Generated
 				GridBagConstraints gridBagConstraints7 = new GridBagConstraints();
 				gridBagConstraints7.gridy = 2;  // Generated
 				gridBagConstraints7.insets = new Insets(0, 5, 0, 0);  // Generated
 				gridBagConstraints7.gridx = 1;  // Generated
-				jLabelRes18Pontos = new JLabel();
-				jLabelRes18Pontos.setText("...");  // Generated
+				jLabelRes13Pontos = new JLabel();
+				jLabelRes13Pontos.setText("...");  // Generated
 				GridBagConstraints gridBagConstraints6 = new GridBagConstraints();
 				gridBagConstraints6.gridy = 1;  // Generated
 				gridBagConstraints6.insets = new Insets(0, 5, 0, 0);  // Generated
 				gridBagConstraints6.gridx = 1;  // Generated
-				jLabelRes19Pontos = new JLabel();
-				jLabelRes19Pontos.setText("...");  // Generated
+				jLabelRes14Pontos = new JLabel();
+				jLabelRes14Pontos.setText("...");  // Generated
 				GridBagConstraints gridBagConstraints5 = new GridBagConstraints();
 				gridBagConstraints5.gridy = 0;  // Generated
 				gridBagConstraints5.ipady = 0;  // Generated
 				gridBagConstraints5.ipadx = 0;  // Generated
 				gridBagConstraints5.insets = new Insets(0, 5, 0, 0);  // Generated
 				gridBagConstraints5.gridx = 1;  // Generated
-				jLabelRes20Pontos = new JLabel();
-				jLabelRes20Pontos.setText("....");  // Generated
+				jLabelRes15Pontos = new JLabel();
+				jLabelRes15Pontos.setText("....");  // Generated
 				GridBagConstraints gridBagConstraints4 = new GridBagConstraints();
 				gridBagConstraints4.gridy = 5;  // Generated
 				gridBagConstraints4.anchor = GridBagConstraints.EAST;  // Generated
@@ -199,35 +199,35 @@ public class JDialogResultado extends JDialog {
 				gridBagConstraints3.anchor = GridBagConstraints.EAST;  // Generated
 				gridBagConstraints3.gridx = 0;  // Generated
 				jLabel16Pontos = new JLabel();
-				jLabel16Pontos.setText("16 Pontos:");  // Generated
+				jLabel16Pontos.setText("11 Pontos:");  // Generated
 				jLabel16Pontos.setHorizontalTextPosition(SwingConstants.TRAILING);  // Generated
 				GridBagConstraints gridBagConstraints2 = new GridBagConstraints();
 				gridBagConstraints2.gridy = 3;  // Generated
 				gridBagConstraints2.anchor = GridBagConstraints.EAST;  // Generated
 				gridBagConstraints2.gridx = 0;  // Generated
 				jLabel17Pontos = new JLabel();
-				jLabel17Pontos.setText("17 Pontos:");  // Generated
+				jLabel17Pontos.setText("12 Pontos:");  // Generated
 				jLabel17Pontos.setHorizontalTextPosition(SwingConstants.TRAILING);  // Generated
 				GridBagConstraints gridBagConstraints11 = new GridBagConstraints();
 				gridBagConstraints11.gridy = 2;  // Generated
 				gridBagConstraints11.anchor = GridBagConstraints.EAST;  // Generated
 				gridBagConstraints11.gridx = 0;  // Generated
 				jLabel18Pontos = new JLabel();
-				jLabel18Pontos.setText("18 Pontos:");  // Generated
+				jLabel18Pontos.setText("13 Pontos:");  // Generated
 				jLabel18Pontos.setHorizontalTextPosition(SwingConstants.TRAILING);  // Generated
 				GridBagConstraints gridBagConstraints1 = new GridBagConstraints();
 				gridBagConstraints1.gridy = 1;  // Generated
 				gridBagConstraints1.anchor = GridBagConstraints.EAST;  // Generated
 				gridBagConstraints1.gridx = 0;  // Generated
 				jLabel19Pontos = new JLabel();
-				jLabel19Pontos.setText("19 Pontos:");  // Generated
+				jLabel19Pontos.setText("14 Pontos:");  // Generated
 				jLabel19Pontos.setHorizontalTextPosition(SwingConstants.TRAILING);  // Generated
 				GridBagConstraints gridBagConstraints = new GridBagConstraints();
 				gridBagConstraints.gridy = 0;  // Generated
 				gridBagConstraints.anchor = GridBagConstraints.EAST;  // Generated
 				gridBagConstraints.gridx = 0;  // Generated
 				jLabel20Pontos = new JLabel();
-				jLabel20Pontos.setText("20 Pontos:");  // Generated
+				jLabel20Pontos.setText("15 Pontos:");  // Generated
 				jLabel20Pontos.setHorizontalTextPosition(SwingConstants.TRAILING);  // Generated
 				jPanelMidlle = new JPanel();
 				jPanelMidlle.setLayout(new GridBagLayout());  // Generated
@@ -238,11 +238,11 @@ public class JDialogResultado extends JDialog {
 				jPanelMidlle.add(jLabel17Pontos, gridBagConstraints2);  // Generated
 				jPanelMidlle.add(jLabel16Pontos, gridBagConstraints3);  // Generated
 				jPanelMidlle.add(jLabel0Pontos, gridBagConstraints4);  // Generated
-				jPanelMidlle.add(jLabelRes20Pontos, gridBagConstraints5);  // Generated
-				jPanelMidlle.add(jLabelRes19Pontos, gridBagConstraints6);  // Generated
-				jPanelMidlle.add(jLabelRes18Pontos, gridBagConstraints7);  // Generated
-				jPanelMidlle.add(jLabelRes17Pontos, gridBagConstraints8);  // Generated
-				jPanelMidlle.add(jLabelRes16Pontos, gridBagConstraints9);  // Generated
+				jPanelMidlle.add(jLabelRes15Pontos, gridBagConstraints5);  // Generated
+				jPanelMidlle.add(jLabelRes14Pontos, gridBagConstraints6);  // Generated
+				jPanelMidlle.add(jLabelRes13Pontos, gridBagConstraints7);  // Generated
+				jPanelMidlle.add(jLabelRes12Pontos, gridBagConstraints8);  // Generated
+				jPanelMidlle.add(jLabelRes11Pontos, gridBagConstraints9);  // Generated
 				jPanelMidlle.add(jLabelRes0Pontos, gridBagConstraints10);  // Generated
 			} catch (java.lang.Throwable e) {
 				// TODO: Something
@@ -267,44 +267,44 @@ public class JDialogResultado extends JDialog {
 		jLabelRes0Pontos = labelRes0Pontos;
 	}
 
-	public JLabel getJLabelRes16Pontos() {
-		return jLabelRes16Pontos;
+	public JLabel getJLabelRes11Pontos() {
+		return jLabelRes11Pontos;
 	}
 
-	public void setJLabelRes16Pontos(JLabel labelRes16Pontos) {
-		jLabelRes16Pontos = labelRes16Pontos;
+	public void setJLabelRes11Pontos(JLabel labelRes11pontos) {
+		jLabelRes11Pontos = labelRes11pontos;
 	}
 
-	public JLabel getJLabelRes17Pontos() {
-		return jLabelRes17Pontos;
+	public JLabel getJLabelRes12Pontos() {
+		return jLabelRes12Pontos;
 	}
 
-	public void setJLabelRes17Pontos(JLabel labelRes17Pontos) {
-		jLabelRes17Pontos = labelRes17Pontos;
+	public void setJLabelRes12Pontos(JLabel labelRes12Pontos) {
+		jLabelRes12Pontos = labelRes12Pontos;
 	}
 
-	public JLabel getJLabelRes18Pontos() {
-		return jLabelRes18Pontos;
+	public JLabel getJLabelRes13Pontos() {
+		return jLabelRes13Pontos;
 	}
 
-	public void setJLabelRes18Pontos(JLabel labelRes18Pontos) {
-		jLabelRes18Pontos = labelRes18Pontos;
+	public void setJLabelRes13Pontos(JLabel labelRes13Pontos) {
+		jLabelRes13Pontos = labelRes13Pontos;
 	}
 
-	public JLabel getJLabelRes19Pontos() {
-		return jLabelRes19Pontos;
+	public JLabel getJLabelRes14Pontos() {
+		return jLabelRes14Pontos;
 	}
 
-	public void setJLabelRes19Pontos(JLabel labelRes19Pontos) {
-		jLabelRes19Pontos = labelRes19Pontos;
+	public void setJLabelRes14Pontos(JLabel labelRes14Pontos) {
+		jLabelRes14Pontos = labelRes14Pontos;
 	}
 
-	public JLabel getJLabelRes20Pontos() {
-		return jLabelRes20Pontos;
+	public JLabel getJLabelRes15Pontos() {
+		return jLabelRes15Pontos;
 	}
 
-	public void setJLabelRes20Pontos(JLabel labelRes20Pontos) {
-		jLabelRes20Pontos = labelRes20Pontos;
+	public void setJLabelRes15Pontos(JLabel labelRes15Pontos) {
+		jLabelRes15Pontos = labelRes15Pontos;
 	}
 
 }  //  @jve:decl-index=0:visual-constraint="10,10"

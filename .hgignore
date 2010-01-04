@@ -1,1 +1,2 @@
 relre:.metadata/*
+relre:/*.class

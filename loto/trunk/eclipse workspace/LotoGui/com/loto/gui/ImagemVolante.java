@@ -23,45 +23,45 @@ import com.lotopro.Cartao;
 
 public class ImagemVolante extends JPanel {
 
-	private static final int COLUMN_1 = 45;
+	private static final int COLUMN_1 = 38;//-7
 
-	private static final int COLUMN_2 = 69;
+	private static final int COLUMN_2 = 62;
 
-	private static final int COLUMN_3 = 93;
+	private static final int COLUMN_3 = 86;
 
-	private static final int COLUMN_4 = 117;
+	private static final int COLUMN_4 = 110;
 
-	private static final int COLUMN_5 = 141;
+	private static final int COLUMN_5 = 137;
 
-	private static final int COLUMN_6 = 166;
+	private static final int COLUMN_6 = 159;
 
-	private static final int COLUMN_7 = 189;
+	private static final int COLUMN_7 = 183;
 
-	private static final int COLUMN_8 = 214;
+	private static final int COLUMN_8 = 209;
 
-	private static final int COLUMN_9 = 238;
+	private static final int COLUMN_9 = 233;
+	
+	private static final int COLUMN_10 = 258;
 
-	private static final int COLUMN_10 = 261;
+	private static final int ROW_1 = 116; //-13
 
-	private static final int ROW_1 = 129;
+	private static final int ROW_2 = 135;
 
-	private static final int ROW_2 = 146;
+	private static final int ROW_3 = 153;
 
-	private static final int ROW_3 = 164;
+	private static final int ROW_4 = 172;
 
-	private static final int ROW_4 = 183;
+	private static final int ROW_5 = 190;
 
-	private static final int ROW_5 = 201;
+	private static final int ROW_6 = 209;
 
-	private static final int ROW_6 = 219;
+	private static final int ROW_7 = 228;
 
-	private static final int ROW_7 = 237;
+	private static final int ROW_8 = 245;
 
-	private static final int ROW_8 = 254;
+	private static final int ROW_9 = 263;
 
-	private static final int ROW_9 = 273;
-
-	private static final int ROW_10 = 293;
+	private static final int ROW_10 = 283;
 
 	private JLabel jLabelImagem = null;
 

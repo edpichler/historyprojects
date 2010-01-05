@@ -24,7 +24,7 @@ import javax.swing.border.EtchedBorder;
  */
 public class JDialogSobre extends JDialog {
 
-	public static final String SITE_PRODUTO = "www.megaloteria.net";
+	public static final String SITE_PRODUTO = "http://loteriainteligente.blogspot.com/";
 
 	private static final long serialVersionUID = 1L;
 

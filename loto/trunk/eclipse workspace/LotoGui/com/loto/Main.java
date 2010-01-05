@@ -26,6 +26,6 @@ public class Main {
 		FrmMain frame = FrmMain.getInstance();		
 		frame.setVisible(true);
 		frame.setLocationRelativeTo(null);
-		frame.verifySerial();
+		//frame.verifySerial();
 	}
 }

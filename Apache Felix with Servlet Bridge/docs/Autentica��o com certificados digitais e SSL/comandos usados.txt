@@ -1,0 +1,15 @@
+﻿openssl x509 -trustout -signkey private/ca.key -days 365 -req -in private/ca.csr -out private/ca.pem
+
+openssl req -new -newkey rsa:512 -nodes -out private/client/client1.req -keyout private/client/client1.key 
+
+openssl x509 -CA private/ca.pem -CAkey private/ca.key -CAserial private/ca.srl -req -in private/client/client1.req -out private/client/client1.pem
+
+openssl pkcs12 -export -clcerts -in private/client/client1.pem -inkey private/client/client1.key -out private/client/client1.p12 -name "Jason's Client Certificate"
+
+openssl s_client -connect 192.168.1.41:8443 -cert private/client/client1.pem -key private/client/client1.key -tls1
+
+"C:\Program Files\Java\jdk1.6.0_20\jre\lib\security\cacerts"
+
+keytool -import -keystore "C:\Program Files\Java\jdk1.6.0_20\jre\lib\security\cacerts" -alias
+
+keytool -import -keystore "C:\Program Files\Java\jdk1.6.0_20\jre\lib\security\cacerts"  -file ca.pem -alias jasonsca

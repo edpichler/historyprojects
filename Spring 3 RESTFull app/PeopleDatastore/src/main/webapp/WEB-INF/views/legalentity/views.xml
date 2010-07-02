@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="legalentity/list">
+        <put-attribute name="body" value="/WEB-INF/views/legalentity/list.jspx"/>
+    </definition>
+    <definition extends="default" name="legalentity/show">
+        <put-attribute name="body" value="/WEB-INF/views/legalentity/show.jspx"/>
+    </definition>
+    <definition extends="default" name="legalentity/create">
+        <put-attribute name="body" value="/WEB-INF/views/legalentity/create.jspx"/>
+    </definition>
+    <definition extends="default" name="legalentity/update">
+        <put-attribute name="body" value="/WEB-INF/views/legalentity/update.jspx"/>
+    </definition>
+</tiles-definitions>

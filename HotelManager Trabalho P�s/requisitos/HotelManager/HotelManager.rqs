@@ -1,0 +1,17 @@
+[Project]
+Owner=admin
+Name=HotelManager
+GUID={11B9E91D-4C3C-4EA0-97E4-1697D145A55B}
+CQWebURL=
+Description=Requisitos para o projeto Hotel manager. Pós em engenharia de software.
+Owner Key=1
+Revision number=1.0001
+Prefix=
+NbrRequirements=0
+Directory=C:\Documents and Settings\Administrador\Meus documentos\workspaces\pos hotel manager\requisitos\HotelManager\HotelManager.rqs
+Key=1
+
+[Application]
+Data file version=1.0040
+Program Version=9.0.0.1
+

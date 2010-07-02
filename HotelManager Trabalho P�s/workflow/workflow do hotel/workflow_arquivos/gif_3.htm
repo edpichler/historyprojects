@@ -1,0 +1,140 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+workflow
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="gif_1.js" type="text/jscript" language="jscript"></script>
+
+<script type="text/jscript" language="jscript">
+	if(parent.isUpLevel)
+	{
+		location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+	}
+</script>
+
+
+
+<script type="text/jscript" language="jscript">
+
+var pageID = 11;
+
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = 1.704189;
+	viewMgr.visBBoxRight = 6.481145;
+	viewMgr.visBBoxBottom = 2.965853;
+	viewMgr.visBBoxTop = 8.746745;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="Mostra o local da forma selecionada" src="arrow.gif"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF">
+
+<div id=arrowdiv style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+
+<DIV id=RasterDiv>
+
+
+<center>
+  <IMG id="ConvertedImage" SRC="gif_3.gif" ALT="Check out" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="Descontar serviço e/ou produtos não reconhecimento" origTitle="Descontar serviço e/ou produtos não reconhecimento" TITLE="Descontar serviço e/ou produtos não reconhecimento"  target="_top" COORDS=" 0,368 161,368 161,312 0,312 0,368" onmouseover="UpdateTooltip(this,11,28)" onfocus="UpdateTooltip(this,11,28)" onclick="return OnShapeClick(11,28);" onkeyup="OnShapeKey(11,28);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Finalizar hospedagem" origTitle="Finalizar hospedagem" TITLE="Finalizar hospedagem"  target="_top" COORDS=" 289,504 413,504 413,483 289,483 289,504" onmouseover="UpdateTooltip(this,11,25)" onfocus="UpdateTooltip(this,11,25)" onclick="return OnShapeClick(11,25);" onkeyup="OnShapeKey(11,25);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Emitir Documento Fiscal" origTitle="Emitir Documento Fiscal" TITLE="Emitir Documento Fiscal"  target="_top" COORDS=" 289,463 412,463 412,437 289,437 289,463" onmouseover="UpdateTooltip(this,11,10)" onfocus="UpdateTooltip(this,11,10)" onclick="return OnShapeClick(11,10);" onkeyup="OnShapeKey(11,10);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Efetuar Pagamento" origTitle="Efetuar Pagamento" TITLE="Efetuar Pagamento"  target="_top" COORDS=" 295,419 407,419 407,392 295,392 295,419" onmouseover="UpdateTooltip(this,11,9)" onfocus="UpdateTooltip(this,11,9)" onclick="return OnShapeClick(11,9);" onkeyup="OnShapeKey(11,9);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Emitir documento de não reconhecimento de gasto" origTitle="Emitir documento de não reconhecimento de gasto" TITLE="Emitir documento de não reconhecimento de gasto"  target="_top" COORDS=" 123,296 256,296 256,257 123,257 123,296" onmouseover="UpdateTooltip(this,11,8)" onfocus="UpdateTooltip(this,11,8)" onclick="return OnShapeClick(11,8);" onkeyup="OnShapeKey(11,8);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS=" 323,277 351,293 378,277 351,260 323,277" onmouseover="UpdateTooltip(this,11,7)" onfocus="UpdateTooltip(this,11,7)" onclick="return OnShapeClick(11,7);" onkeyup="OnShapeKey(11,7);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Conferir Fatura" origTitle="Conferir Fatura" TITLE="Conferir Fatura"  target="_top" COORDS=" 303,237 398,237 398,218 303,218 303,237" onmouseover="UpdateTooltip(this,11,6)" onfocus="UpdateTooltip(this,11,6)" onclick="return OnShapeClick(11,6);" onkeyup="OnShapeKey(11,6);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Emitir Fatura Detalhada" origTitle="Emitir Fatura Detalhada" TITLE="Emitir Fatura Detalhada"  target="_top" COORDS=" 275,193 427,193 427,168 275,168 275,193" onmouseover="UpdateTooltip(this,11,5)" onfocus="UpdateTooltip(this,11,5)" onclick="return OnShapeClick(11,5);" onkeyup="OnShapeKey(11,5);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Verificar Consumos e Serviços" origTitle="Verificar Consumos e Serviços" TITLE="Verificar Consumos e Serviços"  target="_top" COORDS=" 270,145 431,145 431,118 270,118 270,145" onmouseover="UpdateTooltip(this,11,4)" onfocus="UpdateTooltip(this,11,4)" onclick="return OnShapeClick(11,4);" onkeyup="OnShapeKey(11,4);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Consultar Hospedagem" origTitle="Consultar Hospedagem" TITLE="Consultar Hospedagem"  target="_top" COORDS=" 287,96 414,96 414,75 287,75 287,96" onmouseover="UpdateTooltip(this,11,3)" onfocus="UpdateTooltip(this,11,3)" onclick="return OnShapeClick(11,3);" onkeyup="OnShapeKey(11,3);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Solicitar Check-out" origTitle="Solicitar Check-out" TITLE="Solicitar Check-out"  target="_top" COORDS=" 299,57 403,57 403,38 299,38 299,57" onmouseover="UpdateTooltip(this,11,2)" onfocus="UpdateTooltip(this,11,2)" onclick="return OnShapeClick(11,2);" onkeyup="OnShapeKey(11,2);">
+</MAP>
+
+
+
+</DIV>
+
+</body>
+</html>
+

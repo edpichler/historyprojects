@@ -1,0 +1,150 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+<f:view contentType="text/html">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Login</title>
+	<style type="text/css">
+<!--
+html {
+	font-family: Arial, Helvetica, sans-serif;
+}
+.errorMessage {
+	color: #F00;
+}
+.
+direita {
+	text-align: right;
+}
+
+.esquerda {
+	text-align: left;
+	font-size: x-small;
+}
+
+#Table_01 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 400px;
+	height: 218px;
+}
+
+#login-01 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 400px;
+	height: 31px;
+}
+
+#login-02 {
+	position: absolute;
+	left: 0px;
+	top: 31px;
+	width: 252px;
+	height: 55px;
+}
+
+#LastFmLogo {
+	position: absolute;
+	left: 252px;
+	top: 31px;
+	width: 128px;
+	height: 41px;
+}
+
+#login-04 {
+	position: absolute;
+	left: 380px;
+	top: 31px;
+	width: 20px;
+	height: 187px;
+}
+
+#login-05 {
+	position: absolute;
+	left: 252px;
+	top: 72px;
+	width: 128px;
+	height: 14px;
+}
+
+#login-06 {
+	position: absolute;
+	left: 0px;
+	top: 86px;
+	width: 21px;
+	height: 132px;
+}
+
+#login-07 {
+	position: absolute;
+	left: 21px;
+	top: 86px;
+	width: 359px;
+	height: 132px;
+}
+.errorMessage {
+	color: #F00;
+}
+-->
+    </style>
+	</head>
+  <h:outputText value="#{Conf.googleAnalyticsCode}" escape="false" />
+	<body
+		style="background-color: #FFFFFF; margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px;">
+	<!-- Save for Web Slices (login.psd) -->
+	<div id="Table_01">
+	<div id="login-01"><h:graphicImage value="images/login_01.gif" width="400"
+		height="31" alt="" />
+	</div>
+	<div id="login-02"><h:graphicImage value="images/login_02.gif" width="252"
+		height="55" alt="" /></div>
+	<div id="LastFmLogo"><a href="http://www.lastfm.com"
+		target="browser" onmouseover="window.status='LastFm';  return true;"
+		onmouseout="window.status='';  return true;"> <h:graphicImage
+		value="images/LastFmLogo.gif" width="128" height="41" border="0"
+		alt="LastFm" /></a></div>
+	<div id="login-04"><h:graphicImage value="images/login_04.gif" width="20"
+		height="187" alt="" /></div>
+	<div id="login-05"><h:graphicImage value="images/login_05.gif" width="128"
+		height="14" alt="" /></div>
+	<div id="login-06"><h:graphicImage value="images/login_06.gif" width="21"
+		height="132" alt="" /></div>
+	<div id="login-07"><h:form>
+		<table width="100%" border="0" cellspacing="1">
+			<tr>
+				<td class="esquerda"></td>
+				<td class="esquerda"><h:message for="username" errorClass="errorMessage"/>
+			    </td>
+			</tr>
+			<tr>
+				<td width="30%" class="direita">Username:</td>
+				<td width="70%" class="esquerda">
+					<h:inputText id="username" 
+					binding="#{Login.inputUsername}" >
+					</h:inputText></td>
+			</tr>
+			<tr>
+				<td class="direita">Password:</td>
+				<td class="esquerda"><h:inputSecret  binding="#{Login.inputPassword}" ></h:inputSecret> </td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td><h:commandLink value="Login" action="#{Login.actionLogin}">
+
+				</h:commandLink></td>
+			</tr>
+		</table>
+	</h:form></div>
+	</div>
+	<!-- End Save for Web Slices -->
+	</body>
+</f:view>
+</html>

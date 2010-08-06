@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisioDocument>
+	<DocumentProperties>
+		<Title></Title>
+		<HyperlinkBase href=""></HyperlinkBase>
+	</DocumentProperties>
+	<Pages>
+		<Page ID="0" Name="Page-1" NameU="Page-1">
+			<Layer IX="0">
+				<Name>Flowchart</Name>
+				<NameUniv>Flowchart</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="1">
+				<Name>Connector</Name>
+				<NameUniv>Connector</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="2">
+				<Name>Fluxograma</Name>
+				<NameUniv>Flowchart</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="3">
+				<Name>Conector</Name>
+				<NameUniv>Connector</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Shapes>
+				<Shape ID="1" UniqueID="{9EEA9719-7BA5-4A36-A44F-5E82626E8A0C}" Name="Operação" NameU="Operation" Master="11">
+					<Text>Recebe Resposta</Text>
+					<XForm>
+						<PinX Unit="IN_F">5.461737204724409</PinX>
+						<PinY Unit="IN_F">2.196112204724406</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>2</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="2" UniqueID="{DADA61DA-AC58-451D-8D1F-6C9D5A43C2E1}" Name="Operação.2" NameU="Operation.2" Master="11">
+					<Text>Providencia Realizada</Text>
+					<XForm>
+						<PinX Unit="IN_F">4.129675196850394</PinX>
+						<PinY Unit="IN_F">4.862450787401575</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>2</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="3" UniqueID="{797E91C9-343C-4347-8FA0-D813C23F0730}" Name="Operação.3" NameU="Operation.3" Master="11">
+					<Text>Providencia não realizada</Text>
+					<XForm>
+						<PinX Unit="IN_F">6.879675196850394</PinX>
+						<PinY Unit="IN_F">4.862450787401574</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>2</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="4" UniqueID="{292F9C15-AE53-4018-8C4E-D96C989736DA}" Name="Operação.4" NameU="Operation.4" Master="11">
+					<Text>Envia resposta de providencia a ser tomada ao analista</Text>
+					<XForm>
+						<PinX Unit="IN_F">5.461737204724409</PinX>
+						<PinY Unit="IN_F">7.066313976377953</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>2</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="5" UniqueID="{C842607F-5DFF-44F3-BBDB-62569239D5CB}" Name="Operação.5" NameU="Operation.5" Master="11">
+					<Text>Risco enviado para o GP</Text>
+					<XForm>
+						<PinX Unit="IN_F">5.461737204724409</PinX>
+						<PinY Unit="IN_F">9.380413385826772</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>2</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="6" UniqueID="{58AB1AB5-3DD8-42D4-A909-3925D20C0448}" Name="Operação.6" NameU="Operation.6" Master="11">
+					<XForm>
+						<PinX Unit="IN_F">0.795275590551181</PinX>
+						<PinY Unit="IN_F">10.545275590551181</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>2</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="7" UniqueID="{885278D6-AF18-4AC5-9DB6-9754212808EB}" Name="Procedimento" NameU="Procedure" Master="12">
+					<Text>Enviar Risco</Text>
+					<XForm>
+						<PinX Unit="IN_F">5.468750000000000</PinX>
+						<PinY Unit="IN_F">10.545275590551183</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>2</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="8" UniqueID="{47314E91-026B-4810-A729-FD0D2BEAE6BA}" Name="Procedimento.8" NameU="Procedure.8" Master="12">
+					<Text>Reiniciar Etapa</Text>
+					<XForm>
+						<PinX Unit="IN_F">0.793588301462317</PinX>
+						<PinY Unit="IN_F">1.084153543307086</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>2</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="9" UniqueID="{F2CD3D9C-22EC-4368-80A2-6711E113F9E1}" Name="Procedimento.9" NameU="Procedure.9" Master="12">
+					<Text>Prossegue nas atitudes normais</Text>
+					<XForm>
+						<PinX Unit="IN_F">5.468750000000000</PinX>
+						<PinY Unit="IN_F">1.084153543307085</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>2</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="10" UniqueID="{39CBF653-9A41-4C48-AB5C-CD65EAB88CF1}" Name="Procedimento.10" NameU="Procedure.10" Master="12">
+					<Text>Comunica o encerramento da providencia</Text>
+					<XForm>
+						<PinX Unit="IN_F">5.461737204724409</PinX>
+						<PinY Unit="IN_F">3.403420275590545</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>2</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="11" UniqueID="{F641198C-AC6F-4602-BBCF-E08546F0672F}" Name="Procedimento.11" NameU="Procedure.11" Master="12">
+					<Text>Cumprida</Text>
+					<XForm>
+						<PinX Unit="IN_F">4.125000000000000</PinX>
+						<PinY Unit="IN_F">6.093750000000000</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>2</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="12" UniqueID="{C5AC8493-C16E-44E4-83A3-FBEE3274E9DB}" Name="Procedimento.12" NameU="Procedure.12" Master="12">
+					<Text>Não cumprida</Text>
+					<XForm>
+						<PinX Unit="IN_F">6.882874015748032</PinX>
+						<PinY Unit="IN_F">6.109375000000000</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>2</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="13" UniqueID="{E5F62101-3684-4044-91CC-3E8A14178672}" Name="Procedimento.13" NameU="Procedure.13" Master="12">
+					<Text>GP Recebe indicação do risco e avalia a providencia no plano de gerenciamento de risco</Text>
+					<XForm>
+						<PinX Unit="IN_F">5.457062007874016</PinX>
+						<PinY Unit="IN_F">8.342150590551182</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>2</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="14" UniqueID="{619296F7-BC28-4A3A-8E83-9D04701B39ED}" Name="Resultado" NameU="Result" Master="13">
+					<XForm>
+						<PinX Unit="IN_F">3.033587598425196</PinX>
+						<PinY Unit="IN_F">10.545275590551181</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>3</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="15" UniqueID="{A654AD54-B9BA-4E43-8D40-92519B521380}" Name="Resultado.15" NameU="Result.15" Master="13">
+					<XForm>
+						<PinX Unit="IN_F">4.555487204724409</PinX>
+						<PinY Unit="IN_F">6.727669783464567</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>3</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="16" UniqueID="{89A81726-8B64-43B9-94A6-BC574BD1082A}" Name="Resultado.16" NameU="Result.16" Master="13">
+					<XForm>
+						<PinX Unit="IN_F">6.881274606299213</PinX>
+						<PinY Unit="IN_F">5.570312500000000</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>3</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="17" UniqueID="{20207596-C842-4392-A08D-6964A861AD1B}" Name="Resultado.17" NameU="Result.17" Master="13">
+					<XForm>
+						<PinX Unit="IN_F">4.127337598425196</PinX>
+						<PinY Unit="IN_F">5.562500000000000</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>3</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="18" UniqueID="{7B5C8F6D-BA22-4B33-B609-12079CDB1B36}" Name="Resultado.18" NameU="Result.18" Master="13">
+					<XForm>
+						<PinX Unit="IN_F">6.170706200787402</PinX>
+						<PinY Unit="IN_F">4.048535925196847</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>3</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="19" UniqueID="{57545982-5635-49A1-8B18-A002BA0CB6AE}" Name="Resultado.19" NameU="Result.19" Master="13">
+					<XForm>
+						<PinX Unit="IN_F">5.461737204724409</PinX>
+						<PinY Unit="IN_F">2.858759842519681</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>3</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="20" UniqueID="{311BC38F-3B6B-4FA3-A4F8-D87FC575A454}" Name="Resultado.20" NameU="Result.20" Master="13">
+					<XForm>
+						<PinX Unit="IN_F">6.410187007874016</PinX>
+						<PinY Unit="IN_F">6.735482283464567</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>3</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="22" UniqueID="{2D62A83A-3100-45EB-8A05-E4E200942F24}" Name="Resultado.22" NameU="Result.22" Master="13">
+					<XForm>
+						<PinX Unit="IN_F">4.795706200787402</PinX>
+						<PinY Unit="IN_F">4.048535925196847</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>3</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="23" UniqueID="{8849D482-54CF-453E-9E16-4766668410B7}" Name="Resultado.23" NameU="Result.23" Master="13">
+					<XForm>
+						<PinX Unit="IN_F">0.794431946006749</PinX>
+						<PinY Unit="IN_F">5.814714566929133</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>3</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="24" UniqueID="{CB1EE537-0FC0-4A9D-864C-C93969F00749}" Name="Resultado.24" NameU="Result.24" Master="13">
+					<XForm>
+						<PinX Unit="IN_F">3.131169150731159</PinX>
+						<PinY Unit="IN_F">1.084153543307086</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>3</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="25" UniqueID="{0A6BC9F9-0D1A-4EE1-B17C-191D3753492B}" Name="Resultado.25" NameU="Result.25" Master="13">
+					<XForm>
+						<PinX Unit="IN_F">5.465243602362205</PinX>
+						<PinY Unit="IN_F">1.581139271653540</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>3</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="26" UniqueID="{2A931F0A-E031-465E-9E8D-0A2CB59755E1}" Name="Resultado.26" NameU="Result.26" Master="13">
+					<XForm>
+						<PinX Unit="IN_F">5.459399606299213</PinX>
+						<PinY Unit="IN_F">7.794475885826772</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>3</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="27" UniqueID="{BEAC61AD-3CF0-49C8-9549-C1FA3B926EDF}" Name="Resultado.27" NameU="Result.27" Master="13">
+					<XForm>
+						<PinX Unit="IN_F">5.465243602362205</PinX>
+						<PinY Unit="IN_F">9.990588090551182</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>3</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="28" UniqueID="{E33EB053-4F11-41D6-8FCE-8ADC4B29C660}" Name="Resultado.28" NameU="Result.28" Master="13">
+					<XForm>
+						<PinX Unit="IN_F">5.459399606299213</PinX>
+						<PinY Unit="IN_F">8.833538385826770</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>3</LayerMember>
+					</LayerMem>
+				</Shape>
+			</Shapes>
+		</Page>
+	</Pages>
+</VisioDocument>

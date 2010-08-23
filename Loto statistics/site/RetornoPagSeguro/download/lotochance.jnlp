@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp
+  spec="1.0+"
+  codebase="http://www.megaloteria.net/download/"
+  href="http://www.megaloteria.net/download/lotochance.jnlp">
+  <information>
+    <title>Lotochance 1.0</title>
+    <vendor>Megaloteria.net</vendor>
+    <homepage href="http://www.megaloteria.net/"/>
+    <description>Lotochance</description>
+    <description kind="short">Lotochance 1.1</description>
+    <offline-allowed/>
+  </information>
+  <security>
+    <all-permissions/>
+  </security>
+  <resources>
+    <jar href="lib/lotoengine.jar" download="eager"/>
+    <jar href="lib/sec.jar"  download="eager"/>
+    <jar href="lib/log4j-1.2.15.jar" download="eager"/>
+    <jar href="lotochance.jar" main="true" download="eager"/>
+    <j2se version="1.5+" />
+  </resources>
+  <application-desc main-class="loto.Main"/>
+</jnlp>

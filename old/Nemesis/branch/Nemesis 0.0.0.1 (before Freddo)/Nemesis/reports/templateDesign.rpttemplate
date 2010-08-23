@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Written by Eclipse BIRT 2.0 -->
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 2.0.1 Build &lt;20060222-1204></property>
+    <property name="units">in</property>
+    <styles>
+        <style name="table-header" id="4">
+            <property name="backgroundColor">#000000</property>
+            <property name="fontFamily">Arial</property>
+            <property name="fontWeight">bold</property>
+            <property name="color">#FFFFFF</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+</report>

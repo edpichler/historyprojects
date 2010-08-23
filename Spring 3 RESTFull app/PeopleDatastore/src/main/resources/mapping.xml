@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapping PUBLIC "-//EXOLAB/Castor Mapping DTD Version 1.0//EN"
+      "http://castor.org/mapping.dtd">
+
+<mapping>
+	<description>Description of the mapping</description>
+
+	<!-- <include href="other_mapping_file.xml" /> -->
+
+	<!-- mapping for class Adress -->
+	<class name="com.people.service.geolocation.Address" auto-complete="false">
+		<map-to xml="Address" />
+		<field name="id" type="long">
+			<bind-xml name="id" node="element" />
+		</field>
+		<field name="description" type="string">
+			<bind-xml name="description" node="element" />
+		</field>
+	</class>
+	
+	<class name="java.util.ArrayList" auto-complete="true" >
+		<map-to xml="array-list" />		
+	</class>
+		
+</mapping>

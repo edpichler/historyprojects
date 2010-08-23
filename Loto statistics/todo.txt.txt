@@ -1,0 +1,28 @@
+- trocar a imagem do cartão.
+- Fazer instalador(ou jnpl) que force atualização
+- testar erros na hora de ativar, como servidor offline.
+
+
+- Criar um site do produto (www.megaloteria.net) flex ou não..
+- ativar pagamento com cc no pagseguro
+- Pagamento online (cc) paypal pagseguro eduardopichler@gmail.com (verificar minha conta para poder ter apelido e receber via cc)
+
+
+Depois de tudo redondo investir em propaganda!
+- Pagar google ads 
+- Colocar no superdownloads e no baixaki e em outros sites do ramo.
+
+
+site www.megaloteria.net no uol(vide googlenotebook)
+Servidor: dbmy0004.whservidor.com
+Usuário: megaloteria
+Banco: megaloteria
+senha:sgdb2008
+
+
+
+Detalhes do pagamento
+Usuario clica em baixar - Abre um html com instalador para jnpl.
+usuario clica em comprar - vai pro UOL. Depois de pagar é redirecionado mostrando seu id da trasanção. Esse é o serial. Isso também irá por email. Depois que estiver pago poderá ativar seu software.
+
+

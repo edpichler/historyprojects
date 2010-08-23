@@ -1,0 +1,626 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TABLE class="oracle.javatools.db.Table" xmlns="http://xmlns.oracle.com/jdeveloper/10130/offlinedb">
+   <ID class="oracle.jdeveloper.offlinedb.OfflineDBObjectID" id="0">
+      <ID>96d5c983-010b-1000-800e-7f000001e5ee</ID>
+      <parent/>
+      <type>TABLE</type>
+   </ID>
+   <columns>
+      <Item id="3">
+         <ID class="oracle.jdeveloper.offlinedb.OfflineDBObjectID">
+            <ID>96d5c983-010b-1000-800f-7f000001e5ee</ID>
+            <parent idref="0"/>
+            <type>COLUMN</type>
+         </ID>
+         <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+            <attributeValues class="java.util.HashMap">
+               <Item>
+                  <Key>precision</Key>
+                  <Value>10</Value>
+               </Item>
+               <Item>
+                  <Key>scale</Key>
+                  <Value class="java.lang.Long">0</Value>
+               </Item>
+            </attributeValues>
+            <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID" id="1">
+               <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+               <schemaName/>
+               <typeName>NUMBER</typeName>
+            </dataTypeID>
+         </dataTypeUsage>
+         <default/>
+         <name>ID</name>
+         <notNull>true</notNull>
+         <properties class="java.util.HashMap">
+            <Item>
+               <Key>OfflineDBConstants.IMPORT_SOURCE_ID</Key>
+               <Value class="oracle.jdeveloper.offlinedb.marshal.GenericDBReferenceID">
+                  <ID/>
+                  <name>ID</name>
+                  <parent class="oracle.jdeveloper.offlinedb.marshal.OracleDBReferenceID">
+                     <ID/>
+                     <connectionName>Nemesis</connectionName>
+                     <databaseID>13789</databaseID>
+                     <name>CONTA_FINANCEIRA</name>
+                     <parent/>
+                     <schemaName>NEMESIS</schemaName>
+                     <type>TABLE</type>
+                  </parent>
+                  <schemaName/>
+                  <type>COLUMN</type>
+               </Value>
+            </Item>
+         </properties>
+      </Item>
+      <Item>
+         <ID class="oracle.jdeveloper.offlinedb.OfflineDBObjectID">
+            <ID>96d5c983-010b-1000-8010-7f000001e5ee</ID>
+            <parent idref="0"/>
+            <type>COLUMN</type>
+         </ID>
+         <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+            <attributeValues class="java.util.HashMap">
+               <Item>
+                  <Key>precision</Key>
+                  <Value>1</Value>
+               </Item>
+               <Item>
+                  <Key>scale</Key>
+                  <Value class="java.lang.Long">0</Value>
+               </Item>
+            </attributeValues>
+            <dataTypeID idref="1"/>
+         </dataTypeUsage>
+         <default class="java.lang.String">0</default>
+         <name>CONTA_PAGA</name>
+         <notNull>true</notNull>
+         <properties class="java.util.HashMap">
+            <Item>
+               <Key>OfflineDBConstants.IMPORT_SOURCE_ID</Key>
+               <Value class="oracle.jdeveloper.offlinedb.marshal.GenericDBReferenceID">
+                  <ID/>
+                  <name>CONTA_PAGA</name>
+                  <parent class="oracle.jdeveloper.offlinedb.marshal.OracleDBReferenceID">
+                     <ID/>
+                     <connectionName>Nemesis</connectionName>
+                     <databaseID>13789</databaseID>
+                     <name>CONTA_FINANCEIRA</name>
+                     <parent/>
+                     <schemaName>NEMESIS</schemaName>
+                     <type>TABLE</type>
+                  </parent>
+                  <schemaName/>
+                  <type>COLUMN</type>
+               </Value>
+            </Item>
+         </properties>
+      </Item>
+      <Item>
+         <ID class="oracle.jdeveloper.offlinedb.OfflineDBObjectID">
+            <ID>96d5c983-010b-1000-8011-7f000001e5ee</ID>
+            <parent idref="0"/>
+            <type>COLUMN</type>
+         </ID>
+         <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+            <attributeValues class="java.util.HashMap"/>
+            <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID" id="2">
+               <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+               <schemaName/>
+               <typeName>DATE</typeName>
+            </dataTypeID>
+         </dataTypeUsage>
+         <default/>
+         <name>DATA_PAGAMENTO</name>
+         <notNull>true</notNull>
+         <properties class="java.util.HashMap">
+            <Item>
+               <Key>OfflineDBConstants.IMPORT_SOURCE_ID</Key>
+               <Value class="oracle.jdeveloper.offlinedb.marshal.GenericDBReferenceID">
+                  <ID/>
+                  <name>DATA_PAGAMENTO</name>
+                  <parent class="oracle.jdeveloper.offlinedb.marshal.OracleDBReferenceID">
+                     <ID/>
+                     <connectionName>Nemesis</connectionName>
+                     <databaseID>13789</databaseID>
+                     <name>CONTA_FINANCEIRA</name>
+                     <parent/>
+                     <schemaName>NEMESIS</schemaName>
+                     <type>TABLE</type>
+                  </parent>
+                  <schemaName/>
+                  <type>COLUMN</type>
+               </Value>
+            </Item>
+         </properties>
+      </Item>
+      <Item>
+         <ID class="oracle.jdeveloper.offlinedb.OfflineDBObjectID">
+            <ID>96d5c983-010b-1000-8012-7f000001e5ee</ID>
+            <parent idref="0"/>
+            <type>COLUMN</type>
+         </ID>
+         <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+            <attributeValues class="java.util.HashMap">
+               <Item>
+                  <Key>precision</Key>
+                  <Value>10</Value>
+               </Item>
+               <Item>
+                  <Key>scale</Key>
+                  <Value class="java.lang.Long">2</Value>
+               </Item>
+            </attributeValues>
+            <dataTypeID idref="1"/>
+         </dataTypeUsage>
+         <default class="java.lang.String">0</default>
+         <name>VALOR</name>
+         <notNull>true</notNull>
+         <properties class="java.util.HashMap">
+            <Item>
+               <Key>OfflineDBConstants.IMPORT_SOURCE_ID</Key>
+               <Value class="oracle.jdeveloper.offlinedb.marshal.GenericDBReferenceID">
+                  <ID/>
+                  <name>VALOR</name>
+                  <parent class="oracle.jdeveloper.offlinedb.marshal.OracleDBReferenceID">
+                     <ID/>
+                     <connectionName>Nemesis</connectionName>
+                     <databaseID>13789</databaseID>
+                     <name>CONTA_FINANCEIRA</name>
+                     <parent/>
+                     <schemaName>NEMESIS</schemaName>
+                     <type>TABLE</type>
+                  </parent>
+                  <schemaName/>
+                  <type>COLUMN</type>
+               </Value>
+            </Item>
+         </properties>
+      </Item>
+      <Item id="6">
+         <ID class="oracle.jdeveloper.offlinedb.OfflineDBObjectID">
+            <ID>96d5c983-010b-1000-8013-7f000001e5ee</ID>
+            <parent idref="0"/>
+            <type>COLUMN</type>
+         </ID>
+         <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+            <attributeValues class="java.util.HashMap">
+               <Item>
+                  <Key>precision</Key>
+                  <Value>10</Value>
+               </Item>
+               <Item>
+                  <Key>scale</Key>
+                  <Value class="java.lang.Long">0</Value>
+               </Item>
+            </attributeValues>
+            <dataTypeID idref="1"/>
+         </dataTypeUsage>
+         <default class="java.lang.String">NULL</default>
+         <name>PESSOA_ID</name>
+         <notNull>true</notNull>
+         <properties class="java.util.HashMap">
+            <Item>
+               <Key>OfflineDBConstants.IMPORT_SOURCE_ID</Key>
+               <Value class="oracle.jdeveloper.offlinedb.marshal.GenericDBReferenceID">
+                  <ID/>
+                  <name>PESSOA_ID</name>
+                  <parent class="oracle.jdeveloper.offlinedb.marshal.OracleDBReferenceID">
+                     <ID/>
+                     <connectionName>Nemesis</connectionName>
+                     <databaseID>13789</databaseID>
+                     <name>CONTA_FINANCEIRA</name>
+                     <parent/>
+                     <schemaName>NEMESIS</schemaName>
+                     <type>TABLE</type>
+                  </parent>
+                  <schemaName/>
+                  <type>COLUMN</type>
+               </Value>
+            </Item>
+         </properties>
+      </Item>
+      <Item>
+         <ID class="oracle.jdeveloper.offlinedb.OfflineDBObjectID">
+            <ID>96d5c983-010b-1000-8014-7f000001e5ee</ID>
+            <parent idref="0"/>
+            <type>COLUMN</type>
+         </ID>
+         <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+            <attributeValues class="java.util.HashMap"/>
+            <dataTypeID idref="2"/>
+         </dataTypeUsage>
+         <default class="java.lang.String">current_timestamp</default>
+         <name>ULT_MOD</name>
+         <notNull>true</notNull>
+         <properties class="java.util.HashMap">
+            <Item>
+               <Key>OfflineDBConstants.IMPORT_SOURCE_ID</Key>
+               <Value class="oracle.jdeveloper.offlinedb.marshal.GenericDBReferenceID">
+                  <ID/>
+                  <name>ULT_MOD</name>
+                  <parent class="oracle.jdeveloper.offlinedb.marshal.OracleDBReferenceID">
+                     <ID/>
+                     <connectionName>Nemesis</connectionName>
+                     <databaseID>13789</databaseID>
+                     <name>CONTA_FINANCEIRA</name>
+                     <parent/>
+                     <schemaName>NEMESIS</schemaName>
+                     <type>TABLE</type>
+                  </parent>
+                  <schemaName/>
+                  <type>COLUMN</type>
+               </Value>
+            </Item>
+         </properties>
+      </Item>
+      <Item id="4">
+         <ID class="oracle.jdeveloper.offlinedb.OfflineDBObjectID">
+            <ID>96d5c983-010b-1000-8015-7f000001e5ee</ID>
+            <parent idref="0"/>
+            <type>COLUMN</type>
+         </ID>
+         <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+            <attributeValues class="java.util.HashMap">
+               <Item>
+                  <Key>precision</Key>
+                  <Value>10</Value>
+               </Item>
+               <Item>
+                  <Key>scale</Key>
+                  <Value class="java.lang.Long">0</Value>
+               </Item>
+            </attributeValues>
+            <dataTypeID idref="1"/>
+         </dataTypeUsage>
+         <default/>
+         <name>USUARIO_ID</name>
+         <notNull>true</notNull>
+         <properties class="java.util.HashMap">
+            <Item>
+               <Key>OfflineDBConstants.IMPORT_SOURCE_ID</Key>
+               <Value class="oracle.jdeveloper.offlinedb.marshal.GenericDBReferenceID">
+                  <ID/>
+                  <name>USUARIO_ID</name>
+                  <parent class="oracle.jdeveloper.offlinedb.marshal.OracleDBReferenceID">
+                     <ID/>
+                     <connectionName>Nemesis</connectionName>
+                     <databaseID>13789</databaseID>
+                     <name>CONTA_FINANCEIRA</name>
+                     <parent/>
+                     <schemaName>NEMESIS</schemaName>
+                     <type>TABLE</type>
+                  </parent>
+                  <schemaName/>
+                  <type>COLUMN</type>
+               </Value>
+            </Item>
+         </properties>
+      </Item>
+      <Item id="5">
+         <ID class="oracle.jdeveloper.offlinedb.OfflineDBObjectID">
+            <ID>96d5c983-010b-1000-8016-7f000001e5ee</ID>
+            <parent idref="0"/>
+            <type>COLUMN</type>
+         </ID>
+         <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+            <attributeValues class="java.util.HashMap">
+               <Item>
+                  <Key>precision</Key>
+                  <Value>10</Value>
+               </Item>
+               <Item>
+                  <Key>scale</Key>
+                  <Value class="java.lang.Long">0</Value>
+               </Item>
+            </attributeValues>
+            <dataTypeID idref="1"/>
+         </dataTypeUsage>
+         <default/>
+         <name>OBSERVACAO_ID</name>
+         <notNull>false</notNull>
+         <properties class="java.util.HashMap">
+            <Item>
+               <Key>OfflineDBConstants.IMPORT_SOURCE_ID</Key>
+               <Value class="oracle.jdeveloper.offlinedb.marshal.GenericDBReferenceID">
+                  <ID/>
+                  <name>OBSERVACAO_ID</name>
+                  <parent class="oracle.jdeveloper.offlinedb.marshal.OracleDBReferenceID">
+                     <ID/>
+                     <connectionName>Nemesis</connectionName>
+                     <databaseID>13789</databaseID>
+                     <name>CONTA_FINANCEIRA</name>
+                     <parent/>
+                     <schemaName>NEMESIS</schemaName>
+                     <type>TABLE</type>
+                  </parent>
+                  <schemaName/>
+                  <type>COLUMN</type>
+               </Value>
+            </Item>
+         </properties>
+      </Item>
+   </columns>
+   <constraints>
+      <Item class="oracle.javatools.db.PKConstraint">
+         <ID class="oracle.jdeveloper.offlinedb.OfflineDBObjectID">
+            <ID>96d5c983-010b-1000-8017-7f000001e5ee</ID>
+            <parent idref="0"/>
+            <type>CONSTRAINT</type>
+         </ID>
+         <columns>
+            <Item idref="3"/>
+         </columns>
+         <enabled>true</enabled>
+         <name>CONTA_FINANCEIRA_PK</name>
+         <properties class="java.util.HashMap">
+            <Item>
+               <Key>OfflineDBConstants.IMPORT_SOURCE_ID</Key>
+               <Value class="oracle.jdeveloper.offlinedb.marshal.GenericDBReferenceID">
+                  <ID/>
+                  <name>CONTA_FINANCEIRA_PK</name>
+                  <parent class="oracle.jdeveloper.offlinedb.marshal.OracleDBReferenceID">
+                     <ID/>
+                     <connectionName>Nemesis</connectionName>
+                     <databaseID>13789</databaseID>
+                     <name>CONTA_FINANCEIRA</name>
+                     <parent/>
+                     <schemaName>NEMESIS</schemaName>
+                     <type>TABLE</type>
+                  </parent>
+                  <schemaName/>
+                  <type>CONSTRAINT</type>
+               </Value>
+            </Item>
+         </properties>
+      </Item>
+      <Item class="oracle.javatools.db.FKConstraint">
+         <ID class="oracle.jdeveloper.offlinedb.OfflineDBObjectID">
+            <ID>96d5c983-010b-1000-8018-7f000001e5ee</ID>
+            <parent idref="0"/>
+            <type>CONSTRAINT</type>
+         </ID>
+         <columns>
+            <Item idref="4"/>
+         </columns>
+         <deleteMode>0</deleteMode>
+         <enabled>true</enabled>
+         <name>CONTA_FINANCEIRA_USUARIO_FK1</name>
+         <properties class="java.util.HashMap">
+            <Item>
+               <Key>OfflineDBConstants.IMPORT_SOURCE_ID</Key>
+               <Value class="oracle.jdeveloper.offlinedb.marshal.GenericDBReferenceID">
+                  <ID/>
+                  <name>CONTA_FINANCEIRA_USUARIO_FK1</name>
+                  <parent class="oracle.jdeveloper.offlinedb.marshal.OracleDBReferenceID">
+                     <ID/>
+                     <connectionName>Nemesis</connectionName>
+                     <databaseID>13789</databaseID>
+                     <name>CONTA_FINANCEIRA</name>
+                     <parent/>
+                     <schemaName>NEMESIS</schemaName>
+                     <type>TABLE</type>
+                  </parent>
+                  <schemaName/>
+                  <type>CONSTRAINT</type>
+               </Value>
+            </Item>
+         </properties>
+         <referenceID class="oracle.jdeveloper.offlinedb.OfflineDBObjectID">
+            <ID>96d5c983-010b-1000-80e4-7f000001e5ee</ID>
+            <parent class="oracle.jdeveloper.offlinedb.OfflineDBObjectID">
+               <ID>96d5c983-010b-1000-80d9-7f000001e5ee</ID>
+               <parent/>
+               <type>TABLE</type>
+            </parent>
+            <type>CONSTRAINT</type>
+         </referenceID>
+      </Item>
+      <Item class="oracle.javatools.db.CheckConstraint">
+         <ID class="oracle.jdeveloper.offlinedb.OfflineDBObjectID">
+            <ID>96d5c983-010b-1000-8019-7f000001e5ee</ID>
+            <parent idref="0"/>
+            <type>CONSTRAINT</type>
+         </ID>
+         <checkCondition>conta_paga  = 1 or conta_paga = 0</checkCondition>
+         <enabled>true</enabled>
+         <name>CONTA_FINANCEIRA_CHK1</name>
+         <properties class="java.util.HashMap">
+            <Item>
+               <Key>OfflineDBConstants.IMPORT_SOURCE_ID</Key>
+               <Value class="oracle.jdeveloper.offlinedb.marshal.GenericDBReferenceID">
+                  <ID/>
+                  <name>CONTA_FINANCEIRA_CHK1</name>
+                  <parent class="oracle.jdeveloper.offlinedb.marshal.OracleDBReferenceID">
+                     <ID/>
+                     <connectionName>Nemesis</connectionName>
+                     <databaseID>13789</databaseID>
+                     <name>CONTA_FINANCEIRA</name>
+                     <parent/>
+                     <schemaName>NEMESIS</schemaName>
+                     <type>TABLE</type>
+                  </parent>
+                  <schemaName/>
+                  <type>CONSTRAINT</type>
+               </Value>
+            </Item>
+         </properties>
+      </Item>
+      <Item class="oracle.javatools.db.FKConstraint">
+         <ID class="oracle.jdeveloper.offlinedb.OfflineDBObjectID">
+            <ID>96d5c983-010b-1000-801a-7f000001e5ee</ID>
+            <parent idref="0"/>
+            <type>CONSTRAINT</type>
+         </ID>
+         <columns>
+            <Item idref="5"/>
+         </columns>
+         <deleteMode>0</deleteMode>
+         <enabled>true</enabled>
+         <name>CONTA_FINANCEIRA_OBSERVAC_FK1</name>
+         <properties class="java.util.HashMap">
+            <Item>
+               <Key>OfflineDBConstants.IMPORT_SOURCE_ID</Key>
+               <Value class="oracle.jdeveloper.offlinedb.marshal.GenericDBReferenceID">
+                  <ID/>
+                  <name>CONTA_FINANCEIRA_OBSERVAC_FK1</name>
+                  <parent class="oracle.jdeveloper.offlinedb.marshal.OracleDBReferenceID">
+                     <ID/>
+                     <connectionName>Nemesis</connectionName>
+                     <databaseID>13789</databaseID>
+                     <name>CONTA_FINANCEIRA</name>
+                     <parent/>
+                     <schemaName>NEMESIS</schemaName>
+                     <type>TABLE</type>
+                  </parent>
+                  <schemaName/>
+                  <type>CONSTRAINT</type>
+               </Value>
+            </Item>
+         </properties>
+         <referenceID class="oracle.jdeveloper.offlinedb.OfflineDBObjectID">
+            <ID>96d5c983-010b-1000-807b-7f000001e5ee</ID>
+            <parent class="oracle.jdeveloper.offlinedb.OfflineDBObjectID">
+               <ID>96d5c983-010b-1000-8077-7f000001e5ee</ID>
+               <parent/>
+               <type>TABLE</type>
+            </parent>
+            <type>CONSTRAINT</type>
+         </referenceID>
+      </Item>
+      <Item class="oracle.javatools.db.UniqueConstraint">
+         <ID class="oracle.jdeveloper.offlinedb.OfflineDBObjectID">
+            <ID>96d5c983-010b-1000-801b-7f000001e5ee</ID>
+            <parent idref="0"/>
+            <type>CONSTRAINT</type>
+         </ID>
+         <columns>
+            <Item idref="5"/>
+         </columns>
+         <enabled>true</enabled>
+         <name>CONTA_FINANCEIRA_UK1</name>
+         <properties class="java.util.HashMap">
+            <Item>
+               <Key>OfflineDBConstants.IMPORT_SOURCE_ID</Key>
+               <Value class="oracle.jdeveloper.offlinedb.marshal.GenericDBReferenceID">
+                  <ID/>
+                  <name>CONTA_FINANCEIRA_UK1</name>
+                  <parent class="oracle.jdeveloper.offlinedb.marshal.OracleDBReferenceID">
+                     <ID/>
+                     <connectionName>Nemesis</connectionName>
+                     <databaseID>13789</databaseID>
+                     <name>CONTA_FINANCEIRA</name>
+                     <parent/>
+                     <schemaName>NEMESIS</schemaName>
+                     <type>TABLE</type>
+                  </parent>
+                  <schemaName/>
+                  <type>CONSTRAINT</type>
+               </Value>
+            </Item>
+         </properties>
+      </Item>
+      <Item class="oracle.javatools.db.FKConstraint">
+         <ID class="oracle.jdeveloper.offlinedb.OfflineDBObjectID">
+            <ID>96d5c983-010b-1000-801c-7f000001e5ee</ID>
+            <parent idref="0"/>
+            <type>CONSTRAINT</type>
+         </ID>
+         <columns>
+            <Item idref="6"/>
+         </columns>
+         <deleteMode>0</deleteMode>
+         <enabled>true</enabled>
+         <name>CONTA_FINANCEIRA_PESSOA_FK1</name>
+         <properties class="java.util.HashMap">
+            <Item>
+               <Key>OfflineDBConstants.IMPORT_SOURCE_ID</Key>
+               <Value class="oracle.jdeveloper.offlinedb.marshal.GenericDBReferenceID">
+                  <ID/>
+                  <name>CONTA_FINANCEIRA_PESSOA_FK1</name>
+                  <parent class="oracle.jdeveloper.offlinedb.marshal.OracleDBReferenceID">
+                     <ID/>
+                     <connectionName>Nemesis</connectionName>
+                     <databaseID>13789</databaseID>
+                     <name>CONTA_FINANCEIRA</name>
+                     <parent/>
+                     <schemaName>NEMESIS</schemaName>
+                     <type>TABLE</type>
+                  </parent>
+                  <schemaName/>
+                  <type>CONSTRAINT</type>
+               </Value>
+            </Item>
+         </properties>
+         <referenceID class="oracle.jdeveloper.offlinedb.OfflineDBObjectID">
+            <ID>96d5c983-010b-1000-80a9-7f000001e5ee</ID>
+            <parent class="oracle.jdeveloper.offlinedb.OfflineDBObjectID">
+               <ID>96d5c983-010b-1000-808e-7f000001e5ee</ID>
+               <parent/>
+               <type>TABLE</type>
+            </parent>
+            <type>CONSTRAINT</type>
+         </referenceID>
+      </Item>
+   </constraints>
+   <indexes class="[Loracle.javatools.db.Index;"/>
+   <name>CONTA_FINANCEIRA</name>
+   <properties class="java.util.HashMap">
+      <Item>
+         <Key>OfflineDBConstants.IMPORT_SOURCE_CONNECTION</Key>
+         <Value>Nemesis</Value>
+      </Item>
+      <Item>
+         <Key>OfflineDBConstants.IMPORT_SOURCE_ID</Key>
+         <Value class="oracle.jdeveloper.offlinedb.marshal.OracleDBReferenceID">
+            <ID/>
+            <connectionName>Nemesis</connectionName>
+            <databaseID>13789</databaseID>
+            <name>CONTA_FINANCEIRA</name>
+            <parent/>
+            <schemaName>NEMESIS</schemaName>
+            <type>TABLE</type>
+         </Value>
+      </Item>
+      <Item>
+         <Key>OfflineDBConstants.IMPORT_SOURCE_NAME</Key>
+         <Value>CONTA_FINANCEIRA</Value>
+      </Item>
+      <Item>
+         <Key>OfflineDBConstants.IMPORT_SOURCE_SCHEMA</Key>
+         <Value>NEMESIS</Value>
+      </Item>
+      <Item>
+         <Key>OracleStorageProperties</Key>
+         <Value class="oracle.javatools.db.ora.OracleStorageProperties">
+            <bufferMode>0</bufferMode>
+            <freelistGroups/>
+            <freelists/>
+            <initialExtent>65536</initialExtent>
+            <initrans>1</initrans>
+            <logging>true</logging>
+            <maxExtent>2147483645</maxExtent>
+            <maxtrans>255</maxtrans>
+            <minExtent>1</minExtent>
+            <nextExtent/>
+            <percentFree/>
+            <percentIncrease/>
+            <percentUsed/>
+            <tablespace>USERS</tablespace>
+         </Value>
+      </Item>
+      <Item>
+         <Key>TableType</Key>
+         <Value>Normal</Value>
+      </Item>
+   </properties>
+   <schema>
+      <ID class="oracle.jdeveloper.offlinedb.OfflineDBObjectID">
+         <ID>87e2105b-010b-1000-8001-7f0000015b2a</ID>
+         <parent/>
+         <type>SCHEMA</type>
+      </ID>
+      <name>NEMESIS</name>
+      <properties/>
+   </schema>
+</TABLE>

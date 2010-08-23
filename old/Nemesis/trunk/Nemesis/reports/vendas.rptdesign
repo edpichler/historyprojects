@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Written by Eclipse BIRT 2.0 -->
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 2.0.1 Build &lt;20060222-1204></property>
+    <property name="units">in</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">nemesis library.rptlibrary</property>
+            <property name="namespace">nemesis library</property>
+        </structure>
+    </list-property>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="NewOdaDataSet" id="4"
+ extends="nemesis library.Vendas"/>
+    </data-sets>
+    <styles>
+        <style name="table-header" id="57">
+            <property name="backgroundColor">#000000</property>
+            <property name="fontFamily">Arial</property>
+            <property name="fontWeight">bold</property>
+            <property name="color">#FFFFFF</property>
+            <property name="textAlign">center</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <text id="58">
+            <property name="fontFamily">Arial</property>
+            <property name="fontSize">x-large</property>
+            <property name="fontWeight">bold</property>
+            <property name="textAlign">center</property>
+            <property name="contentType">plain</property>
+            <text-property name="content"><![CDATA[Vendas]]></text-property>
+        </text>
+        <table id="5">
+            <property name="width">100%</property>
+            <property name="dataSet">NewOdaDataSet</property>
+            <column id="49"/>
+            <column id="50"/>
+            <column id="52"/>
+            <column id="53"/>
+            <column id="54"/>
+            <column id="55"/>
+            <header>
+                <row id="6">
+                    <property name="fontFamily">Arial</property>
+                    <property name="fontSize">small</property>
+                    <cell id="7">
+                        <label id="8">
+                            <text-property name="text">Vendedor</text-property>
+                        </label>
+                    </cell>
+                    <cell id="9">
+                        <label id="10">
+                            <text-property name="text">Cliente</text-property>
+                        </label>
+                    </cell>
+                    <cell id="13">
+                        <label id="14">
+                            <text-property name="text">Produto</text-property>
+                        </label>
+                    </cell>
+                    <cell id="15">
+                        <label id="16">
+                            <text-property name="text">Valor</text-property>
+                        </label>
+                    </cell>
+                    <cell id="17">
+                        <label id="18">
+                            <text-property name="text">Data Pagamento</text-property>
+                        </label>
+                    </cell>
+                    <cell id="19">
+                        <label id="20">
+                            <text-property name="text">Conta Paga</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </header>
+            <detail>
+                <row id="23">
+                    <property name="fontSize">small</property>
+                    <cell id="24">
+                        <data id="25">
+                            <expression name="valueExpr">row["Vendedor"]</expression>
+                        </data>
+                    </cell>
+                    <cell id="26">
+                        <data id="27">
+                            <expression name="valueExpr">row["Cliente"]</expression>
+                        </data>
+                    </cell>
+                    <cell id="30">
+                        <data id="31">
+                            <expression name="valueExpr">row["Produto"]</expression>
+                        </data>
+                    </cell>
+                    <cell id="32">
+                        <data id="33">
+                            <property name="textAlign">right</property>
+                            <expression name="valueExpr">row["Valor"]</expression>
+                        </data>
+                    </cell>
+                    <cell id="34">
+                        <data id="35">
+                            <property name="textAlign">center</property>
+                            <expression name="valueExpr">row["Data Pagamento"]</expression>
+                        </data>
+                    </cell>
+                    <cell id="36">
+                        <data id="37">
+                            <property name="textAlign">center</property>
+                            <expression name="valueExpr">row["Conta Paga"]</expression>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+            <footer>
+                <row id="40">
+                    <cell id="41"/>
+                    <cell id="42"/>
+                    <cell id="44"/>
+                    <cell id="45"/>
+                    <cell id="46"/>
+                    <cell id="47"/>
+                </row>
+            </footer>
+        </table>
+    </body>
+</report>

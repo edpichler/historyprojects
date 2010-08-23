@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas  xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:grids="grids.*">
+	<mx:states>
+		<mx:State name="seleciona">
+			<mx:AddChild relativeTo="{hbox1}" position="lastChild">
+				<mx:Form   width="40%">		
+					<mx:FormItem label="Nome:">
+						<mx:TextInput text="{medico.nome}" id="txtNome"/>
+					</mx:FormItem>
+					
+					<mx:FormItem label="Cpf:">
+						<mx:TextInput text="{medico.cpf}" id="txtCpf"/>
+					</mx:FormItem>
+					
+					<mx:FormItem label="Rg:">
+						<mx:TextInput text="{medico.rg}" id="txtRg"/>
+					</mx:FormItem>
+					
+					<mx:FormItem label="Data Nasc.:">
+						<mx:DateField id="dtDataNasc" formatString="DD/MM/YYYY" selectedDate="{medico.dataNascimento}" showToday="true" editable="true"/>
+					</mx:FormItem>
+					
+					<mx:FormItem label="Sexo:" id="formitem1">
+					<mx:RadioButtonGroup id="sexoGroup"/>	
+					<mx:RadioButton label="Masculino" id="rdMasc"
+						selected="{medico.sexo}"/>
+					<mx:RadioButton label="Feminino" id="rdFem"			
+						selected="{!medico.sexo}"/>			
+					</mx:FormItem>
+					
+					<mx:FormItem label="Telefone:">
+						<mx:TextInput text="{medico.telefone}" id="txtTel"/>
+					</mx:FormItem>
+					
+					<mx:FormItem label="E-mail:">
+						<mx:TextInput text="{medico.email}" id="txtEmail"/>
+					</mx:FormItem>							
+					<mx:HBox width="100%" height="10%" horizontalAlign="center">
+						<mx:Button label="Cancelar" click="cancela();"/>
+						<mx:Button label="Salvar" click="salva();"/>
+					</mx:HBox>	
+				</mx:Form>
+			</mx:AddChild>
+		</mx:State>
+	</mx:states>
+	<mx:Script>
+		<![CDATA[
+			import mx.events.DataGridEvent;
+			import mx.rpc.events.ResultEvent;
+			import mx.binding.utils.BindingUtils;
+			import mx.controls.Alert;			
+			import mx.rpc.events.FaultEvent;
+			import com.pichler.Medico;
+			import mx.binding.utils.*;
+			
+			[Bindable]
+			public var medico:Medico;
+			private static const VIEWSTATE_VISUALIZADO : String = 'seleciona';
+			
+			public function errorHandler(event:FaultEvent):void {
+				Alert.show(event.fault.message);
+			}		
+
+			private function salva():void{
+				this.medico.cpf = txtCpf.text;
+				this.medico.dataNascimento = this.dtDataNasc.selectedDate;
+				this.medico.email = this.txtEmail.text;
+				this.medico.nome = this.txtNome.text;
+				this.medico.rg = this.txtRg.text;
+				this.medico.sexo = this.rdMasc.selected;
+				this.medico.telefone = this.txtTel.text;				
+				insertMedicoService.salvarMedico();
+			}
+			public function mostraMedico( med:Medico) :void{
+				this.medico = med;			
+				this.currentState = VIEWSTATE_VISUALIZADO;
+			}
+			private function cancela():void{
+				this.currentState = '';
+			}
+			private function novo():void {
+				this.currentState = VIEWSTATE_VISUALIZADO;				
+				medico = new Medico();
+			}
+			private function atualiza():void{
+				grid.atualizar();
+				cancela();
+			}
+		]]>		
+	</mx:Script>
+	<mx:VBox x="0" y="0" height="100%" width="100%" horizontalAlign="left">
+		<mx:HBox horizontalAlign="left">
+			<mx:Button label="Novo" click="novo();"/>
+			<mx:Button label="Excluir" enabled="false"/>
+			<mx:Button label="Atualizar" click="atualiza()" />
+		</mx:HBox>
+		<mx:HBox width="100%" id="hbox1">
+			<grids:GridMedicos cnvMedicos="{this}" id="grid" width="500" height="300">
+			</grids:GridMedicos>
+		</mx:HBox>
+	</mx:VBox>	
+	<mx:WebService
+		id="insertMedicoService"
+		wsdl="{com.pichler.WebService.WSDL_LOCATION}"
+		showBusyCursor="true" 
+		fault="errorHandler(event)"
+		result="atualiza()">
+		<mx:operation name="salvarMedico">
+			<mx:request>
+				<med>
+					{medico}
+				</med>
+			</mx:request>
+		</mx:operation>
+	</mx:WebService>
+</mx:Canvas>

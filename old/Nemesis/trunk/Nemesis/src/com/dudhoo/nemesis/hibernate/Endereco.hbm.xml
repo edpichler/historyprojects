@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 23/01/2006 21:05:42 by Hibernate Tools 3.1.0 beta1JBIDERC2 -->
+<hibernate-mapping>
+	<class name="com.dudhoo.nemesis.hibernate.Endereco" table="ENDERECO"
+		schema="NEMESIS">
+		<id name="id" type="long">
+			<column name="ID" precision="10" scale="0" />
+			<generator class="identity"/>
+		</id>
+		<many-to-one name="observacao"
+			class="com.dudhoo.nemesis.hibernate.Observacao" fetch="select" cascade="all" lazy="false">
+			<column name="OBSERVACAO_ID" precision="10" scale="0"
+				unique="true" />
+		</many-to-one>
+		<many-to-one name="usuario" class="com.dudhoo.nemesis.hibernate.Usuario" 
+			fetch="select">
+			<column name="USUARIO_ID" precision="10" scale="0" 
+				not-null="true" />
+		</many-to-one>
+		<many-to-one name="cidade" class="com.dudhoo.nemesis.hibernate.Cidade" cascade="save-update" 
+			fetch="select" lazy="false">
+			<column name="CIDADE_ID" precision="10" scale="0"
+				not-null="true" />
+		</many-to-one>
+		<property name="rua" type="string">
+			<column name="RUA" length="150" not-null="true" />
+		</property>
+		<property name="bairro" type="string">
+			<column name="BAIRRO" length="100" not-null="true" />
+		</property>
+		<property name="ultMod"  insert="false" type="date">
+			<column name="ULT_MOD" length="7" not-null="false" />
+		</property>
+		<property name="cep" type="string">
+			<column name="CEP" length="8" not-null="true" />
+		</property>
+		<property name="complemento" type="string">
+			<column name="COMPLEMENTO" length="150" />
+		</property>
+		<property name="proximidade" type="string">
+			<column name="PROXIMIDADE" length="150" />
+		</property>
+		<property name="numero" type="string">
+			<column name="NUMERO" length="7" not-null="true" />
+		</property>
+		<property name="andar" type="string">
+			<column name="ANDAR" length="3" />
+		</property>
+		<set name="pessoas" inverse="true">
+			<key>
+				<column name="ENDERECO_ID" precision="10" scale="0"
+					not-null="true" unique="true" />
+			</key>
+			<one-to-many class="com.dudhoo.nemesis.hibernate.Pessoa" />
+		</set>
+	</class>
+</hibernate-mapping>

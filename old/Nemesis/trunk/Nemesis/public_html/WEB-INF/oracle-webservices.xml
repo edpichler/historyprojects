@@ -1,0 +1,13 @@
+<oracle-webservices xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xmlns.oracle.com/oracleas/schema/oracle-webservices-10_0.xsd">
+    <webservice-description name="NWebService">
+        <port-component name="NWebServiceSoap12HttpPort">
+            <operations>
+                <operation name="getAllProdutos" input="{http://webservices.nemesis.dudhoo.com/}getAllProdutosElement"/>
+                <operation name="getTimestamp" input="{http://webservices.nemesis.dudhoo.com/}getTimestampElement"/>
+                <operation name="newClientePf" input="{http://webservices.nemesis.dudhoo.com/}newClientePfElement"/>
+                <operation name="newClientePj" input="{http://webservices.nemesis.dudhoo.com/}newClientePjElement"/>
+                <operation name="newOrder" input="{http://webservices.nemesis.dudhoo.com/}newOrderElement"/>
+            </operations>
+        </port-component>
+    </webservice-description>
+</oracle-webservices>

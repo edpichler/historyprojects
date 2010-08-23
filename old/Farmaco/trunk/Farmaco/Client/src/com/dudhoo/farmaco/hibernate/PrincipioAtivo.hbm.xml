@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.dudhoo.farmaco.hibernate.PrincipioAtivo"
+           table="PRINCIPIO_ATIVO">
+        <id name="id" type="int">
+            <column name="ID"/>
+            <generator class="identity"/>
+        </id>
+        <property name="nome" type="string">
+            <column name="NOME" length="300" not-null="true" unique="true"/>
+        </property>
+        <property name="descricao" type="string" >
+            <column name="DESCRICAO" length="30000" not-null="true"/>
+        </property>
+        <property name="interacoes" type="string">
+            <column name="INTERACOES" length="30000"/>
+        </property>
+        <property name="indicacoes" type="string">
+            <column name="INDICACOES" length="30000"/>
+        </property>
+        <property name="contraIndicacoes" type="string">
+            <column name="CONTRA_INDICACOES" length="30000"/>
+        </property>
+        <property name="precaucoes" type="string">
+            <column name="PRECAUSOES" length="30000"/>
+        </property>
+        <property name="cuidadosEspeciais" type="string">
+            <column name="CUIDADOS_ESPECIAIS" length="30000"/>
+        </property>
+        <property name="reacoesAdversas" type="string">
+            <column name="REACOES_ADVERSAS" length="30000"/>
+        </property>
+        <property name="ultMod" type="date" update="false" insert="false">
+            <column name="ULT_MOD" length="7" not-null="true"/>
+        </property>
+        <set name="nomesComerciais" inverse="true" lazy="false" cascade="all">
+            <key>
+                <column name="PRINCIPIO_ATIVO_ID"
+                        not-null="true"/>
+            </key>
+            <one-to-many class="com.dudhoo.farmaco.hibernate.NomeComercial"/>
+        </set>
+        <set name="apresentacoesFarmaceuticas" inverse="true" lazy="false" cascade="all">
+            <key>
+                <column name="PRINCIPIO_ATIVO_ID" 
+                        not-null="true"/>
+            </key>
+            <one-to-many class="com.dudhoo.farmaco.hibernate.ApresentacaoFarmaceutica"/>
+        </set>
+    </class>
+</hibernate-mapping>

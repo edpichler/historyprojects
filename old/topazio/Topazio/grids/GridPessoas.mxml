@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:DataGrid xmlns:mx="http://www.adobe.com/2006/mxml" creationComplete="this.consultarPessoasService.getPessoas()" itemClick="clicou(event)">
+	<mx:DateFormatter id="dtFormat" formatString="DD/MM/YYYY"/>
+	<mx:columns>
+        <mx:DataGridColumn dataField="nome" headerText="Nome"/>
+        <mx:DataGridColumn dataField="dataNascimento" labelFunction="formataData"  headerText="Data Nasc." />
+    	<mx:DataGridColumn dataField="telefone" headerText="Telefone"/>
+    	<mx:DataGridColumn dataField="cpf" headerText="CPF"/>
+		<mx:DataGridColumn dataField="rg" headerText="RG"/>
+	</mx:columns>
+	<mx:Script>
+		<![CDATA[
+			import mx.events.ListEvent;
+			import forms.CnvPessoas;
+		import mx.rpc.events.ResultEvent;	
+		import mx.collections.ArrayCollection;
+		import mx.rpc.events.FaultEvent;
+		import com.pichler.*;
+		
+		import mx.controls.Alert;
+		
+		public var cnvPessoas : CnvPessoas;
+		
+		public function handleWebServiceResult(event:ResultEvent):void {
+			this.dataProvider = event.result;
+		}
+		
+		public function atualiza():void{
+			this.consultarPessoasService.getPessoas.send();
+		}
+	
+		public function errorHandler(event:FaultEvent):void {
+			Alert.show(event.fault.message);
+		}		
+			
+		private function formataData(item:Object, col:DataGridColumn):String
+		{
+			return dtFormat.format(item.dataNascimento);
+		}
+		
+		private function clicou(evt:ListEvent):void{
+			if (this.cnvPessoas != null && this.selectedIndex != -1){					
+					var pess : Pessoa;
+					pess = new Pessoa();
+					pess.cpf = this.selectedItem.cpf;
+					pess.dataNascimento = this.selectedItem.dataNascimento;
+					pess.email = this.selectedItem.email;
+					pess.id = this.selectedItem.id;
+					pess.nome = this.selectedItem.nome;
+					pess.rg = this.selectedItem.rg;
+					pess.sexo = this.selectedItem.sexo;
+					pess.telefone = this.selectedItem.telefone;
+					pess.ultMod = this.selectedItem.ultMod;
+					this.cnvPessoas.mostraPessoa( pess);
+				}
+		}
+		]]>
+	</mx:Script>
+	<mx:WebService
+		id="consultarPessoasService"
+		useProxy="false"
+		wsdl="{com.pichler.WebService.WSDL_LOCATION}">
+		<mx:operation
+			name="getPessoas"
+			result="handleWebServiceResult(event)"
+			fault="errorHandler(event)">
+				<mx:request>
+					<nome></nome> 
+					<maxResults>200</maxResults> 
+				</mx:request>
+			</mx:operation>
+	</mx:WebService>
+</mx:DataGrid>

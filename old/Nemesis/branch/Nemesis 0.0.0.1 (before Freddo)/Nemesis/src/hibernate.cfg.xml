@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.cglib.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+        <property name="hibernate.connection.password">nemesis</property>
+        <property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>
+        <property name="hibernate.connection.username">nemesis</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.Oracle9Dialect</property>
+	<property name="hibernate.format_sql">false</property>
+        <property name="hibernate.use_sql_comments">false</property>        
+        <property name="hibernate.show_sql">true</property>	
+        <property name="hibernate.jdbc.use_get_generated_keys">true</property>
+        <!-- property name="hibernate.hbm2ddl.auto">validate</property -->
+        
+        <mapping resource="com/dudhoo/nemesis/hibernate/Observacao.hbm.xml" />
+        <mapping resource="com/dudhoo/nemesis/hibernate/Usuario.hbm.xml" />
+        <mapping resource="com/dudhoo/nemesis/hibernate/Endereco.hbm.xml" />
+        <mapping resource="com/dudhoo/nemesis/hibernate/Estado.hbm.xml" />
+        <mapping resource="com/dudhoo/nemesis/hibernate/Permissoes.hbm.xml" />
+        <mapping resource="com/dudhoo/nemesis/hibernate/Cidade.hbm.xml" />
+        <mapping resource="com/dudhoo/nemesis/hibernate/PessoaJuridica.hbm.xml" />
+	<mapping resource="com/dudhoo/nemesis/hibernate/PessoaFisica.hbm.xml" />
+        <mapping resource="com/dudhoo/nemesis/hibernate/Pessoa.hbm.xml" />
+        <mapping resource="com/dudhoo/nemesis/hibernate/Empresa.hbm.xml" />
+        <mapping resource="com/dudhoo/nemesis/hibernate/GrupoUsuario.hbm.xml" />
+        <mapping resource="com/dudhoo/nemesis/hibernate/Ramo.hbm.xml" />
+        <mapping resource="com/dudhoo/nemesis/hibernate/Imagem.hbm.xml" />
+        <mapping resource="com/dudhoo/nemesis/hibernate/Pais.hbm.xml" />
+	<mapping resource="com/dudhoo/nemesis/hibernate/Produto.hbm.xml" />
+	<mapping resource="com/dudhoo/nemesis/hibernate/abstracts/ContaFinanceira.hbm.xml" />
+	<mapping resource="com/dudhoo/nemesis/hibernate/MovimentoEstoque.hbm.xml" />
+    </session-factory>
+</hibernate-configuration>

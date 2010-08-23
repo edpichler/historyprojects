@@ -1,0 +1,3 @@
+relre:.metadata/*
+relre:/*.class
+glob:*/.svn/*

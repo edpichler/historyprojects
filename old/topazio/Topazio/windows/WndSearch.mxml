@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml" creationComplete="handleCreationComplete()" showCloseButton="true" layout="vertical" close="close()">
+	<mx:Script>
+        <![CDATA[
+        	import mx.events.CloseEvent;
+        	import mx.controls.dataGridClasses.DataGridColumn;
+        	import mx.controls.Alert;
+	    	import mx.rpc.events.FaultEvent;
+	        import mx.managers.PopUpManager;		
+			
+	        private function close():void {
+	            // Check credentials (not shown) then remove pop up.
+	            PopUpManager.removePopUp(this);
+	        }
+	        
+			/**
+				Dispatch the close Event of the TitleWindow
+			*/
+	        protected function closeWindow():void{
+		        this.dispatchEvent(new CloseEvent(CloseEvent.CLOSE, false));
+	        }
+	        
+	         private function handleCreationComplete():void {
+	            // Center the TitleWindow container 
+	            // over the control that created it.
+	            PopUpManager.centerPopUp(this);
+	        }
+            
+			public function errorHandler(event:FaultEvent):void {
+				Alert.show(event.fault.message);
+			}	
+			
+			public function formataData(item:Object, col:DataGridColumn):String
+			{
+				return dtFormat.format(item.dataNascimento);
+			}
+			
+			protected function checkItemSelected():void{
+				if(this.grid.selectedIndex == -1 && this.grid.rowCount > 0){
+					throw new Error("Selecione pelo menos um item.");
+				}
+			}
+        ]]>
+    </mx:Script>
+	<mx:DateFormatter id="dtFormat" formatString="DD/MM/YYYY"/>
+	<mx:HBox width="100%">
+		<mx:TextInput id="txtSearch" editable="true" toolTip="Digite um texto chave para ajudar com a busca."/>
+		<mx:Button label="Procurar" id="btnProcurar"/>
+	</mx:HBox>
+	<mx:HBox width="100%">
+		<mx:DataGrid id="grid">
+			
+		</mx:DataGrid>
+	</mx:HBox>
+	<mx:HBox width="100%" horizontalAlign="right">
+		<mx:Button label="Cancelar" id="btnCancelar" toolTip="Cancela a operação e fecha esta janela." click="closeWindow()"/>
+		<mx:Button label="Ok" id="btnOk"/>
+	</mx:HBox>
+</mx:TitleWindow>

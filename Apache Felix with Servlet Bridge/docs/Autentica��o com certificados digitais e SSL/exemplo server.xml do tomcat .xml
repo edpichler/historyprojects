@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Server port="${shutdown.port}" shutdown="SHUTDOWN">
+
+  <Listener className="org.apache.catalina.core.JasperListener"/>
+  <Listener className="org.apache.catalina.mbeans.ServerLifecycleListener"/>
+  <Listener className="org.apache.catalina.mbeans.GlobalResourcesLifecycleListener"/>
+
+  <Listener accessFile="${catalina.base}/conf/jmxremote.access" authenticate="true" bind="127.0.0.1" className="com.springsource.tcserver.serviceability.rmi.JmxSocketListener" passwordFile="${catalina.base}/conf/jmxremote.password" port="${jmx.port}" useSSL="false"/>
+
+  <Listener className="com.springsource.tcserver.serviceability.deploy.TcContainerDeployer"/>
+
+  <GlobalNamingResources>
+    <Resource auth="Container" description="User database that can be updated and saved" factory="org.apache.catalina.users.MemoryUserDatabaseFactory" name="UserDatabase" pathname="conf/tomcat-users.xml" type="org.apache.catalina.UserDatabase"/>
+  </GlobalNamingResources>
+
+  <Service name="Catalina">
+  
+    <Executor maxThreads="300" minSpareThreads="50" name="tomcatThreadPool" namePrefix="tomcat-http--"/>
+
+     <Connector 
+               executor="tomcatThreadPool"
+               port="8080" 
+               protocol="HTTP/1.1" 
+               connectionTimeout="20000" 
+               redirectPort="8443" 
+               acceptCount="100"
+               maxKeepAliveRequests="15"/>
+  <Connector 
+               executor="tomcatThreadPool"
+               port="8443" 
+               protocol="HTTP/1.1" 
+               connectionTimeout="20000" 
+               redirectPort="8443" 
+               acceptCount="100"
+               maxKeepAliveRequests="15"
+               keystoreFile="${user.home}/.keystore"
+               keystorePass="pichler"
+               keyAlias="tomcat"
+               SSLEnabled="true"
+			   clientAuth="false"
+               scheme="https"
+               secure="true"/>
+
+             
+   
+              />
+		
+    <Engine defaultHost="localhost" name="Catalina">
+
+      <Realm className="org.apache.catalina.realm.UserDatabaseRealm" resourceName="UserDatabase"/>
+
+      <Host appBase="webapps" autoDeploy="true" deployOnStartup="true" deployXML="true" name="localhost" unpackWARs="true" xmlNamespaceAware="false" xmlValidation="false">
+      <Context docBase="C:\springsource\tc-server-6.0.20.C\wtpwebapps\geoLocationApp" path="/geoLocationApp" reloadable="true" source="org.eclipse.jst.j2ee.server:geoLocationApp"/></Host>
+    </Engine>
+  </Service>
+</Server>

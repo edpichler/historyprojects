@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 23/01/2006 21:05:42 by Hibernate Tools 3.1.0 beta1JBIDERC2 -->
+<hibernate-mapping>
+    <class name="com.dudhoo.nemesis.hibernate.Usuario" table="USUARIO" schema="NEMESIS">
+        <id name="id" type="long">
+            <column name="ID" precision="10" scale="0" />
+            <generator class="identity"/>
+        </id>        
+        <property name="username" type="string">
+            <column name="USERNAME" length="50" not-null="true" unique="true" />
+        </property>
+        <property name="senha" type="string">
+            <column name="SENHA" length="50" not-null="true" />
+        </property>
+        <property name="nome" type="string">
+            <column name="NOME" length="100" not-null="true" />
+        </property>
+        <property name="celular" type="string">
+            <column name="CELULAR" length="22" />
+        </property>
+        <property name="email" type="string">
+            <column name="EMAIL" length="100" />
+        </property>
+        <property name="expira" type="date">
+            <column name="EXPIRA" length="7" />
+        </property>
+        <property name="imagemId" type="java.lang.Long">
+            <column name="IMAGEM_ID" precision="10" scale="0" unique="true" />
+        </property>
+	  <property name="grupoUsuarioId" type="long">
+            <column name="grupo_usuario_id" precision="10" scale="0" unique="false" not-null="true"/>
+        </property>
+        <set name="cidades" inverse="true">
+            <key>
+                <column name="USUARIO_ID" precision="10" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.dudhoo.nemesis.hibernate.Cidade" />
+        </set>       
+        <set name="estados" inverse="true">
+            <key>
+                <column name="USUARIO_ID" precision="10" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.dudhoo.nemesis.hibernate.Estado" />
+        </set>
+        <set name="pessoas" inverse="true">
+            <key>
+                <column name="USUARIO_ID" precision="10" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.dudhoo.nemesis.hibernate.Pessoa" />
+        </set>
+        <set name="paises" inverse="true">
+            <key>
+                <column name="USUARIO_ID" precision="10" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.dudhoo.nemesis.hibernate.Pais" />
+        </set>
+        <set name="enderecos" inverse="true">
+            <key>
+                <column name="USUARIO_ID" precision="10" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.dudhoo.nemesis.hibernate.Endereco" />
+        </set>
+        <set name="grupoUsuarios" inverse="true">
+            <key>
+                <column name="USUARIO_ID" precision="10" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.dudhoo.nemesis.hibernate.GrupoUsuario" />
+        </set>
+        <set name="ramos" inverse="true">
+            <key>
+                <column name="USUARIO_ID" precision="10" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.dudhoo.nemesis.hibernate.Ramo" />
+        </set>
+        <set name="imagems" inverse="true">
+            <key>
+                <column name="USUARIO_ID" precision="10" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.dudhoo.nemesis.hibernate.Imagem" />
+        </set>
+    </class>
+</hibernate-mapping>

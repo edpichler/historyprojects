@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SEQUENCE class="oracle.javatools.db.Sequence" xmlns="http://xmlns.oracle.com/jdeveloper/10130/offlinedb">
+   <ID class="oracle.jdeveloper.offlinedb.OfflineDBObjectID">
+      <ID>96d5c983-010b-1000-80f7-7f000001e5ee</ID>
+      <parent/>
+      <type>SEQUENCE</type>
+   </ID>
+   <cacheSize>20</cacheSize>
+   <cycleFlag>false</cycleFlag>
+   <incrementBy>1</incrementBy>
+   <maxValue>999999999999999999999999999</maxValue>
+   <minValue>1</minValue>
+   <name>PRODUTO_SEQ</name>
+   <orderFlag>false</orderFlag>
+   <properties class="java.util.HashMap">
+      <Item>
+         <Key>OfflineDBConstants.IMPORT_SOURCE_CONNECTION</Key>
+         <Value>Nemesis</Value>
+      </Item>
+      <Item>
+         <Key>OfflineDBConstants.IMPORT_SOURCE_ID</Key>
+         <Value class="oracle.jdeveloper.offlinedb.marshal.OracleDBReferenceID">
+            <ID/>
+            <connectionName>Nemesis</connectionName>
+            <databaseID>13825</databaseID>
+            <name>PRODUTO_SEQ</name>
+            <parent/>
+            <schemaName>NEMESIS</schemaName>
+            <type>SEQUENCE</type>
+         </Value>
+      </Item>
+      <Item>
+         <Key>OfflineDBConstants.IMPORT_SOURCE_NAME</Key>
+         <Value>PRODUTO_SEQ</Value>
+      </Item>
+      <Item>
+         <Key>OfflineDBConstants.IMPORT_SOURCE_SCHEMA</Key>
+         <Value>NEMESIS</Value>
+      </Item>
+   </properties>
+   <schema>
+      <ID class="oracle.jdeveloper.offlinedb.OfflineDBObjectID">
+         <ID>87e2105b-010b-1000-8001-7f0000015b2a</ID>
+         <parent/>
+         <type>SCHEMA</type>
+      </ID>
+      <name>NEMESIS</name>
+      <properties/>
+   </schema>
+   <startWith/>
+</SEQUENCE>

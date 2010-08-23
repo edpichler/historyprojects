@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:forms="forms.*" xmlns:grids="grids.*">	
+	<mx:states>
+		<mx:State name="consulta">
+			<mx:AddChild relativeTo="{hbox1}" position="lastChild">
+				<mx:Form>
+					<mx:FormItem label="Paciente">
+					<mx:HBox>
+						<mx:TextInput text="{consulta.paciente.nome}" id="txtPaciente">							
+						</mx:TextInput>
+						<mx:Button label="find" id="button2" click="showSearchPessoas()">							
+						</mx:Button>
+					</mx:HBox>						
+					</mx:FormItem>
+					<mx:FormItem label="Médico">						
+						<mx:HBox>
+							<mx:TextInput text="{consulta.medico.nome}" id="txtMedico">							
+							</mx:TextInput>
+							<mx:Button label="find" id="button3" click="showSearchMedicos()"/>
+						</mx:HBox>
+					</mx:FormItem>
+					<mx:FormItem label="Data da Consulta">					
+						<mx:DateField editable="true" showToday="true" id="dtConsulta" selectedDate="{consulta.data}" formatString="DD/MM/YYYY"/>
+					</mx:FormItem>
+				</mx:Form>
+			</mx:AddChild>
+		</mx:State>		
+	</mx:states>
+	<mx:Script>
+	<![CDATA[
+		import mx.events.CloseEvent;
+		import com.pichler.Medico;
+		import mx.binding.utils.BindingUtils;
+		import mx.rpc.events.AbstractEvent;
+		import com.pichler.Pessoa;
+		import windows.WndSearchMedicos;
+		import windows.WndSearchPessoas;
+		import mx.core.IFlexDisplayObject;
+		import windows.WndSearch;
+		import mx.containers.TitleWindow;
+		import mx.controls.Alert;
+	    import com.pichler.Consulta;
+		import mx.managers.PopUpManager;
+	    private const VIEW_CONSULTA : String = "consulta";
+    	[Bindable]
+	    private var consulta : Consulta;
+		//private var searchPessoaPopUp : WndSearchPessoas;
+		
+		
+		private function nova():void
+		{
+			this.currentState = VIEW_CONSULTA;
+			this.consulta = new Consulta();	   
+			this.consulta.paciente = new Pessoa();
+			this.consulta.medico = new Medico();
+			setBindings(null);
+		}
+		
+		public function setBindings(event:CloseEvent):void{
+			BindingUtils.bindProperty(txtPaciente , 'text', this.consulta.paciente, 'nome');
+ 			BindingUtils.bindProperty(txtMedico, 'text', this.consulta.medico, 'nome');
+ 			BindingUtils.bindProperty(dtConsulta  , 'selectedDate', this.consulta, 'data');
+ 			BindingUtils.bindProperty(this.consulta, 'data', dtConsulta  , 'selectedDate');
+		}
+		
+		private function salvar () : void{
+			
+		}		
+		private function showSearchPessoas():void {		
+			var searchPessoaPopUp:WndSearchPessoas  =
+				WndSearchPessoas(PopUpManager.createPopUp(this.parent, WndSearchPessoas , true));			
+			searchPessoaPopUp.title="Busca de Pessoas";		
+			searchPessoaPopUp.pessoa = this.consulta.paciente;
+			searchPessoaPopUp.addEventListener(CloseEvent.CLOSE, setBindings); 
+		}
+		
+		private function showSearchMedicos():void {			
+            var helpWindow:WndSearchMedicos  =
+				WndSearchMedicos(PopUpManager.createPopUp(this.parent, WndSearchMedicos, true));
+            helpWindow.title="Busca de Médicos";
+			helpWindow.medico = this.consulta.medico;
+            helpWindow.addEventListener(CloseEvent.CLOSE, setBindings); 
+		}
+
+		]]>
+		</mx:Script>
+	<mx:VBox height="100%" id="vbox1">
+		<mx:HBox width="100%">
+			<mx:Button label="Nova" click="nova();" id="button1"/>
+		</mx:HBox>				
+		<mx:HBox width="100%" id="hbox1">
+			<grids:GridConsultas/>
+		</mx:HBox>
+	</mx:VBox>
+</mx:Canvas>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+	<ui:composition template="/template.xhtml">
+		<ui:define name="body">
+			<h:form>
+				<h:panelGrid columns="2">
+					<t:inputText value="#{index.key}"></t:inputText>
+					<t:commandButton value="Buscar" actionListener="#{index.buscar}"></t:commandButton>
+				</h:panelGrid>
+			</h:form>
+			<h:form>
+				<t:dataTable var="row" value="#{index.resultado}"
+					binding="#{index.tabela}">
+					<t:column>
+						<f:facet name="header">Nome</f:facet>
+						<t:commandLink actionListener="#{index.ver}" value="ver"
+							action="#{index.acao}">
+						</t:commandLink>
+					</t:column>
+					<t:column>
+						<f:facet name="header">Nome</f:facet>
+						<t:outputText value="#{row.nome}"></t:outputText>
+					</t:column>
+				</t:dataTable>
+			</h:form>			
+		</ui:define>
+	</ui:composition>
+</jsp:root>

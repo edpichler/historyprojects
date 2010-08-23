@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 15/02/2006 22:14:25 by Hibernate Tools 3.1.0 beta1JBIDERC2 -->
+<hibernate-mapping>
+    <class name="com.dudhoo.nemesis.hibernate.PessoaFisica" table="PESSOA_FISICA" schema="NEMESIS">
+        <id name="id" type="long">
+            <column name="ID" precision="10" scale="0" />
+             <generator class="identity"/>
+        </id>
+        <many-to-one name="pessoa"  class="com.dudhoo.nemesis.hibernate.Pessoa" fetch="select" cascade="all" lazy="false">
+            <column name="PESSOA_ID" precision="10" scale="0" not-null="true" unique="true" />
+        </many-to-one>        
+        <property name="rg" type="string">
+            <column name="RG" length="8" not-null="true" unique="true" />
+        </property>
+        <property name="telefoneResidencial" type="string">
+            <column name="TELEFONE_RESIDENCIAL" length="20" />
+        </property>
+        <property name="conjugeId" type="long">
+            <column name="CONJUGE_ID" precision="10" scale="0" />
+        </property>
+        <property name="estadoCivil" type="int">
+            <column name="ESTADO_CIVIL" precision="1" scale="0" not-null="true" />
+        </property>
+        <property name="profissao" type="string">
+            <column name="PROFISSAO" length="50" />
+        </property>
+        <property name="sexo" type="boolean">
+            <column name="SEXO" precision="1" scale="0" not-null="true" />
+        </property>
+        <property name="cpf" type="string">
+            <column name="CPF" length="11" not-null="true" unique="true" />
+        </property>	
+    </class>
+</hibernate-mapping>

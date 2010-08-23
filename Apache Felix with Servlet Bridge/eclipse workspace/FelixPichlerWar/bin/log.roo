@@ -1,0 +1,20 @@
+// Spring Roo 1.0.2.RELEASE [rev 638] log opened at 2010-05-31 15:11:16
+project --topLevelPackage com.pichler.felixwar --projectName FelixPichlerWar --java 6
+// Spring Roo 1.0.2.RELEASE [rev 638] log closed at 2010-05-31 15:11:16
+// Spring Roo 1.0.2.RELEASE [rev 638] log opened at 2010-05-31 15:11:19
+hint
+persistence setup --database HYPERSONIC_IN_MEMORY --provider HIBERNATE 
+entity --class com.teste.A
+controller all --package com.web
+perform eclipse
+perform eclipse
+exit
+// Spring Roo 1.0.2.RELEASE [rev 638] log closed at 2010-05-31 15:49:50
+// Spring Roo 1.0.2.RELEASE [rev 638] log opened at 2010-05-31 16:35:07
+// [failed] logging setup --level WARN 
+exit
+// Spring Roo 1.0.2.RELEASE [rev 638] log closed at 2010-05-31 16:35:57
+// Spring Roo 1.0.2.RELEASE [rev 638] log opened at 2010-05-31 16:40:55
+perform eclipse
+perform eclipse
+perform eclipse

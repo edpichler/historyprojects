@@ -1,0 +1,7 @@
+ - Administrador pode controlar usuários
+ 
+ 
+ 
+# futuro
+ - Logs no banco
+ - Data e pessoa que criou e alterou tal objeto.

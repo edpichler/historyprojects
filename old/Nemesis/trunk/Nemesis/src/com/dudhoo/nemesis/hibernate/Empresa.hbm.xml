@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 23/01/2006 21:05:43 by Hibernate Tools 3.1.0 beta1JBIDERC2 -->
+<hibernate-mapping>
+	<class name="com.dudhoo.nemesis.hibernate.Empresa" table="EMPRESA"
+		schema="NEMESIS">
+		<id name="id" type="long">
+			<column name="ID" precision="10" scale="0" />
+			<generator class="identity"/>
+		</id>
+		<many-to-one name="pessoaJuridica"
+			class="com.dudhoo.nemesis.hibernate.PessoaJuridica" fetch="select">
+			<column name="PESSOA_JURIDICA_ID" precision="10" scale="0"
+				not-null="true" />
+		</many-to-one>
+		<many-to-one name="imagem" class="com.dudhoo.nemesis.hibernate.Imagem"
+			fetch="select">
+			<column name="IMAGEM_ID" precision="10" scale="0"
+				unique="true" />
+		</many-to-one>
+		<property name="slogan" type="string">
+			<column name="SLOGAN" length="500" />
+		</property>
+		<set name="grupoUsuarios" inverse="true">
+			<key>
+				<column name="EMPRESA_ID" precision="10" scale="0"
+					not-null="true" />
+			</key>
+			<one-to-many class="com.dudhoo.nemesis.hibernate.GrupoUsuario" />
+		</set>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE faces-config PUBLIC
+  "-//Sun Microsystems, Inc.//DTD JavaServer Faces Config 1.0//EN"
+  "http://java.sun.com/dtd/web-facesconfig_1_1.dtd" >
+
+<faces-config>
+	<application>
+		<view-handler>com.sun.facelets.FaceletViewHandler</view-handler>
+	</application>
+
+	<navigation-rule>
+		<from-view-id>/listFarmacos.jspx</from-view-id>
+		<navigation-case>
+			<from-outcome>goEdit</from-outcome>
+			<to-view-id>/editFarmaco.jspx</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<from-view-id>/editFarmaco.jspx</from-view-id>
+		<navigation-case>
+			<from-outcome>list</from-outcome>
+			<to-view-id>/listFarmacos.jspx</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+
+	<navigation-rule>
+		<navigation-case>
+			<from-outcome>index</from-outcome>
+			<to-view-id>/index.jspx</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	<navigation-rule>
+		<from-view-id>/index.jspx</from-view-id>
+		<navigation-case>
+			<from-outcome>ver</from-outcome>
+			<to-view-id>/viewFarmaco.jspx</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<managed-bean>
+		<managed-bean-name>editFarmaco</managed-bean-name>
+		<managed-bean-class>
+			com.farmacopedia.view.EditFarmaco
+		</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>listFarmacos</managed-bean-name>
+		<managed-bean-class>
+			com.farmacopedia.view.ListFarmacos
+		</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>index</managed-bean-name>
+		<managed-bean-class>
+			com.farmacopedia.view.Index
+		</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>viewFarmaco</managed-bean-name>
+		<managed-bean-class>
+			com.farmacopedia.view.ViewFarmaco
+		</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+</faces-config>

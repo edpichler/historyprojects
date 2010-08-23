@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+	<ui:composition template="/template.xhtml">
+		<ui:define name="body">
+			<h:form>
+				<t:commandLink action="index" value="Voltar"></t:commandLink>
+			</h:form>
+			<h2><t:outputText value="#{viewFarmaco.farmaco.nome}" /></h2>
+			<t:outputText value="#{viewFarmaco.farmaco.descricao}" escape="true" />
+		</ui:define>
+	</ui:composition>
+</jsp:root>

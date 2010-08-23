@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config version="1.2" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_1_2.xsd">
+	<converter>
+		<converter-id>dateHumanConverter</converter-id>
+		<converter-class>com.openlastfm.backing.DateHumanConverter</converter-class>
+	</converter>
+	<managed-bean>
+		<managed-bean-name>Conf</managed-bean-name>
+		<managed-bean-class>com.openlastfm.backing.Conf</managed-bean-class>
+		<managed-bean-scope>application</managed-bean-scope>
+		<managed-property>
+			<property-name>secret</property-name>
+			<property-class>java.lang.String</property-class>
+			<value />
+		</managed-property>
+		<managed-property>
+			<property-name>key</property-name>
+			<property-class>java.lang.String</property-class>
+			<value />
+		</managed-property>
+	</managed-bean>
+	<navigation-rule>
+		<navigation-case>
+			<from-outcome>home</from-outcome>
+			<to-view-id>/welcome.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>login</from-outcome>
+			<to-view-id>/login/login.xhtml</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>	
+	<application>
+		<view-handler>com.sun.facelets.FaceletViewHandler</view-handler>
+	</application>
+
+</faces-config>

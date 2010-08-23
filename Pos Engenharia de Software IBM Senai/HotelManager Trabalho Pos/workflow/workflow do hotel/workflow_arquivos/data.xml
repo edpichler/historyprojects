@@ -1,0 +1,1097 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisioDocument>
+	<DocumentProperties>
+		<Title></Title>
+		<HyperlinkBase href=""></HyperlinkBase>
+	</DocumentProperties>
+	<Pages>
+		<Page ID="0" Name="Reserva" NameU="Reserva">
+			<Layer IX="0">
+				<Name>Fluxograma</Name>
+				<NameUniv>Flowchart</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="1">
+				<Name>Conector</Name>
+				<NameUniv>Connector</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Shapes>
+				<Shape ID="1" UniqueID="{3738B030-EC38-4D73-B2FD-2209A4729A7B}" Name="Parallel mode" NameU="Parallel mode" Master="8">
+					<XForm>
+						<PinX Unit="MM">3.543307086614173</PinX>
+						<PinY Unit="MM">11.318897637795279</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1;0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="2" UniqueID="{95F5A802-C968-4AFC-8F20-5AB5A7245D85}" Name="Decision" NameU="Decision" Master="9">
+					<Text>Tipo de Cadastro</Text>
+					<XForm>
+						<PinX Unit="MM">3.543307086614173</PinX>
+						<PinY Unit="MM">10.679133858267720</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="3" UniqueID="{E40D031C-BB33-46C4-BCEF-1E2DFE682346}" Name="Dynamic connector" NameU="Dynamic connector" Master="10">
+					<XForm>
+						<PinX Unit="MM">3.543307086614173</PinX>
+						<PinY Unit="MM">11.072834645669291</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="4" UniqueID="{EDF3C570-ABC3-4D96-A8AC-78E96EEE018C}" Name="Process" NameU="Process" Master="11">
+					<Text>Agente de Viagem</Text>
+					<XForm>
+						<PinX Unit="MM">1.968503937007874</PinX>
+						<PinY Unit="MM">9.940944881889763</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="5" UniqueID="{A29478FA-D0A2-4914-B528-14479ACE926E}" Name="Processo.5" NameU="Process.5" Master="11">
+					<Text>On-Line</Text>
+					<XForm>
+						<PinX Unit="MM">3.543307086614173</PinX>
+						<PinY Unit="MM">8.692421259842517</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="6" UniqueID="{BBBB8EA9-6589-4819-B5FB-7E581BAD7731}" Name="Processo.6" NameU="Process.6" Master="11">
+					<Text>Atendente Hotel</Text>
+					<XForm>
+						<PinX Unit="MM">3.543307086614173</PinX>
+						<PinY Unit="MM">9.940944881889763</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="7" UniqueID="{9C2923A2-83E3-4F3F-A579-9599D09F3AB8}" Name="Conector dinâmico.7" NameU="Dynamic connector.7" Master="10">
+					<XForm>
+						<PinX Unit="MM">3.543307086614173</PinX>
+						<PinY Unit="MM">10.260826771653541</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="8" UniqueID="{971B747F-C091-4086-B9A1-C3D3743568EF}" Name="Conector dinâmico.8" NameU="Dynamic connector.8" Master="10">
+					<XForm>
+						<PinX Unit="MM">2.509842519685039</PinX>
+						<PinY Unit="MM">10.383858267716541</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="9" UniqueID="{F2139928-6B93-4A59-9C1D-2C2298F31EBA}" Name="On-page reference" NameU="On-page reference" Master="14">
+					<XForm>
+						<PinX Unit="MM">3.543307086614173</PinX>
+						<PinY Unit="MM">9.251968503937007</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1;0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="10" UniqueID="{C58E7EBC-3C87-488B-8DA9-653D97DCCFBB}" Name="Conector dinâmico.10" NameU="Dynamic connector.10" Master="10">
+					<XForm>
+						<PinX Unit="MM">4.035433070866142</PinX>
+						<PinY Unit="MM">9.685777559055115</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="11" UniqueID="{363EB114-47EA-4633-B014-0B82C281E566}" Name="Conector dinâmico.11" NameU="Dynamic connector.11" Master="10">
+					<XForm>
+						<PinX Unit="MM">2.657480314960630</PinX>
+						<PinY Unit="MM">9.522637795275589</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="12" UniqueID="{BCF1A613-3A92-499A-95D7-CEA7EC9806D9}" Name="Conector dinâmico.12" NameU="Dynamic connector.12" Master="10">
+					<XForm>
+						<PinX Unit="MM">3.543307086614173</PinX>
+						<PinY Unit="MM">9.621062992125983</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="13" UniqueID="{35AC65B1-5383-46A5-85ED-45C0712F4074}" Name="Conector dinâmico.13" NameU="Dynamic connector.13" Master="10">
+					<XForm>
+						<PinX Unit="MM">3.543307086614173</PinX>
+						<PinY Unit="MM">8.938484251968502</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="14" UniqueID="{E8AEA233-CFFC-420C-A7F0-AEDA59DBFD6C}" Name="Processo.14" NameU="Process.14" Master="11">
+					<Text>Buscar disponibilidade de acomodações no período</Text>
+					<XForm>
+						<PinX Unit="MM">3.543307086614173</PinX>
+						<PinY Unit="MM">8.260826771653544</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="15" UniqueID="{D2203B73-4347-4B0C-B0CC-C0AC09337081}" Name="Conector dinâmico.15" NameU="Dynamic connector.15" Master="10">
+					<XForm>
+						<PinX Unit="MM">3.543307086614173</PinX>
+						<PinY Unit="MM">8.475885826771656</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="16" UniqueID="{521F1ADB-E485-453E-974E-4FBE193822AA}" Name="Processo.16" NameU="Process.16" Master="11">
+					<Text>Obter os dados do cliente</Text>
+					<XForm>
+						<PinX Unit="MM">3.543307086614173</PinX>
+						<PinY Unit="MM">7.829232283464570</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="17" UniqueID="{7B5E0DF5-650E-4FA6-855B-290D99CA16D8}" Name="Conector dinâmico.17" NameU="Dynamic connector.17" Master="10">
+					<XForm>
+						<PinX Unit="MM">3.543307086614173</PinX>
+						<PinY Unit="MM">8.035187007874017</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="18" UniqueID="{7ABDC292-12E1-4446-8F02-E97A4C03DF4E}" Name="Processo.18" NameU="Process.18" Master="11">
+					<Text>Verificar os dados e crédito do cliente</Text>
+					<XForm>
+						<PinX Unit="MM">3.543307086614173</PinX>
+						<PinY Unit="MM">7.414370078740157</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="19" UniqueID="{8F8388AC-7441-49FD-9471-6154F431EF1A}" Name="Conector dinâmico.19" NameU="Dynamic connector.19" Master="10">
+					<XForm>
+						<PinX Unit="MM">3.543307086614173</PinX>
+						<PinY Unit="MM">7.633120078740159</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="20" UniqueID="{462477DF-AF67-4F29-B5B9-19F1AA87428C}" Name="Decisão.20" NameU="Decision.20" Master="9">
+					<Text>Falha no cadastro?</Text>
+					<XForm>
+						<PinX Unit="MM">3.543307086614173</PinX>
+						<PinY Unit="MM">6.733759842519682</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="21" UniqueID="{216D31B9-1D6D-4EC7-8731-BA4C4919469D}" Name="Conector dinâmico.21" NameU="Dynamic connector.21" Master="10">
+					<XForm>
+						<PinX Unit="MM">3.543307086614173</PinX>
+						<PinY Unit="MM">7.141486220472439</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="22" UniqueID="{74B4B65D-9822-4AC9-B457-466954221C05}" Name="Processo.22" NameU="Process.22" Master="11">
+					<Text>Confirmar Reserva</Text>
+					<XForm>
+						<PinX Unit="MM">3.543307086614174</PinX>
+						<PinY Unit="MM">6.102362204724409</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="23" UniqueID="{513472B2-5A48-47DF-9128-3B1512055774}" Name="Conector dinâmico.23" NameU="Dynamic connector.23" Master="10">
+					<XForm>
+						<PinX Unit="MM">3.543307086614173</PinX>
+						<PinY Unit="MM">6.334399606299211</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="24" UniqueID="{7666F25F-C09A-4E84-AE0B-9C02EF81DB37}" Name="Processo.24" NameU="Process.24" Master="11">
+					<Text>Comunicar reserva não confirmada</Text>
+					<XForm>
+						<PinX Unit="MM">5.314960629921259</PinX>
+						<PinY Unit="MM">6.733759842519683</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="25" UniqueID="{ABA0FB7B-E3AC-4204-9625-0423D81A2EB7}" Name="Conector dinâmico.25" NameU="Dynamic connector.25" Master="10">
+					<Text>Sim</Text>
+					<XForm>
+						<PinX Unit="MM">4.325787401574803</PinX>
+						<PinY Unit="MM">6.733759842519682</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="26" UniqueID="{F2E479B0-9D51-409F-94DB-64BE11A24213}" Name="Modo paralelo.26" NameU="Parallel mode.26" Master="8">
+					<XForm>
+						<PinX Unit="MM">7.086614173228344</PinX>
+						<PinY Unit="MM">6.812253937007883</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1;0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="27" UniqueID="{C7C752D0-B7A0-4385-AC18-A5834A2700FB}" Name="Conector dinâmico.27" NameU="Dynamic connector.27" Master="10">
+					<XForm>
+						<PinX Unit="MM">6.279527559055115</PinX>
+						<PinY Unit="MM">6.733759842519682</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="28" UniqueID="{1B147AC4-2049-46E5-9D9E-F613AFA4CFE0}" Name="Modo paralelo.28" NameU="Parallel mode.28" Master="8">
+					<XForm>
+						<PinX Unit="MM">3.543307086614174</PinX>
+						<PinY Unit="MM">5.504429133858260</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1;0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="29" UniqueID="{BDEDEDCE-C4BA-4CB6-9BD2-DB214C661FA7}" Name="Conector dinâmico.29" NameU="Dynamic connector.29" Master="10">
+					<XForm>
+						<PinX Unit="MM">3.543307086614174</PinX>
+						<PinY Unit="MM">5.803395669291334</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+			</Shapes>
+		</Page>
+		<Page ID="10" Name="Check In" NameU="Chec-In">
+			<Layer IX="0">
+				<Name>Conector</Name>
+				<NameUniv>Connector</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="1">
+				<Name>Fluxograma</Name>
+				<NameUniv>Flowchart</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Shapes>
+				<Shape ID="1" UniqueID="{7170239B-50FF-4DA6-97CE-77E2138DA133}" Name="Parallel mode" NameU="Parallel mode" Master="8">
+					<XForm>
+						<PinX Unit="MM">5.068897637795276</PinX>
+						<PinY Unit="MM">7.627952755905509</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0;1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="2" UniqueID="{09B241D6-8A6E-4C20-9391-87E4AE0390A8}" Name="Process" NameU="Process" Master="11">
+					<Text>Solicitar o check-in</Text>
+					<XForm>
+						<PinX Unit="MM">5.068897637795274</PinX>
+						<PinY Unit="MM">6.998031496062998</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="3" UniqueID="{F21FA895-6E8E-4F0A-803F-11CDE6CE4848}" Name="Processo.3" NameU="Process.3" Master="11">
+					<Text>Confirmar os dados do Cliente</Text>
+					<XForm>
+						<PinX Unit="MM">5.068897637795274</PinX>
+						<PinY Unit="MM">6.397637795275591</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="4" UniqueID="{EFF7325C-D76B-4FF2-B733-C7F16FD9EB10}" Name="Processo.4" NameU="Process.4" Master="11">
+					<Text>Confirmar os dados da Reserva</Text>
+					<XForm>
+						<PinX Unit="MM">5.068897637795274</PinX>
+						<PinY Unit="MM">5.816929133858269</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="5" UniqueID="{F13632DA-1D80-427A-BC5E-ADECA9C28A72}" Name="Processo.6" NameU="Process.6" Master="11">
+					<Text>Iniciar hospedagem</Text>
+					<XForm>
+						<PinX Unit="MM">5.068897637795274</PinX>
+						<PinY Unit="MM">4.635826771653546</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="6" UniqueID="{21FEE220-3BEF-41AD-B6FE-614DB7695350}" Name="Decision" NameU="Decision" Master="9">
+					<Text>Falha?</Text>
+					<XForm>
+						<PinX Unit="MM">5.088582677165356</PinX>
+						<PinY Unit="MM">5.198818897637796</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="7" UniqueID="{766CF5EF-B4EE-47FC-A254-A965FF459C1D}" Name="Processo.8" NameU="Process.8" Master="11">
+					<Text>Cancelar Check-in</Text>
+					<XForm>
+						<PinX Unit="MM">3.887795275590556</PinX>
+						<PinY Unit="MM">5.198818897637795</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="8" UniqueID="{3ED9EF96-7110-4871-AFB6-4F8D81633705}" Name="Modo paralelo.8" NameU="Parallel mode.8" Master="8">
+					<XForm>
+						<PinX Unit="MM">2.608267716535433</PinX>
+						<PinY Unit="MM">5.206692913385828</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0;1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="9" UniqueID="{9541CF2C-BBD4-425D-BA48-8A3A07353C64}" Name="Modo paralelo.10" NameU="Parallel mode.10" Master="8">
+					<XForm>
+						<PinX Unit="MM">5.068897637795274</PinX>
+						<PinY Unit="MM">4.084645669291341</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0;1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="10" UniqueID="{D6397539-6BB9-48D5-86DF-F8D688C57054}" Name="Dynamic connector" NameU="Dynamic connector" Master="10">
+					<XForm>
+						<PinX Unit="MM">5.068897637795275</PinX>
+						<PinY Unit="MM">7.332677165354331</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="11" UniqueID="{E8967690-9397-4D64-900B-97DCCDB96BFF}" Name="Conector dinâmico.11" NameU="Dynamic connector.11" Master="10">
+					<XForm>
+						<PinX Unit="MM">5.068897637795274</PinX>
+						<PinY Unit="MM">6.702755905511813</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="12" UniqueID="{0A4628E6-1EA8-4AA3-A374-7444EAF6C56A}" Name="Conector dinâmico.12" NameU="Dynamic connector.12" Master="10">
+					<XForm>
+						<PinX Unit="MM">5.068897637795274</PinX>
+						<PinY Unit="MM">6.102362204724409</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="13" UniqueID="{12DA5AF5-519C-426D-B72F-442980BEB0E1}" Name="Conector dinâmico.13" NameU="Dynamic connector.13" Master="10">
+					<XForm>
+						<PinX Unit="MM">5.078740157480315</PinX>
+						<PinY Unit="MM">5.515748031496066</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="14" UniqueID="{46FE02F4-A8F9-4EA3-B80D-93F1D4BD3B34}" Name="Conector dinâmico.14" NameU="Dynamic connector.14" Master="10">
+					<XForm>
+						<PinX Unit="MM">5.078740157480315</PinX>
+						<PinY Unit="MM">4.909448818897639</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="15" UniqueID="{6FEFC9C8-A91B-4113-981A-2ED1EBEF2E5C}" Name="Conector dinâmico.15" NameU="Dynamic connector.15" Master="10">
+					<XForm>
+						<PinX Unit="MM">4.606299212598427</PinX>
+						<PinY Unit="MM">5.198818897637795</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="16" UniqueID="{DD80DCFA-3389-444C-9AD8-CAC7DC8107CE}" Name="Conector dinâmico.16" NameU="Dynamic connector.16" Master="10">
+					<XForm>
+						<PinX Unit="MM">3.248031496062995</PinX>
+						<PinY Unit="MM">5.198818897637795</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="17" UniqueID="{7D19391B-36FB-4135-AF7E-F009469227A0}" Name="Conector dinâmico.18" NameU="Dynamic connector.18" Master="10">
+					<XForm>
+						<PinX Unit="MM">5.068897637795274</PinX>
+						<PinY Unit="MM">4.340551181102365</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+			</Shapes>
+		</Page>
+		<Page ID="11" Name="Check out" NameU="Check out">
+			<Layer IX="0">
+				<Name>Conector</Name>
+				<NameUniv>Connector</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="1">
+				<Name>Fluxograma</Name>
+				<NameUniv>Flowchart</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Shapes>
+				<Shape ID="1" UniqueID="{E3FC9A91-FA0D-4100-82DE-1209363E5D24}" Name="Parallel mode" NameU="Parallel mode" Master="8">
+					<XForm>
+						<PinX Unit="MM">5.347588224656975</PinX>
+						<PinY Unit="MM">8.646653543307078</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0;1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="2" UniqueID="{C507D19F-0CBF-42C1-98C6-70AB6661379E}" Name="Process" NameU="Process" Master="11">
+					<Text>Solicitar Check-out</Text>
+					<XForm>
+						<PinX Unit="MM">5.347588224656976</PinX>
+						<PinY Unit="MM">8.252952755905508</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="3" UniqueID="{08E36FF4-2B7F-4011-80FD-21B1E95FB00B}" Name="Processo.3" NameU="Process.3" Master="11">
+					<Text>Consultar Hospedagem</Text>
+					<XForm>
+						<PinX Unit="MM">5.347588224656976</PinX>
+						<PinY Unit="MM">7.859251968503937</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="4" UniqueID="{69C06D60-48EB-488A-88D5-F38407E2DC31}" Name="Processo.4" NameU="Process.4" Master="11">
+					<Text>Verificar Consumos e Serviços</Text>
+					<XForm>
+						<PinX Unit="MM">5.347588224656976</PinX>
+						<PinY Unit="MM">7.381889763779517</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="5" UniqueID="{197BF0AF-A9D6-4555-B17B-C9BF83D79A50}" Name="Processo.5" NameU="Process.5" Master="11">
+					<Text>Emitir Fatura Detalhada</Text>
+					<XForm>
+						<PinX Unit="MM">5.347588224656975</PinX>
+						<PinY Unit="MM">6.870078740157474</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="6" UniqueID="{21CFC57B-2F8D-4628-8AE4-76826C8EE38E}" Name="Processo.6" NameU="Process.6" Master="11">
+					<Text>Conferir Fatura</Text>
+					<XForm>
+						<PinX Unit="MM">5.347588224656976</PinX>
+						<PinY Unit="MM">6.382874015748026</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="7" UniqueID="{7907BF74-9009-4BE8-8E0A-9E2301BA29BA}" Name="Decision" NameU="Decision" Master="9">
+					<XForm>
+						<PinX Unit="MM">5.347588224656977</PinX>
+						<PinY Unit="MM">5.871062992125982</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="8" UniqueID="{294CF861-11F8-41D7-901E-86DFDE0ED917}" Name="Processo.8" NameU="Process.8" Master="11">
+					<Text>Emitir documento de não reconhecimento de gasto</Text>
+					<XForm>
+						<PinX Unit="MM">3.674359878200282</PinX>
+						<PinY Unit="MM">5.871062992125980</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="9" UniqueID="{03C8F02A-8A00-4E2E-B24C-68F50D61A23D}" Name="Processo.9" NameU="Process.9" Master="11">
+					<Text>Efetuar Pagamento</Text>
+					<XForm>
+						<PinX Unit="MM">5.347588224656975</PinX>
+						<PinY Unit="MM">4.532480314960633</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="10" UniqueID="{8340BB11-B9A2-4FCA-8FA0-E938553764F3}" Name="Processo.10" NameU="Process.10" Master="11">
+					<Text>Emitir Documento Fiscal</Text>
+					<XForm>
+						<PinX Unit="MM">5.347588224656975</PinX>
+						<PinY Unit="MM">4.069881889763772</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="11" UniqueID="{EB30536E-0371-432C-9DB0-21A58FA413F8}" Name="Dynamic connector" NameU="Dynamic connector" Master="10">
+					<XForm>
+						<PinX Unit="MM">5.347588224656976</PinX>
+						<PinY Unit="MM">8.449803149606293</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="12" UniqueID="{33715DB2-8B1B-4329-9BC1-E8BDC2316C10}" Name="Conector dinâmico.12" NameU="Dynamic connector.12" Master="10">
+					<XForm>
+						<PinX Unit="MM">5.347588224656976</PinX>
+						<PinY Unit="MM">8.061023622047241</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="13" UniqueID="{9911C328-AE82-46D2-8BE1-D30E98BAD264}" Name="Conector dinâmico.13" NameU="Dynamic connector.13" Master="10">
+					<XForm>
+						<PinX Unit="MM">5.347588224656976</PinX>
+						<PinY Unit="MM">7.637795275590547</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="14" UniqueID="{BF13E3AD-817E-4174-987E-08DCAE076A5A}" Name="Conector dinâmico.14" NameU="Dynamic connector.14" Master="10">
+					<XForm>
+						<PinX Unit="MM">5.347588224656976</PinX>
+						<PinY Unit="MM">7.121062992125975</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="15" UniqueID="{B852B343-BFE6-43ED-B316-2DC8409722F3}" Name="Conector dinâmico.15" NameU="Dynamic connector.15" Master="10">
+					<XForm>
+						<PinX Unit="MM">5.347588224656976</PinX>
+						<PinY Unit="MM">6.609251968503933</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="16" UniqueID="{948B9D9C-7A0D-4F77-A6ED-3DED7ED81112}" Name="Conector dinâmico.16" NameU="Dynamic connector.16" Master="10">
+					<XForm>
+						<PinX Unit="MM">5.347588224656976</PinX>
+						<PinY Unit="MM">6.163877952755900</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="17" UniqueID="{3D469BF5-EACE-43CC-84DC-998BDB6989AC}" Name="Conector dinâmico.17" NameU="Dynamic connector.17" Master="10">
+					<XForm>
+						<PinX Unit="MM">5.909432056677973</PinX>
+						<PinY Unit="MM">6.626476377952749</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="18" UniqueID="{E583296F-77B3-4416-B1C2-61BF2EAA145A}" Name="Conector dinâmico.18" NameU="Dynamic connector.18" Master="10">
+					<XForm>
+						<PinX Unit="MM">4.711925494998183</PinX>
+						<PinY Unit="MM">5.871062992125981</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="19" UniqueID="{5E79A049-17DB-4FDD-9EB8-1AA9EE3C6C64}" Name="Conector dinâmico.20" NameU="Dynamic connector.20" Master="10">
+					<XForm>
+						<PinX Unit="MM">5.347588224656975</PinX>
+						<PinY Unit="MM">4.301181102362202</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="20" UniqueID="{4F23B46A-3404-49B6-91ED-7BBFE9D9A078}" Name="On-page reference" NameU="On-page reference" Master="14">
+					<XForm>
+						<PinX Unit="MM">5.347588224656975</PinX>
+						<PinY Unit="MM">5.211614173228343</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0;1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="21" UniqueID="{5AB2F2CE-3456-442A-9E25-94835F34C40C}" Name="Conector dinâmico.21" NameU="Dynamic connector.21" Master="10">
+					<XForm>
+						<PinX Unit="MM">5.347588224656976</PinX>
+						<PinY Unit="MM">5.553641732283461</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="22" UniqueID="{F67C0027-DDB6-4851-8EA6-2DFD3DFE6D87}" Name="Conector dinâmico.22" NameU="Dynamic connector.22" Master="10">
+					<XForm>
+						<PinX Unit="MM">2.763926807334140</PinX>
+						<PinY Unit="MM">5.688976377952751</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="23" UniqueID="{61AF2737-21AC-4CE1-B2B5-C69812DF23D5}" Name="Conector dinâmico.23" NameU="Dynamic connector.23" Master="10">
+					<XForm>
+						<PinX Unit="MM">5.347588224656975</PinX>
+						<PinY Unit="MM">4.842519685039370</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="24" UniqueID="{227DEA6F-0A4E-418D-A967-8DFE6E250278}" Name="Modo paralelo.24" NameU="Parallel mode.24" Master="8">
+					<XForm>
+						<PinX Unit="MM">5.347588224656977</PinX>
+						<PinY Unit="MM">3.065944881889775</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0;1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="25" UniqueID="{C4204BAD-BB2C-475E-89D6-8B8265C46A25}" Name="Processo.25" NameU="Process.25" Master="11">
+					<Text>Finalizar hospedagem</Text>
+					<XForm>
+						<PinX Unit="MM">5.347588224656976</PinX>
+						<PinY Unit="MM">3.617125984251971</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="26" UniqueID="{26D3A510-93C8-4790-ADB5-19FAFBA6CA43}" Name="Conector dinâmico.26" NameU="Dynamic connector.26" Master="10">
+					<XForm>
+						<PinX Unit="MM">5.347588224656976</PinX>
+						<PinY Unit="MM">3.828740157480311</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="27" UniqueID="{766B17B9-214E-46E0-88DE-CC06204A244E}" Name="Conector dinâmico.27" NameU="Dynamic connector.27" Master="10">
+					<XForm>
+						<PinX Unit="MM">5.347588224656976</PinX>
+						<PinY Unit="MM">3.336614173228355</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="28" UniqueID="{CC0EA912-0EBE-4F4E-8E3A-B9F15C6E0D9B}" Name="Processo.28" NameU="Process.28" Master="11">
+					<Text>Descontar serviço e/ou produtos não reconhecimento</Text>
+					<XForm>
+						<PinX Unit="MM">2.542470114420754</PinX>
+						<PinY Unit="MM">5.211614173228342</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Custo</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duração</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Recursos</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="29" UniqueID="{91FA9844-DE90-45A3-9928-A61770537E83}" Name="Conector dinâmico.29" NameU="Dynamic connector.29" Master="10">
+					<XForm>
+						<PinX Unit="MM">4.264911059302644</PinX>
+						<PinY Unit="MM">5.211614173228343</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+			</Shapes>
+		</Page>
+		<Page ID="4" Name="VPlano de fundo" NameU="VPlano de fundo">
+			<Layer IX="0">
+				<Name>Conector</Name>
+				<NameUniv>Connector</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="1">
+				<Name>Fluxograma</Name>
+				<NameUniv>Flowchart</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Shapes>
+				<Shape ID="1" UniqueID="{8A83614E-89C5-40C4-993F-F6D4D6252778}" Name="Background none" NameU="Background none" Master="7">
+					<XForm>
+						<PinX Unit="MM">4.133858267716535</PinX>
+						<PinY Unit="MM">5.846456692913385</PinY>
+					</XForm>
+				</Shape>
+			</Shapes>
+		</Page>
+	</Pages>
+</VisioDocument>

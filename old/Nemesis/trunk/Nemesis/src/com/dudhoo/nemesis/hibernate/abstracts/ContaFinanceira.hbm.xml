@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class name="com.dudhoo.nemesis.hibernate.abstracts.ContaFinanceira"
+        table="CONTA_FINANCEIRA" schema="NEMESIS">
+  <id name="id" type="long">
+   <column name="ID" precision="10" scale="0"/>
+   <generator class="identity"/>
+  </id>
+  <property name="valor" type="long">
+   <column name="VALOR" length="10" precision="2" not-null="true"/>
+  </property>
+  <property name="dataPagamento" type="date">
+   <column name="DATA_PAGAMENTO" length="7" not-null="true"/>
+  </property>
+  <many-to-one name="pessoa" class="com.dudhoo.nemesis.hibernate.Pessoa"
+               fetch="join" cascade="save-update">
+   <column name="PESSOA_ID" precision="10" scale="0" not-null="true"/>
+  </many-to-one>
+  <many-to-one name="tipoConta" class="com.dudhoo.nemesis.hibernate.TipoConta"
+               fetch="join" cascade="none">
+   <column name="TIPO_CONTA_ID" precision="10" scale="0" not-null="true"/>
+  </many-to-one>
+  <property name="contaPaga" type="boolean">
+   <column name="CONTA_PAGA" precision="1" scale="0" not-null="true"/>
+  </property>
+  <!-- entity-->
+  <many-to-one name="observacao" class="com.dudhoo.nemesis.hibernate.Observacao"
+               lazy="false" fetch="join" cascade="all">
+   <column name="OBSERVACAO_ID" precision="10" scale="0" unique="true"/>
+  </many-to-one>
+  <many-to-one name="usuario" class="com.dudhoo.nemesis.hibernate.Usuario"
+               fetch="select" cascade="none">
+   <column name="USUARIO_ID" precision="10" scale="0" not-null="true"/>
+  </many-to-one>
+  <property name="ultMod"  insert="false" type="date" update="false" >
+   <column name="ULT_MOD" length="7" not-null="false"/>
+  </property>
+  <!-- subclasses -->
+  <joined-subclass name="com.dudhoo.nemesis.hibernate.ContaReceber"
+                   table="CONTA_RECEBER" schema="NEMESIS">
+   <key column="ID"/>
+  </joined-subclass>
+  <joined-subclass name="com.dudhoo.nemesis.hibernate.ContaPagar"
+                   table="CONTA_PAGAR" schema="NEMESIS">
+   <key column="ID"/>
+  </joined-subclass>
+ </class>
+</hibernate-mapping>

@@ -1,0 +1,16 @@
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+     "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+     <session-factory>
+
+         <property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+         <property name="connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>
+         <property name="connection.username">dudu</property>
+         <property name="connection.password">dudu</property>
+
+         <property name="show_sql">true</property>
+         <!-- SQL dialect, especifico para a versão 9 do Oracle -->
+         <property name="dialect">org.hibernate.dialect.OracleDialect</property>
+         <property name="hbm2ddl.auto">update</property>
+     </session-factory>
+</hibernate-configuration>

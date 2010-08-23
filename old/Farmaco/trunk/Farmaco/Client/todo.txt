@@ -1,0 +1,33 @@
+Serial?
+-Gerado um número loco que representa a data inicial e a quantidade de dias que vai funcionar.*
+Vai ver a hora no servidor caso tenha internet. e so abrir caso nao tenha
+diferenças maiores que um dia na hora que liga e cada 1 hora.
+Vai ver na rede se tem 2 computadores com o mesmo serial a cada 2 horas.
+
+Fom cadastrar remedios?
+cadastra pela web e software atualiza via webservice.
+data de atualização dos farmacos.
+
+notas bibliográficas?
+
+apresentação farmacêutica?
+
+detalhes?
+Outra aba ou botão direito.
+
+Instalador?
+launch4j
+
+pagamento?
+cartão, boleto .pensar
+
+dominios?
+dudhoo.com
+farmacopedia.com
+
+nome da empresa?
+
+Notas bibliográficas?
+Grava no banco de dados.
+Atualizavel(web service)
+aparce no about

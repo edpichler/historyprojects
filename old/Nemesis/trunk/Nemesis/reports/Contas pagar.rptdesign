@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Written by Eclipse BIRT 2.0 -->
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 2.0.1 Build &lt;20060222-1204></property>
+    <property name="units">in</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">nemesis library.rptlibrary</property>
+            <property name="namespace">nemesis library</property>
+        </structure>
+    </list-property>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="NewOdaDataSet" id="4"
+ extends="nemesis library.Contas Pagar"/>
+    </data-sets>
+    <styles>
+        <style name="table-header" id="39">
+            <property name="backgroundColor">#000000</property>
+            <property name="fontFamily">Arial</property>
+            <property name="fontWeight">bold</property>
+            <property name="color">#FFFFFF</property>
+            <property name="textAlign">center</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <text id="40">
+            <property name="fontFamily">Arial</property>
+            <property name="fontSize">x-large</property>
+            <property name="fontWeight">bold</property>
+            <property name="textAlign">center</property>
+            <property name="contentType">plain</property>
+            <text-property name="content"><![CDATA[Contas à pagar]]></text-property>
+        </text>
+        <table id="5">
+            <property name="width">100%</property>
+            <property name="dataSet">NewOdaDataSet</property>
+            <column id="34"/>
+            <column id="35"/>
+            <column id="36"/>
+            <column id="37"/>
+            <column id="38"/>
+            <header>
+                <row id="6">
+                    <cell id="7">
+                        <label id="8">
+                            <text-property name="text">Pessoa</text-property>
+                        </label>
+                    </cell>
+                    <cell id="9">
+                        <label id="10">
+                            <text-property name="text">Conta</text-property>
+                        </label>
+                    </cell>
+                    <cell id="11">
+                        <label id="12">
+                            <text-property name="text">Valor</text-property>
+                        </label>
+                    </cell>
+                    <cell id="13">
+                        <label id="14">
+                            <text-property name="text">Data Pagamento</text-property>
+                        </label>
+                    </cell>
+                    <cell id="15">
+                        <label id="16">
+                            <text-property name="text">Conta Paga</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </header>
+            <detail>
+                <row id="17">
+                    <property name="fontSize">small</property>
+                    <cell id="18">
+                        <data id="19">
+                            <expression name="valueExpr">row["Pessoa"]</expression>
+                        </data>
+                    </cell>
+                    <cell id="20">
+                        <data id="21">
+                            <expression name="valueExpr">row["Conta"]</expression>
+                        </data>
+                    </cell>
+                    <cell id="22">
+                        <data id="23">
+                            <property name="textAlign">right</property>
+                            <expression name="valueExpr">row["Valor"]</expression>
+                        </data>
+                    </cell>
+                    <cell id="24">
+                        <data id="25">
+                            <property name="textAlign">center</property>
+                            <expression name="valueExpr">row["Data Pagamento"]</expression>
+                        </data>
+                    </cell>
+                    <cell id="26">
+                        <data id="27">
+                            <property name="textAlign">center</property>
+                            <expression name="valueExpr">row["Conta Paga"]</expression>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+            <footer>
+                <row id="28">
+                    <cell id="29"/>
+                    <cell id="30"/>
+                    <cell id="31"/>
+                    <cell id="32"/>
+                    <cell id="33"/>
+                </row>
+            </footer>
+        </table>
+    </body>
+</report>
